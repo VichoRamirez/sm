@@ -1,24 +1,29 @@
 # Repo dedicated to the InfoCar Proyect
+
 ## By Caro B., Cuero D., Leon M., Marin G., Parraud J., Ramírez S., Ramírez V.
 
 The motive of this repo is to orgianice all Strategic Marketing Proyect info, links, etc.
 
 Hopefully, lets organice all sources by themes (market, ai, etc.)
 
+(Forn now, just upload things, I'll tell my agent to re-organice the folders after a couple uploads/commits)
+
 ## Sources:
+
 ### AI:
+
 1. [Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/)
 2. [License: CC BY 4.0](https://arxiv.org/html/2509.04664v1)
-3. [Introducing the next generation of Vectara's Hallucination Leaderboard](https://www.vectara.com/blog/introducing-the-next-generation-of-vectaras-hallucination-leaderboard)
-4. [Which AI Has the Lowest Hallucination Rate? Why Benchmarks Don't Tell the Full Story](https://www.seekr.com/resource/ai-lowest-hallucination-rate/)
+3. [Introducing the next generation of Vectara&#39;s Hallucination Leaderboard](https://www.vectara.com/blog/introducing-the-next-generation-of-vectaras-hallucination-leaderboard)
+4. [Which AI Has the Lowest Hallucination Rate? Why Benchmarks Don&#39;t Tell the Full Story](https://www.seekr.com/resource/ai-lowest-hallucination-rate/)
 5. [Latest AI Hallucination Rates, Benchmarks and Leaderboards 2026](https://suprmind.ai/hub/ai-hallucination-rates-and-benchmarks/)
-6. [AI Hallucination in May 2026: The Complete Data Report - Multi Agent AI News & Update](https://multiai.news/ai-hallucination-in-2026/)
-7. [Vectara's Hallucination Leaderboard](https://www.emergentmind.com/topics/vectara-s-hallucination-leaderboard)
+6. [AI Hallucination in May 2026: The Complete Data Report - Multi Agent AI News &amp; Update](https://multiai.news/ai-hallucination-in-2026/)
+7. [Vectara&#39;s Hallucination Leaderboard](https://www.emergentmind.com/topics/vectara-s-hallucination-leaderboard)
 8. [Benchmarking LLM Faithfulness in RAG with Evolving Leaderboards](https://arxiv.org/html/2505.04847v2)
 9. [Grounding Agentic VLMs with Dedicated Segmentation for Fine-Grained Vehicle Damage Assessment](https://arxiv.org/html/2608.02470)
 10. [CarDD: Car Damage Detection Dataset](https://www.emergentmind.com/topics/cardd)
 11. [Harnessing GPT-4V(ision) for Insurance: A Preliminary Exploration](https://arxiv.org/html/2404.09690v1)
-12. <https://arxiv.org/pdf/2406.09105>
+12. [https://arxiv.org/pdf/2406.09105](https://arxiv.org/pdf/2406.09105)
 13. [Benchmarking Large and Small MLLMs](https://arxiv.org/pdf/2501.04150)
 14. [Solutions - Insurers - Tractable](https://tractable.ai/insurers/)
 15. [AI for Insurance Claims: Automation and Processing Playbook - Kanopy Labs](https://kanopylabs.com/blog/ai-for-insurance-claims-processing-automation)
@@ -33,11 +38,11 @@ Hopefully, lets organice all sources by themes (market, ai, etc.)
 24. [Tractable Review: Insurance AI Tool](https://smarterway.ai/tools/tractable)
 25. [BC Tribunal Finds Air Canada Liable For Inaccurate Advice Given By Website Chatbot](https://www.dww.com/articles/bc-tribunal-finds-air-canada-liable-for-inaccurate-advice-given-by-website-chatbot)
 26. [Are Chatbot Promises Legally Binding? Air Canada, Chevy \$1, Tests](https://www.agenttorture.com/resources/are-chatbot-promises-legally-binding)
-27. [A tribunal rejected Air Canada's claim its chatbot was a separate entity](https://www.centerconsulting.com/ai-library/facts/air-canada-chatbot-separate-entity-rejected)
+27. [A tribunal rejected Air Canada&#39;s claim its chatbot was a separate entity](https://www.centerconsulting.com/ai-library/facts/air-canada-chatbot-separate-entity-rejected)
 28. [BC Tribunal Confirms Companies Remain Liable for Information Provided by AI Chatbot](https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-february/bc-tribunal-confirms-companies-remain-liable-information-provided-ai-chatbot/)
 29. [Entity: Chevrolet of Watsonville](https://incidentdatabase.ai/entities/chevrolet-of-watsonville/)
 30. [Chatbot Case Study: Purchasing a Chevrolet Tahoe for \$1 · Cut The SaaS](https://cut-the-saas.com/ai/chatbot-case-study-purchasing-a-chevrolet-tahoe-for-dollar-1)
-31. [A Chevy Dealership's Chatbot Agreed to Sell a \$76,000 SUV for \$1](https://www.agent-kits.com/postmortem/library/chevrolet-watsonville-chatbot-one-dollar-tahoe)
+31. [A Chevy Dealership&#39;s Chatbot Agreed to Sell a \$76,000 SUV for \$1](https://www.agent-kits.com/postmortem/library/chevrolet-watsonville-chatbot-one-dollar-tahoe)
 32. [Se aprueba en primer trámite constitucional el Proyecto que regula los sistemas de IA en Chile](https://iapp.org/news/a/se-aprueba-en-primer-tr-mite-constitucional-el-proyecto-que-regula-los-sistemas-de-ia-en-chile)
 33. [Ley para regular la IA en Chile: ¿tu asistente virtual es legal?](https://www.tichile.cl/ley-ia-chile-asistente-virtual-legal/)
 34. [Diputados aprobaron proyecto para regular la inteligencia artificial en Chile - Cooperativa.cl](https://cooperativa.cl/noticias/pais/politica/camara-baja/diputados-aprobaron-proyecto-para-regular-la-inteligencia-artificial-en/2025-10-13/213644.html)
@@ -74,8 +79,8 @@ Hopefully, lets organice all sources by themes (market, ai, etc.)
 65. [Autos Usados en Chile · 65 marcas analizadas con IA](https://ofertautos.cl/autos-usados)
 66. [CAVEM llama a verificar el historial de los vehículos usados antes de comprar](https://g5noticias.cl/2026/08/31/cavem-llama-a-verificar-el-historial-de-los-vehiculos-usados-antes-de-comprar/)
 67. [Noticias - CAVEM](https://www.cavem.cl/noticias/por-efecto-cuarentena-mercado-de-autos-usados-se-digitaliza-y-logra-frenar-la-cada-de-su-oferta)
-68. <https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf>
-69. [CDK Global: Dealerships report AI boosts lead conversion, F&I - Automotive News](https://www.autonews.com/retail/an-cdk-data-box-retal-tech-trends-0303/)
+68. [https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf](https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf)
+69. [CDK Global: Dealerships report AI boosts lead conversion, F&amp;I - Automotive News](https://www.autonews.com/retail/an-cdk-data-box-retal-tech-trends-0303/)
 70. [Video: AI Gains Ground at the Dealership](https://www.cdkglobal.com/insights/video-ai-gains-ground-dealership)
 71. [La Tercera| La irrupción de la IA en el mercado laboral: casi la mitad de los trabajadores dice ocuparla - Sitio Web Cadem](https://cadem.cl/la-tercera-la-irrupcion-de-la-ia-en-el-mercado-laboral-casi-la-mitad-de-los-trabajadores-dice-ocuparla/)
 72. [Indice Latinoamericano de Inteligencia Artificial ILIA 2025](https://desarrollodigital.cepal.org/es/datos-y-hechos/indice-latinoamericano-de-inteligencia-artificial-ilia-2025)
