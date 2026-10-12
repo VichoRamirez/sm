@@ -85,7 +85,12 @@ El repositorio local se organiza en módulos especializados:
 ```
 strategic-marketing/
 ├── context/
-│   └── README.md              # Este marco de gobernanza, contexto y workflow
+│   ├── README.md              # Este marco de gobernanza, contexto y workflow
+│   ├── business_definition.md, market_context.md, buyer_persona_tam_sam_som.md   # Tareas Notion "Done"
+│   ├── objectives_definition_framework.md                                        # Notas de clase
+│   └── *_vg.md                # Informes de benchmarks, modalidades y objetivos
+├── research/                  # Investigaciones en curso (competidores, disposición a pagar, IA)
+├── team/                      # Matriz RACI, minuta y notas de reunión
 ├── data/
 │   ├── technical-bases/       # Bases técnicas (papers, artículos científicos, Computer Vision/IA)
 │   │   ├── damage-with-IA/
@@ -93,6 +98,7 @@ strategic-marketing/
 │   └── raw-data/              # Datos crudos (scrapes de mercado, reportes CAVEM, bases de precios)
 ├── analysis/                  # Procesamiento analítico, scripts de cálculo, modelos y síntesis
 └── deliverys/                 # Instrucciones, pautas y rúbricas de los entregables
+    ├── stage-1/               # Stage 1 Background: Market Research Report v2 e InfoCar Internal Analysis
     └── workshop-2/            # Pauta e instrucciones de Workshop 2 (Objetivos de Investigación)
 ```
 

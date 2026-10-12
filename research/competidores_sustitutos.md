@@ -151,4 +151,4 @@ All checked 11 Oct 2026.
 - CAVEM September 2026: [The Clinic](https://www.theclinic.cl/2026/10/06/ventas-de-vehiculos-en-chile-septiembre-2026-cavem/)
 - Gemini Deep Research reports (competitors; benchmarks and market figures): held by Bruno.
 
-[Chile Auto Dealer SaaS Analysis.docx](Investigaci%C3%B3n%20de%20Competidores%20Sustitutos/Chile_Auto_Dealer_SaaS_Analysis.docx)
+[Chile Auto Dealer SaaS Analysis.docx](competidores_sustitutos/chile_auto_dealer_saas_analysis.docx)

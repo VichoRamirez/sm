@@ -1,10 +1,6 @@
-# Strategic Marketing Project
+# Notas de reunión: ideas y pendientes
 
-[Entregas](Strategic%20Marketing%20Project/Entregas%203e7c4aae38f68053a226de9dac5a26f1.csv)
-
----
-
-[Sources](Strategic%20Marketing%20Project/Sources%203e7c4aae38f680049861d3da708a78ea.csv)
+*Notas sueltas de la página principal de Notion (Strategic Marketing Project).*
 
 Añadir la NAC
 

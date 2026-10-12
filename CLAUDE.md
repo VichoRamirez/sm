@@ -36,8 +36,11 @@ Para asumir explícitamente un rol en Claude Code, puedes iniciar con la instruc
 - **Contexto:** Solo se consideran recursos de tipo `Articulo`, `Minuta`, `Notas` y `team-research`.
 - **Tareas y Contexto:** Las tareas en progreso no son contexto. Solo cuando una tarea está finalizada (`Listo`) se incorpora su desarrollo como contexto en `context/`.
 - **Estructura de Carpetas:**
-  - `context/`: Acuerdos, contexto consolidado y marcos teóricos.
+  - `context/`: Acuerdos, contexto consolidado y marcos teóricos (incluye tareas de Notion en estado `Done`).
+  - `research/`: Investigaciones del equipo aún en curso (tareas de Notion `In progress`); no son contexto oficial.
+  - `team/`: Organización del equipo (Matriz RACI, minutas y notas de reunión).
   - `data/technical-bases/`: Papers científicos y arquitecturas de IA.
-  - `data/raw-data/`: Datos crudos para análisis.
-  - `analysis/`: Scripts y modelos cuantitativos en Python.
-  - `deliverys/`: Pautas y entregables finales.
+  - `data/raw-data/`: Datos crudos para análisis (aún no creada).
+  - `analysis/`: Scripts y modelos cuantitativos en Python (aún no creada).
+  - `deliverys/`: Pautas y entregables finales (`stage-1/`, `workshop-2/`).
+  - Fuentes: el índice de fuentes verificadas y pendientes vive en [`README.md`](./README.md).
