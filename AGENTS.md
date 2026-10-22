@@ -24,6 +24,11 @@ flowchart TD
         DM["📋 Notion & Delivery Manager<br><code>delivery-manager</code>"]
     end
 
+    subgraph Validación Académica
+        KV["📚 Academic Knowledge Validator<br><code>knowledge-validator</code>"]
+        NLM["🗄️ NotebookLM<br>Base Teórica del Ramo"]
+    end
+
     MS -->|Directrices metodológicas| MR
     MS -->|Requerimientos de producto| TA
     MS -->|Hipótesis cuantitativas| DA
@@ -36,6 +41,13 @@ flowchart TD
     DM -->|Actualiza tareas en Notion| Notion["📝 Notion DB Tareas"]
     DM -->|Promueve tareas listas a contexto| Context["📚 context/"]
     Context -.->|Retroalimenta contexto| MS
+
+    MS -->|Solicita validación de objetivos y fases| KV
+    DM -->|Solicita auditoría teórica antes de Listo| KV
+    KV -->|Consulta vía MCP| NLM
+    NLM -->|Respuesta del notebook| KV
+    KV -->|Veredicto con cita del notebook| MS
+    KV -->|Veredicto con cita del notebook| DM
 ```
 
 | Agente | Identificador | Rol Principal | Enfoque Metodológico |
@@ -45,6 +57,7 @@ flowchart TD
 | **Tech & AI Architect** | `tech-architect` | Arquitectura técnica de IA y producto | Visión computacional para inspección y MVP |
 | **Quantitative Analyst** | `data-analyst` | Análisis de datos y dispersión de precios | Evidencia estadística (*"Dataaaaaaa!"*) |
 | **Notion & Delivery Manager**| `delivery-manager` | Sincronización de Notion y entregables | Gobernanza de contexto y compilación |
+| **Academic Knowledge Validator** | `knowledge-validator` | Validación teórica contra base del ramo | Consulta NotebookLM vía MCP |
 
 ---
 
@@ -116,6 +129,20 @@ flowchart TD
 
 ---
 
+### 2.6 📚 Academic Knowledge Validator (`knowledge-validator`)
+* **Archivo de definición:** [`.agents/knowledge-validator.md`](./.agents/knowledge-validator.md)
+* **Objetivo:** Actuar como árbitro teórico del proyecto consultando la base de conocimiento oficial del ramo en **NotebookLM** (vía MCP) y contrastando entregables, objetivos y solicitudes contra ese marco.
+* **Responsabilidades Clave:**
+  - Consultar el notebook del curso de Strategic Marketing usando las herramientas MCP de NotebookLM (`list_notebooks` → `ask_notebook`) para obtener la fuente de verdad teórica.
+  - Validar que la formulación de objetivos, las fases metodológicas y los entregables sean coherentes con lo dictado en el ramo.
+  - Emitir veredictos estructurados (✅ Alineado / ⚠️ Observación / ❌ No alineado) con cita textual del notebook como sustento.
+  - Responder consultas puntuales de cualquier agente sobre coherencia conceptual con el marco teórico.
+* **Inputs:** Borradores de entregables, formulaciones de objetivos, solicitudes de validación de `marketing-strategist` y `delivery-manager`.
+* **Outputs:** Informes de validación con veredicto ítem por ítem y citas del notebook; recomendaciones de ajuste fundamentadas.
+* **Restricción crítica:** NUNCA emite veredicto sin haber consultado primero el notebook vía MCP. El notebook es la única fuente de verdad del ramo.
+
+---
+
 ## 3. Workflow de Colaboración e Interacción
 
 El desarrollo de cualquier tarea o taller sigue este flujo secuencial estandarizado:
@@ -134,6 +161,12 @@ El desarrollo de cualquier tarea o taller sigue este flujo secuencial estandariz
      └── `marketing-strategist`: Enmarca en las 5 fases y formula objetivos canónicos
                  │
                  ▼
+[3.5 Validación Académica — NUEVO]
+     └── `knowledge-validator`:
+           ├── Consulta el notebook del ramo en NotebookLM vía MCP
+           └── Emite veredicto ✅/⚠️/❌ con cita del notebook
+                 │
+                 ▼
 [4. Consolidación y Entrega]
      └── `delivery-manager`:
            ├── Documenta el desarrollo en la página de Notion
@@ -146,7 +179,7 @@ El desarrollo de cualquier tarea o taller sigue este flujo secuencial estandariz
 
 ## 4. Guía de Invocación en Antigravity CLI (`agy`)
 
-Los 5 agentes están registrados formalmente en Antigravity mediante `define_subagent`. Puedes invocarlos y orquestarlos de tres formas:
+Los 6 agentes están registrados formalmente en Antigravity mediante `define_subagent`. Puedes invocarlos y orquestarlos de tres formas:
 
 ### 4.1 Invocación Directa como Subagente (`invoke_subagent`)
 Para asignar una tarea específica a un agente en segundo plano, se invoca indicando su nombre registrado:
@@ -186,7 +219,23 @@ Puedes lanzar múltiples agentes de forma concurrente para resolver diferentes a
 }
 ```
 
-### 4.3 Comandos Recomendados en `agy`
+### 4.3 Invocar el `knowledge-validator` para auditoría académica
+Usa este agente antes de declarar cualquier objetivo o entregable como terminado:
+
+```json
+{
+  "Subagents": [
+    {
+      "TypeName": "knowledge-validator",
+      "Role": "Academic Theory Validator",
+      "Prompt": "Valida la siguiente formulación de Objetivo General contra el marco teórico del ramo en NotebookLM: 'Comprender los factores que inciden en la toma de decisiones de compra de autos usados en Chile.' Emite veredicto con cita del notebook.",
+      "Model": "inherit"
+    }
+  ]
+}
+```
+
+### 4.4 Comandos Recomendados en `agy`
 - `/teamwork-preview`: Activa la vista previa y coordinación autónoma del equipo de agentes para tareas complejas.
 - `/plan`: Genera un plan de acción detallado paso a paso antes de delegar a los subagentes.
 - `/goal`: Ejecuta una meta de largo aliento donde los agentes investigan, documentan y no se detienen hasta completar el objetivo.
