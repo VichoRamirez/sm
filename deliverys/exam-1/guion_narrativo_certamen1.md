@@ -50,13 +50,13 @@ Quedan 2 minutos de margen para preguntas, dentro de los 15.
 
 ## Slide 2 · Asimetría de información — Seba (1:15)
 
-> Everything starts with one idea from economics: **information asymmetry**. The seller knows the car: past crashes, repaint, hidden filler, old faults. The buyer only sees an ad, a few photos and a short test drive.
+> Everything starts from one idea of economics: **information asymmetry**. The seller knows the car: past crashes, repaint and hidden details. The buyer only knows an ad, description, a few photos and in some cases a price.
 >
-> Akerlof called this the **market for lemons**. When buyers cannot tell a good car from a bad one, they discount every car, and the good cars leave the market.
+> In 1970 Akerlof called this the **market for lemons**. When you cant distinguish a good car from a bad one, then you are not interest in pay a high ticket price, and the good cars leave the market.
 >
-> Two numbers show it in Chile. In 2025 the same model, the Ford F-150, was listed from **2.0 to 68.9 million pesos**. Price alone does not reveal condition. And when the damage finally shows up, it is slow and expensive: a car spends **52 days on average** in an insured repair workshop.
+> Two numbers show that in Chile. In 2025 the same Ford model, was listed from **2.0 million pesos to almost 70**. Price alone does not reveal the condition. And when the damage finally shows up, its slow and expensive: a car spends around **52 days** in an official mechanic workshop. That cost of capital is lifechanger for a Small or medium company.
 >
-> So hidden condition is a cost on every deal. The question is: **who carries that cost?** Gabo.
+> The question is: **who carries that cost?** Gabo.
 
 **Concepto del curso:** el diagnóstico se apoya en un marco teórico y en datos secundarios verificables (Akerlof, 1970; Farías, 2026; Guzmán, 2026).
 
