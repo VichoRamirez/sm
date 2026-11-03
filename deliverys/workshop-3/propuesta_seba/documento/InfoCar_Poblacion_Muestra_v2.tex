@@ -1,0 +1,556 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Paquetes ----------
+\usepackage{fontspec}
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\usepackage[spanish,es-tabla,es-nodecimaldot,es-noshorthands]{babel}
+\usepackage[margin=2.2cm,top=2.4cm,bottom=2.4cm]{geometry}
+\usepackage{xcolor}
+\usepackage{booktabs,tabularx,array,xltabular}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage{csquotes}
+\usepackage{xurl}
+
+\definecolor{cobalt}{HTML}{2340E0}
+\definecolor{ink}{HTML}{1B1F2A}
+\definecolor{soft}{HTML}{EEF1FD}
+\definecolor{amber}{HTML}{FFCF1F}
+\definecolor{grayline}{HTML}{9AA3B5}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\titleformat{\section}{\sffamily\Large\bfseries\color{cobalt}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\sffamily\large\bfseries\color{ink}}{\thesubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{16pt}{6pt}
+\titlespacing*{\subsection}{0pt}{12pt}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\sffamily\small\color{grayline}InfoCar · Población y muestra · v2}
+\fancyhead[R]{\sffamily\small\color{grayline}Strategic Marketing · UDD}
+\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlist{itemsep=2pt,topsep=3pt,leftmargin=1.3em}
+
+\newtcolorbox{keybox}[1][]{colback=soft,colframe=cobalt,boxrule=0.6pt,arc=3pt,left=8pt,right=8pt,top=6pt,bottom=6pt,fonttitle=\sffamily\bfseries,#1}
+\newtcolorbox{notebox}[1][]{colback=amber!12,colframe=amber!80!black,boxrule=0.5pt,arc=3pt,left=8pt,right=8pt,top=5pt,bottom=5pt,fonttitle=\sffamily\bfseries,#1}
+\newcommand{\hyp}{\textsuperscript{\textsf{\scriptsize H}}}
+
+\begin{document}
+
+% ---------- Portada ----------
+\begin{titlepage}
+\vspace*{1.2cm}
+{\sffamily\small\color{cobalt}STRATEGIC MARKETING · UNIVERSIDAD DEL DESARROLLO\par}
+\vspace{0.6cm}
+{\sffamily\fontsize{34}{40}\selectfont\bfseries\color{ink} InfoCar\par}
+\vspace{0.3cm}
+{\sffamily\fontsize{20}{26}\selectfont\color{ink} Workshop: Definición de la\\ población objetivo y la muestra\par}
+\vspace{0.5cm}
+{\large Negocio B2B (compraventas de autos usados) con extensión B2C (compradores particulares)\par}
+\vspace{0.3cm}
+{\sffamily\small\color{cobalt}Versión 2 · corregida con investigación de fuentes primarias nacionales e internacionales\par}
+\vspace{1cm}
+\begin{keybox}
+\textbf{En una frase.} Investigamos a dos poblaciones:
+\begin{itemize}
+\item \textbf{B2B:} las 572 compraventas pequeñas y medianas con nombre y RUT en el listado del SII de la RM, Valparaíso y Biobío, unas 628 si se suman las personas naturales. Se separan por tramo de ventas del SII.
+\item \textbf{B2C:} quienes compraron un auto usado con su propio dinero, separados por tipo de vendedor y antigüedad del auto.
+\end{itemize}
+La etapa cualitativa tiene 10 entrevistas (más 2 de reserva) y 4 grupos focales. La cuantitativa tiene 100 encuestas B2B, sorteadas por celda desde el listado del SII, y 300 B2C, con 30 casos o más por celda.
+\end{keybox}
+\vfill
+{\sffamily\small
+\begin{tabular}{@{}ll}
+Profesora: & Claudia Scherman B., MBA\\
+Equipo: & Bruno Caro · Daniel Cuero · Moisés León · Gabriel Marín ·\\
+ & Joaquín Parraud · Sebastián Ramírez · Vicente Ramírez\\
+Fecha: & 3 de noviembre de 2026\\
+Presentación: & \texttt{global-sm\_v4.pptx}, láminas 14 a 22 (más correcciones a láminas 1–15)\\
+\end{tabular}\par}
+\end{titlepage}
+
+% ---------- Resumen ----------
+\section*{Resumen de decisiones}
+\addcontentsline{toc}{section}{Resumen de decisiones}
+
+Esta entrega \textbf{no cambia la metodología ni las técnicas} del Certamen 1: el diseño sigue siendo mixto secuencial, primero cualitativo para explorar y luego cuantitativo para medir. Lo nuevo es \textbf{a quién} se le aplica cada técnica, \textbf{cuántos casos} se necesitan y \textbf{por qué}. Antes de cerrar estas decisiones, las contrastamos con fuentes de primer nivel (sección~\ref{sec:cambios}).
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}LL@{}}
+\toprule
+ & \textbf{B2B · cliente principal} & \textbf{B2C · extensión} \\
+\midrule
+Población & Empresas cuya actividad principal es la venta al por menor de vehículos, compraventas incluidas (SII 451002), de tramo Pequeña 1 a Mediana 2 (2.400–100.000 UF al año). Deben estar en la RM, Valparaíso o Biobío y haber comprado un usado para revender en los últimos 3 meses. & Personas de 18 años o más de las mismas regiones que compraron un auto, SUV o camioneta usado en los últimos 12 meses, con dinero propio o del hogar, y que participaron en la decisión. \\
+Tamaño & 572 empresas con nombre (listado SII); $\approx$\,628 con personas naturales & $\approx$\,590.000 compras al año\hyp \\
+Segmentación & 3 celdas por tramo SII: Pequeña 1–2, Pequeña 3 y Mediana & 8 celdas: tipo de vendedor $\times$ 4 bandas de antigüedad \\
+Cualitativa & 10 entrevistas (5 perfiles $\times$ 2) y 2 de reserva & 4 grupos focales (2 por tipo de vendedor) \\
+Cuantitativa & $n=100$ (36/34/30), sorteo por celda con reemplazos & $n=300$ (37–38 por celda), CAWI e intercepción \\
+Error de referencia (95\,\%) & $\pm$\,9,8\,\% en el total, tras ponderar & $\pm$\,5,7\,\% sin ponderar (hasta $\pm$\,7,2\,\% ponderado) \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{notebox}[title=Cómo leer este documento]
+\begin{itemize}
+\item Las cifras con fuente son datos. Las marcadas con \hyp{} son \textbf{estimaciones del equipo}.
+\item Las cifras de CAVEM se revisaron contra los PDF originales. Las del SII salen de los archivos que el propio SII publica, procesados el 2 de noviembre de 2026.
+\item Hablamos de \textbf{error de referencia} y no de margen de error. AAPOR advierte que en muestras por cuotas no se puede calcular un error muestral válido (Baker et al., 2013), así que es una referencia y no una garantía.
+\end{itemize}
+\end{notebox}
+
+{\small\setcounter{tocdepth}{1}\setlength{\parskip}{0pt}\tableofcontents}
+
+% =========================================================
+\section{Qué cambió tras la investigación}\label{sec:cambios}
+
+Investigamos en cuatro frentes: estándares metodológicos, referentes internacionales de la industria, datos chilenos de compradores y marco muestral de compraventas en Chile. Las notas completas con todas las fuentes están en la carpeta \texttt{Investigacion/notas} de este workshop. Estos son los cambios respecto de la versión anterior:
+
+{\small
+\begin{xltabular}{\textwidth}{@{}p{3.0cm}LL@{}}
+\toprule
+\textbf{Tema} & \textbf{Antes} & \textbf{Ahora y fuente}\\
+\midrule
+\endhead
+Marco B2B & Toda la actividad 451 del SII, con la proporción regional supuesta para cada tamaño ($\approx$\,689). & Solo el código \textbf{451002} (venta al por menor, compraventas incluidas). La actividad 451001 son mayoristas e importadores: 163 de sus 511 empresas están en Tarapacá. El \textbf{listado de personas jurídicas del SII} trae RUT, tramo y comuna, y da 572 empresas con nombre (SII, 2026). \\
+Celdas B2B & 1–2, 3–6 y 7–27 compras al mes, calculadas con un precio supuesto de CLP 12 M. & \textbf{Tramos del SII}, que el listado trae para cada empresa. Con el precio medio publicado de CLP 18,4 M (Guzmán, 2026), los tramos equivalen a unos 0,4–18 autos al mes, no a 1–27. \\
+Error B2B & $\pm$\,9,1\,\%. & $\pm$\,9,8\,\%: la ponderación tiene un efecto de diseño de 1,15 (Kish), lo que deja un $n$ efectivo de $\approx$\,87. \\
+Grupos focales & 2 (1 por tipo de vendedor). & 4 (2 por tipo de vendedor). Con 1 grupo por estrato se \emph{identifican} temas, pero hacen falta 2 para \emph{comprenderlos} (Hennink et al., 2019). \\
+Experimento (OE2) & Cada informante tasaba las 4 fichas a ciegas y con costo. & Quien ya vio el costo no puede volver a tasar a ciegas (sesgo de orden). Ahora son 2 fichas a ciegas y 2 con costo, rotadas: 400 tasaciones, 100 por banda. \\
+Garantía legal & \enquote{Comprarle a una empresa da 6 meses de garantía legal}. & \textbf{Incorrecto.} Los autos usados no tienen garantía legal: si el vendedor informó que el bien es usado, queda eximido (art. 14, Ley 19.496). La empresa sí debe informar con veracidad y cumplir cualquier garantía voluntaria que ofrezca (SERNAC, 2019). A un particular no se le aplica la ley del consumidor. \\
+Población B2C & $\approx$\,634.000, incluidos los vehículos comerciales. & $\approx$\,590.000\hyp: se excluyen los comerciales, que son el 7\,\% de las transferencias (CAVEM, 2026b). \\
+Precisión & \enquote{Margen de error}. & \enquote{Error de referencia}, declarando los límites de representatividad (Baker et al., 2013; ICC/ESOMAR, 2025). \\
+Ley 21.719 & Entra en vigencia el 1 de diciembre de 2026. & Sigue siendo esa fecha, pero el Senado aprobó el 28 de octubre de 2026 un proyecto que la posterga al 15 de octubre de 2027. Está pendiente en la Cámara (Garrigues, 2026). \\
+\bottomrule
+\end{xltabular}}
+
+\textbf{Correcciones que arrastra el deck acumulativo (v3 $\rightarrow$ v4):}
+\begin{itemize}
+\item \textbf{Lámina 3.} Decía \enquote{12,95\,\% compras de empresas}, pero esa es la cuota de marcas chinas. Las empresas compran el 15,3\,\% (CAVEM, 2026c). También se actualizaron las cifras del SII según la revisión de 2024: 4.230, 1.112 y 564.
+\item \textbf{Láminas 4 y 7.} Se corrigió la garantía legal. Además, el dealer \enquote{core} compra unos 6 autos al mes y no 9: las ventas SII de los tramos Pequeña 3 y Mediana, divididas por CLP 18,4 M, dan 5,6. Por eso el costo de InfoCar por auto pasa a ser de unos CLP 10.000.
+\item \textbf{Lámina 12.} Se quitaron los polos \enquote{Gran Avenida} y \enquote{Av. Bilbao}, porque no encontramos fuente que los verifique, y las cuotas por género y edad.
+\item Se corrigieron erratas: \enquote{Dinamic}, \enquote{hard to checked} y \enquote{Tecnique}.
+\end{itemize}
+
+\textbf{Validación académica.} La regla del agente \emph{knowledge-validator} del repositorio (rama \texttt{test-dc}) pide validar contra el NotebookLM del ramo. Ese conector no estaba disponible en esta sesión. Validamos contra los materiales oficiales del curso descargados de Canvas: las diapositivas de población y muestra, la pauta del workshop y la transcripción de la clase. \textbf{Queda pendiente pasarlo por el NotebookLM} antes de declararlo listo.
+
+% =========================================================
+\section{Punto de partida: la cadena del proyecto}
+El diagnóstico parte de la asimetría de información entre quien vende y quien compra (Akerlof, 1970). La pauta exige coherencia entre diagnóstico, problema, objetivos, metodología, población y muestra (Scherman, 2026b).
+
+\begin{center}
+\begin{tikzpicture}[node distance=0.32cm,
+  box/.style={draw=cobalt,rounded corners=3pt,fill=white,align=center,font=\sffamily\scriptsize,minimum height=1.05cm,text width=2.05cm},
+  new/.style={box,fill=cobalt,text=white,draw=cobalt},
+  arr/.style={-{Stealth[length=2mm]},cobalt,thick}]
+\node[box] (d) {Diagnóstico\\asimetría de\\información};
+\node[box,right=of d] (p) {Problema\\nadie ve el estado\\del auto antes de pagar};
+\node[box,right=of p] (o) {Objetivos\\OG + OE1–OE5};
+\node[box,right=of o] (m) {Método\\mixto secuencial\\cuali $\rightarrow$ cuanti};
+\node[new,right=of m] (pm) {\textbf{Población}\\\textbf{y muestra}\\(esta entrega)};
+\draw[arr] (d)--(p); \draw[arr] (p)--(o); \draw[arr] (o)--(m); \draw[arr] (m)--(pm);
+\end{tikzpicture}
+\end{center}
+
+\begin{keybox}[title=Objetivo general (sin cambios)]
+Comprender la valoración de la certidumbre técnica y económica en la determinación del valor transaccional de vehículos usados.
+\end{keybox}
+
+Los objetivos específicos (OE1–OE5) se mantienen: atributos físicos y estéticos, anticipación de costos, barreras de adopción, experiencia operativa y atractivo con disposición a adoptar. También se mantienen las técnicas: entrevistas en profundidad y grupos focales en la etapa 1, y encuesta presencial con CATI (B2B) y CAWI con intercepción (B2C) en la etapa 2.
+
+% =========================================================
+\section{Criterios que aplicamos}
+\begin{enumerate}
+\item \textbf{La población no puede ser \enquote{todos}.} Se delimita con cinco dimensiones: demográfica, geográfica, psicográfica, de consumo y de necesidad. Como mínimo hay que incluir la demográfica y la cualitativa (Scherman, 2026a, 2026b).
+\item \textbf{Se triangulan presupuesto, tiempo y representatividad.} Solo un censo cubre a todos.
+\item \textbf{Los filtros comunes no son segmentos.} Un criterio que se aplica a todos es un filtro. Solo los segmentos reciben casos propios.
+\item \textbf{No se excluye sin evidencia}, ni se extrapolan estudios hechos en otros contextos.
+\item \textbf{Cuantitativa: 30 casos o más por celda.} Es la regla de clase, basada en el Teorema del Límite Central. La industria lee subgrupos de 130 a 770 casos, así que en este estudio una celda sola indica tendencias. Las conclusiones salen de los totales, de cada tipo de vendedor y de cada banda.
+\item \textbf{Cualitativa: diversidad, no representatividad.} La pauta propone 2 entrevistas por perfil. En estudios empíricos, la saturación llegó entre 9 y 17 entrevistas y entre 4 y 8 grupos focales (Hennink \& Kaiser, 2022).
+\end{enumerate}
+
+% =========================================================
+\section{Población B2B: compraventas}\label{sec:b2b}
+
+\begin{keybox}[title=Definición]
+Empresas cuya actividad principal es la venta al por menor de vehículos, compraventas incluidas (SII 451002), de tramo Pequeña 1 a Mediana 2 (2.400–100.000 UF de ventas anuales). Deben estar en la RM, Valparaíso o Biobío y haber comprado al menos un usado para revender en los últimos 3 meses. Responde la persona que fija el precio de compra: dueño, tasador o jefe de compras, una por empresa.
+\end{keybox}
+
+\subsection{Marco muestral y tamaño}
+El SII publica dos fuentes útiles: las estadísticas de empresas por actividad de 6 dígitos y tramo de ventas, y un \textbf{listado de personas jurídicas} con RUT, razón social, tramo, actividad principal y comuna (SII, 2026). Con ellas:
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}Lcp{4.6cm}@{}}
+\toprule
+\textbf{Nivel} & \textbf{Empresas} & \textbf{Fuente y alcance}\\
+\midrule
+Venta al por menor de vehículos (451002), todo Chile, todos los tamaños & 4.116 & SII, año comercial 2025 \\
+Pequeñas y medianas (Pequeña 1–Mediana 2), todo Chile & 1.066 & SII, año comercial 2025 \\
+Personas jurídicas con nombre en las 3 regiones & \textbf{572} & Listado SII 2024: RM 487, Valparaíso 53, Biobío 32 \\
+Más personas naturales (el listado no las incluye) & $\approx$\,\textbf{628}\hyp & Estimación: unas 56 \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+El código 451002 también incluye a concesionarios de marca que venden autos nuevos. Por eso el filtro pregunta si la empresa compra usados para revender y qué parte de sus ventas son usados. El marco se mueve cerca de un 5\,\% al año: pasó de 544 empresas en 2023 a 572 en 2024.
+
+\subsection{Celdas: tramos de ventas del SII}
+Los \enquote{autos al mes} son una \textbf{referencia}\hyp, no un conteo: corresponden a las ventas del tramo divididas por CLP 18,4 M, el precio medio publicado en Chileautos en 2025 (Guzmán, 2026). Con el UF promedio de 2025, el dealer \enquote{core} (Pequeña 3 y Mediana) vende unos 5,6 autos al mes.
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lCCCC@{}}
+\toprule
+\textbf{Celda} & \textbf{Tramo SII} & \textbf{Ventas (UF/año)} & \textbf{Autos al mes\hyp} & \textbf{Empresas (PJ + PN\hyp)}\\
+\midrule
+B1 & Pequeña 1–2 & 2.400–10.000 & $\approx$\,0,4–1,8 & 311 + 30 = 341\\
+B2 & Pequeña 3 & 10.000–25.000 & $\approx$\,1,8–4,4 & 150 + 15 = 165\\
+B3 & Mediana 1–2 & 25.000–100.000 & $\approx$\,4,4–18 & 111 + 11 = 122\\
+\midrule
+\textbf{Total} & & & & \textbf{572 + 56 = 628}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Las empresas de la población son pequeñas: tienen en mediana 2 trabajadores dependientes. Eso respalda que el informante sea el propio dueño, porque suele ser quien fija el precio.
+
+\subsection{Descriptores por dimensión}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{2.3cm}p{1.6cm}LL@{}}
+\toprule
+\textbf{Dimensión} & \textbf{Uso} & \textbf{Criterio} & \textbf{Por qué}\\
+\midrule
+Demográfica (empresa) & \textbf{Segmenta} & Tramo de ventas SII: Pequeña 1–2, Pequeña 3 y Mediana. & El listado ya lo trae, así que no hay que preguntarlo. Con el tamaño cambia la frecuencia del problema, y la celda pone a prueba el corte \enquote{core} del SOM. \\
+Demográfica (informante) & Describe & Cargo, años en el rubro, si hay mecánico en planta, si es concesionario oficial o independiente. & La industria separa concesionarios oficiales de independientes (Cox Automotive, 2025a). Registrarlo permite comparar con esos estudios. \\
+Geográfica & Filtra & RM, Valparaíso y Biobío. & Juntas suman el 70,6\,\% de las transferencias (CAVEM, 2026b). \\
+Consumo / conducta & Filtra & Compró al menos un usado para revender en los últimos 3 meses. & Excluye a quienes venden solo autos nuevos, que también caen en el código 451002. \\
+Necesidad & Filtra & Fijó un precio de compra sin una inspección mecánica completa. & Es el problema que InfoCar resuelve. \\
+Psicográfica & Describe & Confianza en la IA, aversión al riesgo, confianza en su propio \enquote{ojo}. & Corresponde a OE3. En Estados Unidos, el 74\,\% de los dealers duda de la precisión de la IA (Cox Automotive, 2025b). \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Exclusiones con evidencia}
+\begin{itemize}
+\item \textbf{Grandes empresas.} El tramo Grande 4 concentra el 88–89\,\% de las ventas de la actividad 451 en 2024–2025 y tiene tasación propia (SII, 2026). Quedan como perfil de \textbf{contraste} en la etapa cualitativa (P5).
+\item \textbf{Microempresas.} Son 1.744 empresas del 451002 a nivel nacional, que venden menos de 0,4 autos al mes, muy poco para justificar una suscripción. Son un posible segmento de expansión.
+\item \textbf{Mayoristas e importadores (451001).} No son compraventas: 163 de sus 511 empresas están en Tarapacá (ZOFRI).
+\item \textbf{Otras regiones.} Suman el 29\,\% de las transferencias, repartidas en 13 regiones.
+\item \textbf{\emph{Flippers} informales.} No hay ningún registro que permita contarlos. La regla de 2024 para vendedores habituales de bienes usados no se aplica a autos completos. Por eso solo entran en la etapa cualitativa (P3).
+\end{itemize}
+
+\textbf{Registros de apoyo.} Desde la Ley 21.575 (2023), las automotoras y comercializadoras de vehículos deben inscribirse en la UAF. Su listado (junio de 2026) cubre solo unas 146 de las 572 empresas del marco y se inclina hacia las más grandes, así que sirve para \textbf{contactar}, no como marco. CAVEM, con unos 105 socios públicos, sirve de \textbf{puerta de entrada} para presentarnos ante las empresas.
+
+% =========================================================
+\section{Población B2C: compradores particulares}\label{sec:b2c}
+
+\begin{keybox}[title=Definición]
+Personas de 18 años o más, residentes en la RM, Valparaíso o Biobío, que en los últimos 12 meses compraron un auto, SUV o camioneta usado para uso personal o del hogar, pagado con dinero propio, del hogar o con crédito personal, y que participaron en la decisión.
+\end{keybox}
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{2.3cm}p{1.6cm}LL@{}}
+\toprule
+\textbf{Dimensión} & \textbf{Uso} & \textbf{Criterio} & \textbf{Por qué}\\
+\midrule
+Consumo & \textbf{Segmenta} & Tipo de vendedor: particular o empresa. & Es la asimetría del diagnóstico. A una empresa se le aplica la ley del consumidor (información veraz, garantía voluntaria exigible); a un particular, no (SERNAC, 2019). Además, el precio de un dealer supera más al de un particular a medida que el auto envejece (Biglaiser et al., 2020). \\
+Consumo & \textbf{Segmenta} & Antigüedad del auto: bandas A–D (sección~\ref{sec:bandas}). & Con la edad cambian el daño, el precio y el riesgo (OE1, OE2). \\
+Consumo & Filtra & Pagó con dinero propio, del hogar o con crédito personal. & Es un filtro común, igual que el ejemplo del campus visto en clase. \\
+Demográfica & Describe & Edad, sexo, comuna y GSE con las 4 preguntas de AIM: educación y ocupación del principal sostenedor, tamaño del hogar y tramo de ingreso, todas anónimas (AIM, 2024). & El GSE responde a la pregunta de quién está dispuesto a pagar (OE5). El sexo se controla contra CAVEM: 66\,\% hombres y 34\,\% mujeres entre los compradores personas (24horas, 2024). \\
+Necesidad & Describe & Si revisó el auto antes de pagar, si conocía al vendedor y si pidió un informe. & Quienes le compran a un particular inspeccionan menos: 40\,\% frente a 51\,\% (Ipsos, 2013). \\
+Psicográfica & Describe & Miedo al fraude, malas experiencias previas, confianza en la tecnología. & Corresponde a OE3. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{Tamaño.} En 2025 hubo 1.060.919 transferencias. Si aplicamos el 70,6\,\% de las tres regiones, el 84,7\,\% de compras de personas (septiembre de 2026) y el 93\,\% de autos, SUV y camionetas, quedan $\approx$\,\textbf{590.000 compras al año}\hyp. Es un techo, porque una persona puede comprar más de un auto (CAVEM, 2026b, 2026c). Hay unos 8,6 millones de adultos en las tres regiones\hyp (INE, 2025), así que \textbf{alrededor de 7 de cada 100 compró un usado el último año}. Para el cálculo de la muestra, la población es infinita.
+
+\textbf{Exclusiones.} Quedan fuera quienes trabajan, o tienen a alguien del hogar trabajando, en compraventas, talleres, aseguradoras o investigación de mercados. También las compras pagadas por una empresa. Quienes solo tienen intención de comprar no entran en la encuesta, pero sí en los grupos focales.
+
+% =========================================================
+\section{Bandas de vehículos: por antigüedad, no por precio}\label{sec:bandas}
+
+En la clase de definición de muestra, la profesora pidió explicitar el criterio de las bandas de vehículos. Esta es nuestra respuesta:
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{2.1cm}LL@{}}
+\toprule
+\textbf{Criterio} & \textbf{Evaluación} & \textbf{Referente}\\
+\midrule
+Precio & \textbf{Circular}: el valor de transacción es el fenómeno que estudia el objetivo general. Además, no hay datos públicos de precios de transacción. & Las bandas por precio cambian de composición con el tiempo: en EE.\,UU., el auto promedio del tramo de USD 15–20 mil pasó de 3,4 a 6 años de antigüedad entre 2019 y 2026 (Autobody News, 2026). \\
+Lujo / \emph{tier} & No hay una clasificación oficial ni una fuente verificada de \emph{tiers} para Chile. & Se registran la marca y el modelo para reagrupar después. \\
+\textbf{Antigüedad} & Figura en el padrón y CAVEM publica su distribución. & Es la práctica de la industria: UCDA y DesRosiers (Canadá) y Auto Trader (Reino Unido) segmentan por edad. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lCCC@{}}
+\toprule
+\textbf{Banda} & \textbf{Antigüedad} & \textbf{Transferencias 2025} & \textbf{\%}\\
+\midrule
+A & 0–5 años & 273.033 & 25,7\,\%\\
+B & 6–10 & 264.238 & 24,9\,\%\\
+C & 11–15 & 271.243 & 25,6\,\%\\
+D & 16 o más & 252.405 & 23,8\,\%\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Las cuatro bandas son casi cuartos exactos (CAVEM, 2026b), y entran todas, porque no hay evidencia para excluir ninguna. Las marcas chinas son el 12,95\,\% de las transferencias entre enero y septiembre de 2026 (CAVEM, 2026c) y tienen un mínimo blando de 30 casos en la encuesta B2C. El precio pagado se pregunta por tramos, incluido uno de CLP 30 millones o más.
+
+% =========================================================
+\section{Muestra cualitativa (etapa 1)}
+
+\subsection{B2B: 10 entrevistas y 2 de reserva}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{3.6cm}cL@{}}
+\toprule
+\textbf{Perfil} & \textbf{n} & \textbf{Dispersión dentro del par}\\
+\midrule
+P1 · compraventa pequeña, RM & 2 & Una con stock de bandas A–B y otra de C–D. \\
+P2 · compraventa mediana, RM & 2 & Una con tasador dedicado y otra donde tasa el dueño. \\
+P3 · \emph{flipper} (compra, repara y revende) & 2 & Uno que compra autos chocados o de remate, otro que compra a particulares. \\
+P4 · compraventa de región & 2 & Una en Valparaíso y otra en Biobío, por videollamada. \\
+P5 · tasador de concesionario (\textbf{contraste}) & 2 & Una marca tradicional y una china. \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\textbf{Regla de detención} (Guest, Namey \& Chen, 2020): se termina cuando dos entrevistas seguidas no aportan temas nuevos. Si no ocurre, se usan las 2 de reserva, para un total de 12, que coincide con la saturación observada por Guest, Bunce y Johnson (2006). Los perfiles P1 y P2 se reclutan desde el listado del SII y el directorio de 20 compraventas que reunió el equipo. P3 se busca entre vendedores con varios avisos en portales: Chileautos considera profesional a quien tiene más de 5 avisos activos.
+
+\subsection{B2C: 4 grupos focales}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lCC@{}}
+\toprule
+ & \textbf{Compró en los últimos 12 meses} & \textbf{Va a comprar en los próximos 6}\\
+\midrule
+\textbf{Le compró a un particular} & GF1 & GF2\\
+\textbf{Le compró a una empresa} & GF3 & GF4\\
+\bottomrule
+\end{tabularx}
+\end{center}
+Cada grupo tiene entre 6 y 8 personas (se reclutan 8), 2 por banda de antigüedad, con mezcla de sexo, edad y GSE, y sin participantes que se conozcan entre sí. Con 2 grupos por estrato se logra comprender los temas, no solo identificarlos (Hennink et al., 2019). Entre 2 y 3 grupos ya capturan más del 80\,\% de los temas (Guest et al., 2017).
+
+% =========================================================
+\section{Muestra cuantitativa (etapa 2)}
+
+\[
+e = 1{,}96\sqrt{\frac{p(1-p)}{n_{\text{ef}}}}\cdot\sqrt{\frac{N-n}{N-1}},\qquad n_{\text{ef}} = \frac{n}{\text{deff}},\qquad \text{deff}\approx 1+\text{CV}^2(w)
+\]
+
+\subsection{B2B: $n=100$ sorteado desde el listado del SII}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lCCCCC@{}}
+\toprule
+\textbf{Celda} & \textbf{$N$} & \textbf{$n$} & \textbf{\% encuestado} & \textbf{Peso} & \textbf{Error ref.}\\
+\midrule
+B1 · Pequeña 1–2 & 341 & 36 & 11\,\% & 1,51 & $\pm$\,15,5\,\%\\
+B2 · Pequeña 3 & 165 & 34 & 21\,\% & 0,77 & $\pm$\,15,0\,\%\\
+B3 · Mediana & 122 & 30 & 25\,\% & 0,65 & $\pm$\,15,6\,\%\\
+\midrule
+\textbf{Total} & \textbf{628} & \textbf{100} & 16\,\% & deff 1,15 & $\pm$\,\textbf{9,8\,\%}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Selección.} Se sortea al azar dentro de cada celda desde el listado nominativo, con unidades de reemplazo documentadas. Es la práctica de la Encuesta Longitudinal de Empresas del INE. Como el marco es una lista, el diseño B2B es probabilístico salvo por la no respuesta, algo que pocos proyectos de curso logran.
+\item \textbf{Contacto.} Las organizaciones responden en promedio el 35,7\,\% de las encuestas (Baruch \& Holtom, 2008), y los ejecutivos el 32\,\% (Cycyota \& Harrison, 2006). Las encuestas web en frío a empresas chilenas obtienen mucho menos. Por eso el contacto es presencial o telefónico, con la presentación de CAVEM: unas \textbf{300 empresas}, incluidas $\approx$\,90 de las 122 medianas.
+\item \textbf{Mínimo viable:} $n=90$, es decir, 3 celdas de 30.
+\item \textbf{Experimento (OE2).} Cada dealer tasa 4 fichas, una por banda: 2 a ciegas y 2 con el costo de reparación, en orden rotado. Son 400 tasaciones, 100 por banda (50 y 50). En la mitad de los cuestionarios, la ficha de la banda A es de marca china.
+\item \textbf{Precios (Van Westendorp).} Se leen sobre el total B2B de 100 casos, no por celda. Los proveedores sugieren al menos 100 casos por segmento comparado.
+\end{itemize}
+
+\subsection{B2C: $n=300$ en 8 celdas}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lCCCCc@{}}
+\toprule
+\textbf{Vendedor} & \textbf{A · 0–5} & \textbf{B · 6–10} & \textbf{C · 11–15} & \textbf{D · 16+} & \textbf{Total}\\
+\midrule
+Particular & 38 & 37 & 38 & 37 & 150\\
+Empresa & 37 & 38 & 37 & 38 & 150\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}lccL@{}}
+\toprule
+\textbf{Lectura} & \textbf{$n$} & \textbf{Error ref.} & \textbf{Uso}\\
+\midrule
+Total & 300 & $\pm$\,5,7\,\% (hasta 7,2\,\% ponderado) & Prevalencias e intención de compra\\
+Por tipo de vendedor & 150 & $\pm$\,8,0\,\% & Comparación principal y \textbf{precios (PSM)}\\
+Por banda & 75 & $\pm$\,11,3\,\% & Daños y atributos (OE1)\\
+Por celda & 37–38 & $\pm$\,16\,\% & Solo tendencias\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\begin{itemize}
+\item \textbf{Incidencia.} Si el 7\,\% de los adultos califica\hyp, para lograr 300 encuestas hay que filtrar a unos \textbf{4.300 panelistas}. El 93,2\,\% de los hogares tiene internet (INE, 2025), y existen paneles CAWI chilenos, pero son opt-in. Por eso el muestreo se declara \enquote{no probabilístico por cuotas}.
+\item \textbf{Canales.} Al menos 220 encuestas por CAWI y hasta 80 por intercepción en notarías y en las 41 plantas de revisión técnica de la RM. Autofact procesa cerca del 30\,\% de las transferencias en línea, lo que significa que las intercepciones en notarías no ven las transferencias digitales. Además, en las regiones solo hay CAWI, así que el modo de encuesta se confunde con la región. Ambos sesgos se declaran.
+\item \textbf{Ponderación.} No hay un dato publicado de cuántos compran a particulares y cuántos a empresas: una estimación de la industria habla de $\approx$\,60\,\% a particulares, sin metodología (G5 Noticias, 2025). El filtro de la propia encuesta mide esa proporción, y con ella se pondera. Las bandas se ponderan según CAVEM (2026b).
+\item \textbf{Calidad.} Se usan preguntas de atención y se eliminan las respuestas demasiado rápidas. Los 60 casos que exceden el mínimo de 240 cubren esa depuración.
+\end{itemize}
+
+% =========================================================
+\section{Presupuesto, tiempo y representatividad}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{2.6cm}LL@{}}
+\toprule
+\textbf{Alternativa} & \textbf{Evaluación} & \textbf{Decisión}\\
+\midrule
+B2B 60–80 & No alcanza para 30 casos por celda. & Se descarta\\
+\textbf{B2B 100} & 30 o más por celda; $\pm$\,9,8\,\%; unas 300 empresas contactadas. & \textbf{Se elige}\\
+B2B 150 & $\pm$\,7,0\,\%, pero implica encuestar al 24\,\% de la población en dos semanas. & Se descarta\\
+B2C 240 & El mínimo exacto, sin margen para depurar respuestas. & Se descarta\\
+\textbf{B2C 300} & $\pm$\,5,7\,\%; 150 casos por tipo de vendedor. & \textbf{Se elige}\\
+B2C 400 & $\pm$\,4,9\,\%, pero requiere un panel pagado. & Se descarta\\
+\bottomrule
+\end{tabularx}
+\end{center}
+Calendario: semana 1, etapa cualitativa; semana 2, construcción del instrumento y piloto con 5 dealers y 10 compradores, que no se cuentan en la muestra; semanas 3 y 4, medición.
+
+% =========================================================
+\section{Coherencia de punta a punta}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}p{0.9cm}p{1.6cm}LL@{}}
+\toprule
+\textbf{OE} & \textbf{Población} & \textbf{Dónde se lee} & \textbf{Decisión}\\
+\midrule
+OE1 & B2B, B2C & Gravedad de cada daño por banda (75 por banda) & Clases de daño de la app\\
+OE2 & B2B & 400 tasaciones a ciegas frente a con costo, por banda & Regla de oferta y margen\\
+OE3 & B2B, B2C & Particular frente a empresa (150 y 150); marcas chinas ($\geq$\,30) & Cómo se explica el informe\\
+OE4 & B2B & Días y horas perdidos, por tramo SII & Flujo y tiempos de la app\\
+OE5 & B2B, B2C & PSM sobre el total B2B (100) y por tipo de vendedor (150) & Precios B2B y B2C\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+% =========================================================
+\section{Vacíos de información}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}LL@{}}
+\toprule
+\textbf{Lo que no sabemos} & \textbf{Cómo lo resuelve el diseño}\\
+\midrule
+Qué parte de las empresas 451002 vende principalmente usados. & Lo pregunta el filtro (proporción de usados en las ventas).\\
+El precio de transacción promedio, porque solo se publica el precio de aviso. & Los \enquote{autos al mes} se presentan como referencia; las celdas se definen por tramo SII.\\
+Cuántos \emph{flippers} hay. & Solo entran en la etapa cualitativa (P3).\\
+Cuántas personas compran a particulares y cuántas a empresas. & Lo mide el filtro y con eso se pondera.\\
+Estudios chilenos de compradores con metodología publicada. & No encontramos ninguno, lo que justifica el estudio propio. Contrastamos con EE.\,UU., Canadá y Reino Unido.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+% =========================================================
+\section{Resguardos éticos y de datos}
+\begin{itemize}
+\item El GSE y el ingreso se preguntan por tramos, \textbf{en forma anónima}. Cualquier dato que identifique a alguien requiere su autorización expresa.
+\item El código ICC/ESOMAR (2025) exige separar la investigación de cualquier acción comercial posterior. Si un dealer quiere ser contactado como cliente, se le pide un consentimiento aparte. El código también exige recolectar solo los datos necesarios y respetar la participación voluntaria, y considera a las empresas como sujetos de datos.
+\item La Ley 21.719 entra en vigencia el 1 de diciembre de 2026, aunque podría postergarse a octubre de 2027. Cualquiera sea la fecha, todos los instrumentos parten con un consentimiento informado.
+\end{itemize}
+
+% =========================================================
+\section*{Referencias}
+\addcontentsline{toc}{section}{Referencias}
+\begin{list}{}{\leftmargin=1.5em\itemindent=-1.5em\itemsep=3pt}
+\small
+\item 24horas. (2024, 18 de noviembre). \emph{Compra de autos usados en Chile: ¿quiénes adquieren más estos vehículos?} \url{https://www.24horas.cl/motores-24/dato-motor/compra-de-autos-usados-en-chile-quienes-adquieren-mas-estos-vehiculos}
+\item Akerlof, G. A. (1970). The market for \enquote{lemons}: Quality uncertainty and the market mechanism. \emph{The Quarterly Journal of Economics, 84}(3), 488–500. \url{https://doi.org/10.2307/1879431}
+\item Asociación de Investigadores de Mercado y Opinión Pública [AIM]. (2024). \emph{Actualización y manual de aplicación: GSE AIM 2023}. \url{https://aimchile.cl/wp-content/uploads/2024/01/Actualizacion-y-Manual-GSE-AIM-2023_VF.pdf}
+\item Autobody News. (2026, 31 de agosto). \emph{Used vehicle prices hit Q2 record as affordable inventory shrinks, Edmunds finds}. \url{https://www.autobodynews.com/news/used-vehicle-prices-hit-q2-record-as-affordable-inventory-shrinks-edmunds-finds}
+\item Auto Trader. (2023, 22 de agosto). \emph{Nuanced market records strong price growth for older cars as younger vehicle values contract} [Comunicado de prensa]. \url{https://plc.autotrader.co.uk/news-views/press-releases/}
+\item Baker, R., Brick, J. M., Bates, N. A., Battaglia, M., Couper, M. P., Dever, J. A., Gile, K. J., \& Tourangeau, R. (2013). Summary report of the AAPOR Task Force on Non-Probability Sampling. \emph{Journal of Survey Statistics and Methodology, 1}(2), 90–143. \url{https://doi.org/10.1093/jssam/smt008}
+\item Baruch, Y., \& Holtom, B. C. (2008). Survey response rate levels and trends in organizational research. \emph{Human Relations, 61}(8), 1139–1160. \url{https://doi.org/10.1177/0018726708094863}
+\item Biglaiser, G., Li, F., Murry, C., \& Zhou, Y. (2020). Intermediaries and product quality in used car markets. \emph{The RAND Journal of Economics, 51}(3), 905–933.
+\item Cámara de Comercio Automotriz de Chile [CAVEM]. (2026b). \emph{Anuario automotor 2025}. \url{https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf}
+\item Cámara de Comercio Automotriz de Chile [CAVEM]. (2026c). \emph{Informe mensual septiembre 2026: Livianos y medianos}. \url{https://www.cavem.cl/informes/6ac52d8391f8d.pdf}
+\item Cox Automotive. (2025a). \emph{Q2 2025 Cox Automotive Dealer Sentiment Index}. \url{https://www.coxautoinc.com/news/q2-2025-cadsi}
+\item Cox Automotive. (2025b, 28 de octubre). \emph{Automotive dealers are ready for AI to deliver outcomes and skip the hype} [Comunicado de prensa]. \url{https://www.coxautoinc.com/wp-content/uploads/2025/10/Press-Release_Cox-Automotive-AI-Study-_FINAL.pdf}
+\item Cycyota, C. S., \& Harrison, D. A. (2006). What (not) to expect when surveying executives. \emph{Organizational Research Methods, 9}(2), 133–160. \url{https://doi.org/10.1177/1094428105280770}
+\item G5 Noticias. (2025, 17 de julio). \emph{Transacciones entre particulares impulsan el auge del mercado de autos usados en Chile}. \url{https://g5noticias.cl/2025/07/17/transacciones-entre-particulares-impulsan-el-auge-del-mercado-de-autos-usados-en-chile/}
+\item Garrigues. (2026, 30 de octubre). \emph{El Senado chileno aprueba el proyecto de ley que busca postergar al 15 de octubre de 2027 la entrada en vigencia de la nueva ley de protección de datos personales}. \url{https://www.garrigues.com}
+\item Guest, G., Bunce, A., \& Johnson, L. (2006). How many interviews are enough? \emph{Field Methods, 18}(1), 59–82. \url{https://doi.org/10.1177/1525822X05279903}
+\item Guest, G., Namey, E., \& Chen, M. (2020). A simple method to assess and report thematic saturation in qualitative research. \emph{PLOS ONE, 15}(5), e0232076. \url{https://doi.org/10.1371/journal.pone.0232076}
+\item Guest, G., Namey, E., \& McKenna, K. (2017). How many focus groups are enough? \emph{Field Methods, 29}(1), 3–22. \url{https://doi.org/10.1177/1525822X16639015}
+\item Guzmán, J. P. (2026, 13 de febrero). Radiografía al mercado de autos usados en Chile 2025. \emph{Emol}. \url{https://www.emol.com/noticias/Economia/2026/02/13/1191407/autos-usados-chile-2025.html}
+\item Hennink, M., \& Kaiser, B. N. (2022). Sample sizes for saturation in qualitative research: A systematic review of empirical tests. \emph{Social Science \& Medicine, 292}, 114523. \url{https://doi.org/10.1016/j.socscimed.2021.114523}
+\item Hennink, M. M., Kaiser, B. N., \& Weber, M. B. (2019). What influences saturation? Estimating sample sizes in focus group research. \emph{Qualitative Health Research, 29}(10), 1483–1496. \url{https://doi.org/10.1177/1049732318821692}
+\item ICC/ESOMAR. (2025). \emph{ICC/ESOMAR International Code on Market, Opinion and Social Research and Data Analytics}. \url{https://community.esomar.org/uploads/public/knowledge-and-standards/codes-and-guidelines/ICCESOMAR-International-Code_English.pdf}
+\item Instituto Nacional de Estadísticas [INE]. (2025). \emph{Síntesis de resultados Censo 2024}. \url{https://censo2024.ine.gob.cl/wp-content/uploads/2025/12/sintesis_resultados_censo2024.pdf}
+\item Ipsos. (2013). \emph{Motor Vehicle Sales Authority of British Columbia: 2013 private sales survey}. \url{https://vsabc.ca/wp-content/uploads/2023/02/2013_IPSOS_Private-sales-survey.pdf}
+\item Ley N.° 19.496. (1997). \emph{Establece normas sobre protección de los derechos de los consumidores}. Biblioteca del Congreso Nacional de Chile. \url{https://www.bcn.cl/leychile/navegar?idNorma=61438}
+\item Ley N.° 21.719. (2024, 13 de diciembre). \emph{Regula la protección y el tratamiento de los datos personales y crea la Agencia de Protección de Datos Personales}. \url{https://www.bcn.cl/leychile/navegar?idNorma=1209272}
+\item Scherman, C. (2026a). \emph{Investigación de mercado: Población y muestra} [Diapositivas de clase]. Strategic Marketing, Universidad del Desarrollo.
+\item Scherman, C. (2026b). \emph{Workshop: Defining population and sample} [Pauta de evaluación]. Strategic Marketing, Universidad del Desarrollo.
+\item Servicio de Impuestos Internos [SII]. (2026). \emph{Estadísticas de empresas y nómina de personas jurídicas, años comerciales 2024–2025}. \url{https://www.sii.cl/sobre_el_sii/estadisticas_de_empresas.html}
+\item Servicio Nacional del Consumidor [SERNAC]. (2019, 21 de febrero). \emph{Recomendaciones para comprar un auto usado}. \url{https://www.sernac.cl/portal/607/w3-article-1256.html}
+\item Used Car Dealers Association of Ontario \& DesRosiers Automotive Consultants. (2026). \emph{UCDA survey: July 2026 results}. \url{https://www.ucda.org/wp-content/uploads/2026/08/UCDA-July-2026-Results.pdf}
+\end{list}
+
+% =========================================================
+\newpage
+\appendix
+\section{Preguntas filtro}
+\subsection*{B2B (la celda ya viene asignada desde el listado SII)}
+\begin{enumerate}[label=F\arabic*.]
+\item ¿Su empresa compra vehículos usados para revenderlos? \\ \emph{No $\rightarrow$ se reemplaza la empresa.}
+\item ¿Qué parte de sus ventas son autos usados? \\ \emph{Se registra; si es casi cero, se reemplaza.}
+\item En los últimos 3 meses, ¿compró al menos un usado para revender? ¿Lo hizo sin una inspección mecánica completa? \\ \emph{Filtros de conducta y de necesidad.}
+\item ¿Usted participa en decidir cuánto pagar por esos autos? \\ \emph{No $\rightarrow$ se pide hablar con quien decide.}
+\item ¿Su empresa es concesionario oficial de una marca o compraventa independiente? \\ \emph{Se registra para comparar con Cox y UCDA.}
+\end{enumerate}
+\subsection*{B2C}
+\begin{enumerate}[label=F\arabic*.]
+\item Edad (18 o más), comuna y región (RM, Valparaíso o Biobío).
+\item ¿Usted o alguien de su hogar trabaja en compraventas, talleres, aseguradoras o investigación de mercados? \\ \emph{Sí $\rightarrow$ termina.}
+\item En los últimos 12 meses, ¿compró un auto, SUV o camioneta usado? ¿Lo pagó usted o su hogar? ¿Participó en la decisión?
+\item ¿A quién se lo compró: a un particular, a una automotora o compraventa, a un concesionario, en un remate? ¿Conocía al vendedor? \\ \emph{Define el tipo de vendedor.}
+\item ¿De qué año es el auto? ¿De qué marca y modelo? \\ \emph{Definen la banda y si es de marca china.}
+\end{enumerate}
+
+\section{Presentación: láminas 14–22 de \texttt{global-sm\_v4}}
+\begin{center}\small
+\begin{tabularx}{\textwidth}{@{}clLc@{}}
+\toprule
+\textbf{\#} & \textbf{Título} & \textbf{Mensaje} & \textbf{Tiempo}\\
+\midrule
+14 & \emph{Who we will ask, and how many} & La cadena y las 5 reglas & 0:45\\
+15 & \emph{B2B population} & 451002, 572 empresas con nombre, 3 tramos & 1:00\\
+16 & \emph{B2C population: private buyers} & 5 filtros y 2 segmentos; $\approx$\,590.000; corrección de la garantía & 0:50\\
+17 & \emph{We cut cars by age, not by price} & El precio es circular; 4 cuartos de CAVEM & 1:10\\
+18 & \emph{How the industry does it} & Lo que es práctica estándar y lo que ajustamos & 1:00\\
+19 & \emph{Stage 1: diversity, not numbers} & 10 + 2 entrevistas y 4 grupos focales & 1:00\\
+20 & \emph{Stage 2, dealers} & Sorteo SII, 36/34/30, $\pm$\,9,8\,\%, 400 tasaciones & 1:00\\
+21 & \emph{Stage 2, buyers} & 2 $\times$ 4 celdas, escala de precisión, 4.300 filtrados & 1:00\\
+22 & \emph{Every objective has its cell} & Matriz y trade-offs & 0:50\\
+\midrule
+ & & \textbf{Total de la sección nueva} & \textbf{8:35}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+Las notas del orador están en inglés simple, a unas 105 palabras por minuto, dentro de cada lámina. Las correcciones al v3 (láminas 3, 4, 7 y 12) se mencionan en el minuto de \enquote{qué cambió}, como pide la pauta acumulativa.
+
+\section{Pendientes antes de entregar}
+\begin{enumerate}
+\item Confirmar la fecha: el calendario dice \enquote{Certamen 2} para el 3 de noviembre. Hay que subir los archivos \textbf{antes de que empiece la clase}.
+\item Pasar este documento por el \texttt{knowledge-validator} (NotebookLM del ramo), como exige la regla de la rama \texttt{test-dc}.
+\item Agregar los comentarios puntuales que haya hecho la profesora sobre el Certamen 1.
+\item Revisar en la BCN el texto oficial de los artículos citados y el estado del proyecto que posterga la Ley 21.719.
+\item Pedir a CAVEM la carta de presentación para contactar a las empresas sorteadas.
+\end{enumerate}
+
+\end{document}

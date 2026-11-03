@@ -1,1 +1,5 @@
 *.py
+
+# macOS / Office junk
+.DS_Store
+~$*
