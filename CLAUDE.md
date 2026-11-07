@@ -4,6 +4,17 @@ Bienvenido al repositorio de **Strategic Marketing Proyect**. Este archivo defin
 
 ---
 
+## ⚠️ Foco actual: Certamen 2
+
+Hasta la entrega del certamen 2, todo el trabajo sigue [`deliverys/exam-2/PLAN_CERTAMEN_2.md`](./deliverys/exam-2/PLAN_CERTAMEN_2.md). Léelo antes de cualquier tarea.
+
+- La pauta y el diagnóstico del repo ya están analizados en ese plan: **no repetir esa investigación**.
+- Fase actual: **investigación PESTEL** en [`research/pestel/`](./research/pestel/) y gestión de las tareas del plan. No editar el deck hasta cerrar los bloques A y B.
+- El PESTEL es **descriptivo**: no clasificar hallazgos como oportunidades o amenazas. Solo fuentes verificadas del `README.md`, con URL exacta.
+- Al cerrar una tarea, marcarla en el plan y anotarla en su registro de avance.
+
+---
+
 ## 1. Contexto del Negocio y Metodología
 - **Negocio:** Plataforma móvil y web de compra-venta de autos usados asistida por IA (Computer Vision para escaneo/diagnóstico de daños e identificación de partes a reparar/costos estimados) y scraping de mercado para pricing justo en tiempo real.
 - **Problema:** Concesionarios y dealers compran sin referencia confiable de precio ni mecánico en el lugar, navegando alta dispersión (ej. F-150 de CLP 2.0M a 68.9M), variación entre segmentos y planillas manuales.

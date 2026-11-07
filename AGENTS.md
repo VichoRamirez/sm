@@ -6,6 +6,17 @@ El sistema está diseñado bajo un estándar abierto y desacoplado, lo que permi
 
 ---
 
+## ⚠️ Foco actual: Certamen 2
+
+Hasta la entrega del certamen 2, todo el trabajo sigue [`deliverys/exam-2/PLAN_CERTAMEN_2.md`](./deliverys/exam-2/PLAN_CERTAMEN_2.md). Léelo antes de cualquier tarea.
+
+- La pauta y el diagnóstico del repo ya están analizados en ese plan: **no repetir esa investigación**.
+- Fase actual: **investigación PESTEL** en [`research/pestel/`](./research/pestel/) y gestión de las tareas del plan. No editar el deck hasta cerrar los bloques A y B.
+- El PESTEL es **descriptivo**: no clasificar hallazgos como oportunidades o amenazas. Solo fuentes verificadas del `README.md`, con URL exacta.
+- Al cerrar una tarea, marcarla en el plan y anotarla en su registro de avance.
+
+---
+
 ## 1. Visión General del Escuadrón
 
 ```mermaid
