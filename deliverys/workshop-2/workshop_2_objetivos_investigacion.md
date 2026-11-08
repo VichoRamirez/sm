@@ -85,7 +85,7 @@ $$\mathbf{Comprender \; la \; valoración \; de \; la \; certidumbre \; técnica
 ## Referencias Bibliográficas (Norma APA 7ª Edición)
 
 - Akerlof, G. A. (1970). The Market for "Lemons": Quality Uncertainty and the Market Mechanism. *The Quarterly Journal of Economics*, *84*(3), 488–500. https://doi.org/10.2307/1879431
-- Amodu, O., Habaebi, M. H., Abdullah, K. A., & Agbede, M. O. (2024). Lightweight deep learning models for vehicle damage classification and severity estimation. *Journal of Artificial Intelligence and Technology*, *4*(2), 112–125. https://doi.org/10.37965/jait.2024.0389
+- Amodu, O. D., Shaban, A., & Akinade, G. (2024). Revolutionizing vehicle damage inspection: A deep learning approach for automated detection and classification. En *Proceedings of the 9th International Conference on Internet of Things, Big Data and Security (IoTBDS 2024)*. SciTePress. https://doi.org/10.5220/0012630700003705
 - Asociación Nacional Automotriz de Chile [ANAC]. (2026). *Informe del Sector Automotor: Cierre 2025 y Evolución Acumulada 2026*. ANAC A.G. https://www.anac.cl
 - Autofact. (s. f.-a). *Informe Full Autofact: Historial legal y mecánico de vehículos en Chile*. Recuperado el 12 de octubre de 2026, de https://www.autofact.cl
 - Autofact. (s. f.-b). *Informe de Precio y Tasación de Autos Usados*. Recuperado el 12 de octubre de 2026, de https://precios.autofactpro.com
@@ -102,7 +102,7 @@ $$\mathbf{Comprender \; la \; valoración \; de \; la \; certidumbre \; técnica
 - Financier Worldwide. (2023, diciembre). *Shift Technologies files for Chapter 11 bankruptcy liquidation*. Financier Worldwide Magazine. https://www.financierworldwide.com
 - Fleet Maintenance. (2025, 22 de enero). *UVeye secures \$191M in funding to expand automated vehicle inspection footprint*. Fleet Maintenance. https://www.fleetmaintenance.com
 - Guzmán, J. P. (2026, 13 de febrero). *Radiografía al mercado de autos usados en Chile 2025: Precios promedio suben 5% y Ford F-150 lidera búsquedas*. Emol Economía. https://www.emol.com
-- Hasan, M. A., Rahman, M. M., & Siddique, A. (2025). Automated vehicle damage assessment using computer vision: A comprehensive ten-year survey (2014–2024). *IEEE Transactions on Intelligent Transportation Systems*, *26*(1), 45–68. https://doi.org/10.1109/TITS.2024.3412098
+- Hasan, M. J., Nguyen, C. K., Boo, Y. L., Jahani, H., & Ong, K.-L. (2025). Vehicle damage detection using artificial intelligence: A systematic literature review. *WIREs Data Mining and Knowledge Discovery*. https://doi.org/10.1002/widm.70027
 - LaChance, K. (2021, 10 de noviembre). *CCC launches Estimate-STP: AI-driven straight-through repair estimating*. Repairer Driven News. https://www.repairerdrivennews.com
 - Melelli Viveros, A. (2026, 6 de octubre). *Récord de fraudes vehiculares en Chile: Causas judiciales ingresadas suben 64% en 2025*. The Clinic. https://www.theclinic.cl
 - Mellado, R. (2026, 14 de enero). *Garantías en vehículos usados: Alcances legales del estatuto del consumidor en Chile*. Revista Chilena de Derecho y Comercio Automotriz, *12*(1), 34–49.
