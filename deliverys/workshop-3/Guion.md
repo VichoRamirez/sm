@@ -49,7 +49,7 @@ Our first population is B2B, because the dealer pays every month. The tax office
 
 ## Slide 17 — B2C population: private buyers · **Checho** (≈1:00)
 
-The second population is private buyers in Santiago. Five filters apply to everyone: 18 or older, living in Santiago, a used-car purchase in the last 12 months or planned in the next 6, own money, and a part in the decision. Two variables split the sample. Seller type: from a company, consumer law applies; from a private person, it does not. And purchase timing: people who already bought tell us what really happened; people about to buy tell us what they need before paying. Age, sex, income and the value of the car are recorded, not used as quotas. That is about 521,000 purchases a year in Santiago.
+The second population is private buyers in Santiago. Five filters apply to everyone: 18 or older, living in Santiago, a used-car purchase in the last 12 months or planned in the next 6, own money, and a part in the decision. Two variables split the sample. Seller type: from a company, consumer law applies; from a private person, it does not. And purchase timing: people who already bought tell us what really happened; people about to buy tell us what they need before paying. Age, sex, income and the value of the car are recorded, not used as quotas. That is about 485,000 used cars, SUVs and pickups bought by people in Santiago each year.
 
 ---
 
@@ -91,7 +91,7 @@ Why are the last three slides the ideal design? Because they meet our precision 
 
 ## Slide 24 — Every objective has its cell · **Joaco** (≈0:50)
 
-This closes the loop with the matrix from before. Each specific objective has a population and a place where we read it: SO1 by car value segment, SO2 in the appraisals blind and with cost, SO3 comparing private and company sellers and people who bought with people about to buy, SO5 with prices on the dealer total and on each seller type. At the bottom, the two designs: ideal, 100 dealers and 300 buyers; realistic, 60 and 180.
+This closes the loop with the matrix from before. Each specific objective has a population and a place where we read it: SO1 by car value segment, SO2 in the appraisals blind and with cost, SO3 comparing private and company sellers and people who bought with people about to buy, SO4 among dealers by size, counting the days and hours lost in the workshop, SO5 with prices on the dealer total and on each seller type. At the bottom, the two designs: ideal, 100 dealers and 300 buyers; realistic, 60 and 180.
 
 ---
 

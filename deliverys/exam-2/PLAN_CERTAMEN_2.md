@@ -101,12 +101,12 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 
 | ID | Tarea | Responsable | Estado |
 | --- | --- | --- | --- |
-| C1 | Fijar una sola cifra de compras B2C en Santiago (la diapo 17 dice ≈485.000; el guion dice 521.000) | — | [ ] |
-| C2 | Fijar un solo precio del plan B2B (la diapo 5 dice CLP 59.990; la diapo 7 dice 59.900–149.900) | — | [ ] |
-| C3 | Agregar el SO4 al guion de la diapo 24 | — | [ ] |
-| C4 | Marcar como superados `workshop-3/03_diseno_muestral_infocar.md` y `03_slides_presentacion_muestreo.md` (N≈1.200–1.500, n=60/80 y 230/300) o reescribirlos según el v6 | — | [ ] |
-| C5 | Actualizar `context/market_context.md` y `context/buyer_persona_tam_sam_som.md` a las cifras del v6 (451002: 4.116 / 1.066 / 487; ~3 autos al mes) | — | [ ] |
-| C6 | Limpiar `exam-1/propuesta_consolidada_certamen1.md`: 10 enlaces `file:///home/dacmxo/...` y texto corrupto en la línea 124 | — | [ ] |
+| C1 | Fijar una sola cifra de compras B2C en Santiago (la diapo 17 dice ≈485.000; el guion dice 521.000) | — | [x] Vale ≈485.000 (1.060.919 × 58 % × 84,7 % × 93 %). El 521.000 del guion omitía el filtro de 93 %. Guion corregido |
+| C2 | Fijar un solo precio del plan B2B (la diapo 5 dice CLP 59.990; la diapo 7 dice 59.900–149.900) | — | [x] Se unifica en **CLP 59.900** (diapositiva 7: rango y cálculo de ≈20.000 por auto). En D se corrige la diapositiva 5 ("about CLP 59,990" → "59,900") |
+| C3 | Agregar el SO4 al guion de la diapo 24 | — | [x] SO4 agregado al guion de la diapositiva 24 |
+| C4 | Marcar como superados `workshop-3/03_diseno_muestral_infocar.md` y `03_slides_presentacion_muestreo.md` (N≈1.200–1.500, n=60/80 y 230/300) o reescribirlos según el v6 | — | [x] Aviso de "documento superado" en ambos archivos |
+| C5 | Actualizar `context/market_context.md` y `context/buyer_persona_tam_sam_som.md` a las cifras del v6 (451002: 4.116 / 1.066 / 487; ~3 autos al mes) | — | [x] Nota de actualización con las cifras del v6 en ambos archivos; e-commerce y 96,5 % ahora con fuente (E-07, S-10). El TAM/SAM/SOM en pesos no se recalculó |
+| C6 | Limpiar `exam-1/propuesta_consolidada_certamen1.md`: 10 enlaces `file:///home/dacmxo/...` y texto corrupto en la línea 124 | — | [x] 14 enlaces `file:///` cambiados por rutas relativas (todos existen) y "MódMi prulo" corregido |
 
 ### Bloque D — Armado del PDF (después de A, B y C)
 
@@ -134,6 +134,7 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 | Fecha | Qué se hizo | Quién |
 | --- | --- | --- |
 | 2026-11-07 | Análisis de la pauta, diagnóstico del repo y creación de este plan y de `research/pestel/` | Bruno (con Claude Code) |
+| 2026-11-07 | Bloque C cerrado (C1–C6) | Bruno (con Claude Code) |
 | 2026-11-07 | Tercera ronda: segunda corrida del complemento político verificada (P-12 a P-15). Legal pospuesta; se avanza al bloque C | Bruno (con Claude Code) |
 | 2026-11-07 | Segunda ronda: complemento político (P-05 a P-11) y nueva corrida transversal (X-11 a X-16) verificados e integrados. Legal sigue pendiente | Bruno (con Claude Code) |
 | 2026-11-07 | Hallazgos aprobados consolidados en `research/pestel/` (E, S, T, A y transversales completos; P parcial). Cifras unificadas: 12,95 % de marcas chinas en usados y 3,4 usados por nuevo | Bruno (con Claude Code) |

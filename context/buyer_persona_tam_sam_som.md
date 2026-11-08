@@ -2,6 +2,9 @@
 
 Status: Done
 
+> **Actualización 07-nov-2026 (cifras vigentes del deck v6).** Las cifras de empresas de este archivo usan la actividad SII **451** completa (nuevos y usados, 2024). El proyecto ya usa la subactividad **451002** (venta al por menor de vehículos), con estas cifras: **4.116** empresas en Chile (techo, 2025), **1.066** pequeñas y medianas en Chile y **487** pequeñas y medianas en Santiago, con nombre y RUT (2024). Cada dealer compra **≈3 autos al mes** (ventas SII ÷ precio promedio de publicación de CLP 18,4M; Guzmán, 2026). Donde este archivo dé otra cifra (4.325, 1.109, 557, ~560), manda el deck [`global-sm_v6.pptx`](../deliverys/workshop-3/global-sm_v6.pptx). El TAM/SAM/SOM en pesos de este archivo no se recalculó: depende de precios que son hipótesis (SO5).
+
+
 The buyer persona or potential buyer are both direct clients (b2c model) and small to medium car dealerships / compraventa business that do not have direct access to mechanics that might help with appraisals.
 
 Todo:

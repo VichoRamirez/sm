@@ -2,6 +2,9 @@
 
 Status: Done
 
+> **Actualización 07-nov-2026 (cifras vigentes del deck v6).** Las cifras de empresas de este archivo usan la actividad SII **451** completa (nuevos y usados, 2024). El proyecto ya usa la subactividad **451002** (venta al por menor de vehículos), con estas cifras: **4.116** empresas en Chile (techo, 2025), **1.066** pequeñas y medianas en Chile y **487** pequeñas y medianas en Santiago, con nombre y RUT (2024). Cada dealer compra **≈3 autos al mes** (ventas SII ÷ precio promedio de publicación de CLP 18,4M; Guzmán, 2026). Donde este archivo dé otra cifra (4.325, 1.109, 557, ~560), manda el deck [`global-sm_v6.pptx`](../deliverys/workshop-3/global-sm_v6.pptx). El TAM/SAM/SOM en pesos de este archivo no se recalculó: depende de precios que son hipótesis (SO5).
+
+
 <aside>
 📌
 
@@ -43,7 +46,7 @@ Brief outline of the market. Sources: Stage 1 Market Research Report v2 (22 Sep 
 - **Large firms are out of scope:** 83 companies above 1M UF a year make 88% of all sales (582.7M of 660.1M UF). They are likely importers and franchised groups.
 - **Working assumption for the buyer personas:** small compraventas = Pequeña (866); medium dealerships = Mediana (243). Together **1,109 companies** (flat at about 1,000–1,200 since 2018; about 2,100 in 2013). Micro, large and no-sales companies are excluded. Micro 3 (644 companies, 600–2,400 UF a year) is a possible stretch segment. Bracket limits follow the standard SII scale and still need checking against the SII site.
 - **By region (2024, all sizes):** Santiago 2,183 (50.5%), Valparaíso 301, Tarapacá 282, La Araucanía 210, Los Lagos 208, Maule 207, Biobío 200. The file does not cross region and size. If Santiago has the same 50.5% share of small and medium companies, that is about 560 (assumption).
-- **Earlier base-case estimate** of about 1,430 professional buyers nationally and 830 in Santiago has no documented source. It is kept for reference; the SII small plus medium figure (1,109) is the same order of magnitude.
+- **Earlier base-case estimate** of about 1,430 professional buyers nationally and 830 in Santiago has no documented source. **Superseded:** the deck v6 uses 1,066 (Chile) and 487 (Santiago), SII 451002.
 
 ## 4. Where the data comes from
 
@@ -83,7 +86,7 @@ Differentiators to test against Rodar and GoAuto:
 
 ## 7. Trends and constraints
 
-- **A digital market:** 96.5% of households are online (2024); e-commerce reached about USD 10 billion in 2025 (12.6% of retail).
+- **A digital market:** 96.5% of households are online (2024) (Subtel, 2026; see `research/pestel/S_social.md`, S-10); e-commerce reached about USD 10 billion in 2025 (12.6% of retail) (Cámara de Comercio de Santiago, 2026; see `research/pestel/E_economico.md`, E-07).
 - **AI for dealers is arriving: AutoGest, GoAuto, GEMA and Rodar all advertise AI features. The category is forming now.**
 - **Data law:** Ley 21.719 takes effect on 1 Dec 2026, with fines up to 20,000 UTM. We collect vehicle data only, never seller names or phone numbers.
 - **Data access is the main constraint:** the largest portal bans scraping.
@@ -91,7 +94,7 @@ Differentiators to test against Rodar and GoAuto:
 ## Open questions
 
 - [x]  Count target businesses from SII company statistics: done for activity 451 (see section 3)
-- [ ]  Narrow activity 451 to used-car dealers only, and cross region with size (Santiago small and medium count). Would need an SII transparency request (Ley 20.285) for codes 451001 and 451002
+- [x]  *(Resuelto en el deck v6 con la subactividad 451002.)* Narrow activity 451 to used-car dealers only, and cross region with size (Santiago small and medium count). Would need an SII transparency request (Ley 20.285) for codes 451001 and 451002
 - [ ]  Check the SII sales-bracket limits against the SII site
 - [ ]  Rodar: launch date, pricing, data sources, and whether it sends deal alerts
 - [ ]  GoAuto: pricing and number of Chilean clients

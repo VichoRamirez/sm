@@ -164,5 +164,5 @@ Mismos dos documentos que en A. Hay que buscar el link exacto de cada artículo.
 
 - [ ] Precio de un mecánico freelance en 2x3.cl (CLP 35.000–40.000): "Gemini figure, not checked" ([`research/competidores_sustitutos.md`](./research/competidores_sustitutos.md)).
 - [ ] Informes de Gemini Deep Research (competidores, benchmarks y cifras de mercado): los tiene Bruno; no están en el repo.
-- [ ] Estimación previa de ~1.430 compradores profesionales (830 en Santiago): "no documented source" ([`context/market_context.md`](./context/market_context.md)).
+- [x] ~~Estimación previa de ~1.430 compradores profesionales (830 en Santiago)~~: superada por SII 451002 (1.066 en Chile y 487 en Santiago), según el deck v6.
 - [ ] Cifras del Workshop 2 sin fuente propia: "75% de las soluciones de CV se concentran en aseguradoras" (atribuido a Hasan et al., revisar en el paper), "84,7% de compradores particulares" y precios SaaS de $59.990 / $4.990 (son hipótesis de precio, no datos).

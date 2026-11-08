@@ -1,3 +1,5 @@
+> **⚠️ Documento superado (07-nov-2026).** Las cifras de población y muestra de este archivo (N≈1.200–1.500; n=60/80 y 230/300) son de una versión anterior. Las vigentes están en el deck [`global-sm_v6.pptx`](./global-sm_v6.pptx): 4.116 / 1.066 / 487 dealers (SII 451002); diseño ideal 100 + 300 y realista 60 + 180. No citar este archivo en entregables.
+
 # Guion y Diapositivas de Presentación: Workshop 3 — Población, Muestra y Cuotas
 ## Proyecto InfoCar — Strategic Marketing (UDD)
 
