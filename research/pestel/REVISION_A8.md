@@ -149,3 +149,37 @@ Las fuentes que bloquean descargas automáticas (Reuters, Bloomberg, Consilium, 
 2. **Relanzar el complemento Político** con `prompts/A1b_politico_complemento.md`.
 3. **Revisar a mano** las fuentes ⚠️: Consilium, Cox Europa y Reuters (X-10). Son 5 minutos en el navegador.
 4. **Consolidar** los hallazgos ✅ y ✏️ en las tablas `P_…`, `E_…`, `S_…`, `T_…`, `A_…` y `transversales.md`, con las correcciones de arriba y las cifras unificadas.
+
+---
+
+## Segunda ronda (07-nov-2026, noche)
+
+Llegaron dos archivos: `raw/Análisis Político_b…` (el complemento A1b) y una **nueva versión** de `raw/Análisis Transversal…`, que reemplazó a la primera. La primera ya estaba verificada y consolidada como X-01 a X-10. **La investigación Legal no llegó:** `raw/Análisis Legal…` sigue siendo el informe ambiental.
+
+Se descargaron 32 URLs nuevas y se corrió el mismo control.
+
+### Político (complemento) → P-05 a P-11
+
+Buena calidad. Verificado en la fuente:
+
+- Kast es presidente (gob.cl).
+- Robo violento de vehículos: −22,26 % y 2.293 casos menos en 2025; −18,3 % en el primer trimestre de 2026 (SPD). Fiscalía: 11.043 casos en 2025, −28 %.
+- Boletín 18.607-15 y sus patrocinantes (Senado).
+- Propuesta del Ejecutivo sobre IA (Senado, 26-may).
+- Reunión CNC–Segpres.
+- Índice de incertidumbre: 103,6 → 148,5 → 143,4 (Banco Central).
+
+⚠️ **No se pudieron leer de forma automática:** la Cuenta Pública (contenido del discurso), las fichas de la Cámara (Boletines 16.821, 17.387 y 18.623), El Mercurio (columna de Jara y postura de ANAC), InfoLobby y el IPN de noviembre. Quedan marcados en la tabla.
+
+### Transversal (segunda corrida) → X-11 a X-16
+
+| ID nuevo | Origen | Veredicto |
+| --- | --- | --- |
+| X-11 | X-01 nuevo | ✅ ANAC septiembre 2026: 36,5 % por marca y 47,2 % por fabricación (enero–agosto) |
+| X-12 | X-03 nuevo | ✏️ **Cifras corregidas.** El informe decía 35–40 % frente a 25–30 % y lo atribuía a Chileautos. La fuente (Emol, 2025) dice **35–45 % frente a 25–35 %**, citando a un experto. Chileautos habla de 5 a 10 puntos más |
+| X-13 | X-09 nuevo | ✅ Garantía de batería MG transferible; GWM/TANK 10 años o 1.000.000 km solo para el primer dueño |
+| X-14 | X-10 nuevo | ✅ J.D. Power VDS China 2026: 201 contra 191 PP100 |
+| X-15 | X-11 nuevo | ✅ SERNAC: JAC e-JS1 (2025) y alerta de 126 JAC X200 (2026) |
+| X-16 | X-05 nuevo | ⚠️ La rebaja de 50 % del impuesto de compra en China y las exportaciones de 5,79 millones no están en la página de la IEA citada, y Reuters bloquea la descarga |
+
+Los demás hallazgos de la segunda corrida repiten los de la primera.

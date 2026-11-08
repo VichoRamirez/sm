@@ -74,13 +74,13 @@ Método y plantilla en [`research/pestel/README.md`](../../research/pestel/READM
 
 | ID | Tarea | Archivo | Responsable | Estado |
 | --- | --- | --- | --- | --- |
-| A1 | Político: país (gobierno 2026–2030, agenda), industria (política comercial, aranceles), global (EE.UU.–China) | [`P_politico.md`](../../research/pestel/P_politico.md) | — | [~] 4 hallazgos consolidados; falta el complemento `prompts/A1b_politico_complemento.md` |
+| A1 | Político: país (gobierno 2026–2030, agenda), industria (política comercial, aranceles), global (EE.UU.–China) | [`P_politico.md`](../../research/pestel/P_politico.md) | — | [x] 11 hallazgos (5 con partes ⚠️ por revisar a mano) |
 | A2 | Económico: crecimiento, inflación, tasas, crédito automotriz, tipo de cambio, precios y volumen de usados | [`E_economico.md`](../../research/pestel/E_economico.md) | — | [x] 10 hallazgos |
 | A3 | Social: confianza y fraude, hábitos de compra, digitalización, uso de IA por personas | [`S_social.md`](../../research/pestel/S_social.md) | — | [x] 10 hallazgos |
 | A4 | Tecnológico: IA y visión computacional, adopción en pymes y automotoras, plataformas, acceso a datos | [`T_tecnologico.md`](../../research/pestel/T_tecnologico.md) | — | [x] 10 hallazgos |
 | A5 | Ambiental: emisiones, electromovilidad, restricción vehicular, chatarrización y vida útil del parque | [`A_ambiental.md`](../../research/pestel/A_ambiental.md) | — | [x] 17 hallazgos (dos informes) |
-| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [ ] **Falta.** El archivo recibido era Ambiental: relanzar `prompts/A6_legal.md` |
-| A7 | Factores que cruzan varias dimensiones (autos chinos y otros) | [`transversales.md`](../../research/pestel/transversales.md) | Integrador | [x] 10 hallazgos sobre autos chinos, más un cruce con otros factores |
+| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [ ] **Falta.** No llegó: `raw/Análisis Legal…` sigue siendo ambiental. Relanzar `prompts/A6_legal.md` |
+| A7 | Factores que cruzan varias dimensiones (autos chinos y otros) | [`transversales.md`](../../research/pestel/transversales.md) | Integrador | [x] 16 hallazgos sobre autos chinos, más un cruce con otros factores |
 | A8 | Revisión cruzada: cada hallazgo tiene fuente exacta, nivel, relevancia y no lleva juicio de oportunidad o amenaza | todos | Integrador | [~] Revisión en [`REVISION_A8.md`](../../research/pestel/REVISION_A8.md) |
 
 Criterio de término por dimensión: al menos 6 hallazgos con dato concreto, al menos uno de nivel global donde aplique, al menos una postura contraria o matiz, y todas las fuentes en "verificadas".
@@ -134,6 +134,7 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 | Fecha | Qué se hizo | Quién |
 | --- | --- | --- |
 | 2026-11-07 | Análisis de la pauta, diagnóstico del repo y creación de este plan y de `research/pestel/` | Bruno (con Claude Code) |
+| 2026-11-07 | Segunda ronda: complemento político (P-05 a P-11) y nueva corrida transversal (X-11 a X-16) verificados e integrados. Legal sigue pendiente | Bruno (con Claude Code) |
 | 2026-11-07 | Hallazgos aprobados consolidados en `research/pestel/` (E, S, T, A y transversales completos; P parcial). Cifras unificadas: 12,95 % de marcas chinas en usados y 3,4 usados por nuevo | Bruno (con Claude Code) |
 | 2026-11-07 | Revisión A8 de los 7 informes de deep research (132 URLs descargadas): P insuficiente, L faltante, E/S/T/A/X aprobables con correcciones. Fecha corregida a martes 10-nov | Bruno (con Claude Code) |
 | 2026-11-07 | Bloque B verificado (B1–B3 y B5 listos para aplicar en D; B4 parcial). Errores: 41,4 % ANAC es país de fabricación, 41.700 causas son de fraude en general y el 52,3 días mide desde la denuncia del siniestro | Bruno (con Claude Code) |
