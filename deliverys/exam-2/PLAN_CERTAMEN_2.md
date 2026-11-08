@@ -79,7 +79,7 @@ Método y plantilla en [`research/pestel/README.md`](../../research/pestel/READM
 | A3 | Social: confianza y fraude, hábitos de compra, digitalización, uso de IA por personas | [`S_social.md`](../../research/pestel/S_social.md) | — | [x] 10 hallazgos |
 | A4 | Tecnológico: IA y visión computacional, adopción en pymes y automotoras, plataformas, acceso a datos | [`T_tecnologico.md`](../../research/pestel/T_tecnologico.md) | — | [x] 10 hallazgos |
 | A5 | Ambiental: emisiones, electromovilidad, restricción vehicular, chatarrización y vida útil del parque | [`A_ambiental.md`](../../research/pestel/A_ambiental.md) | — | [x] 17 hallazgos (dos informes) |
-| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [ ] Pospuesta por decisión del equipo (07-nov). Lo legal parcial está en P-01, P-02, P-06, P-09, X-13 y X-15 |
+| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [~] No hay investigación propia. El PESTEL tiene una diapositiva Legal con hallazgos verificados de otras dimensiones y la Ley 19.496 leída en LeyChile |
 | A7 | Factores que cruzan varias dimensiones (autos chinos y otros) | [`transversales.md`](../../research/pestel/transversales.md) | Integrador | [x] 16 hallazgos sobre autos chinos, más un cruce con otros factores |
 | A8 | Revisión cruzada: cada hallazgo tiene fuente exacta, nivel, relevancia y no lleva juicio de oportunidad o amenaza | todos | Integrador | [x] [`REVISION_A8.md`](../../research/pestel/REVISION_A8.md) (tres rondas) |
 
@@ -94,7 +94,7 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 | B1 | Reemplazar las fuentes no verificadas del v6 por su equivalente verificado del README o eliminar el dato: Guzmán (2026) → Emol 13-feb-2026 (F-150, CLP 18,4M); Farías (2026) → Autocosmos 30-abr-2026 (52,3 días); Melelli Viveros (2026) → Pauta 23-ago-2026 (41.700 causas); ANAC (2026) → PDF de diciembre 2025. **Confirmar que cada cifra aparece en la fuente equivalente.** | — | [x] Verificado; 3 cifras mal etiquetadas. Texto corregido en `B_fuentes_deck.md`, se aplica en D |
 | B2 | Agregar a las referencias las cuatro citas que faltan: Hogale et al. (2026) y Cox Automotive (2025) en la diapo 8, Chileautos (n.d.) y Autofact (n.d.) en la diapo 5 | — | [x] Referencias listas en `B_fuentes_deck.md`, se aplican en D |
 | B3 | Poner la letra que corresponde a "CAVEM (2026)" en la diapo 3 (2026a, b, c o e) | — | [x] CAVEM (2026a, 2026b, 2026c), se aplica en D |
-| B4 | Resolver los DOIs falsos (Hasan, Amodu) y Mellado (2026) en `context/definicion_fenomeno_y_objetivos_vg.md` y `deliverys/workshop-2/`, según la sección A de pendientes del README | — | [~] DOIs corregidos en context/ y workshop-2/. Mellado depende de A6 |
+| B4 | Resolver los DOIs falsos (Hasan, Amodu) y Mellado (2026) en `context/definicion_fenomeno_y_objetivos_vg.md` y `deliverys/workshop-2/`, según la sección A de pendientes del README | — | [x] DOIs corregidos; Mellado reemplazado por la Ley 19.496, arts. 1 y 14 (LeyChile) |
 | B5 | Si el ~3 autos al mes por dealer (diapo 18) depende del precio de Guzmán, recalcularlo con la fuente que quede en B1 | — | [x] No se recalcula; solo se precisa la etiqueta |
 
 ### Bloque C — Coherencia entre documentos (prioridad 2)
@@ -112,13 +112,13 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 
 | ID | Tarea | Responsable | Estado |
 | --- | --- | --- | --- |
-| D1 | Portada "Certamen 2" y orden: diagnóstico → objetivos → metodología → población y muestra → PESTEL → referencias | — | [ ] |
-| D2 | Quitar la diapositiva 14 ("The story so far"), que repite la 3 | — | [ ] |
-| D3 | Diapositiva "Qué cambió tras el feedback" (feedback → cambio → dónde está) | — | [ ] |
-| D4 | Diapositivas PESTEL: hallazgo + una línea de síntesis + fuente pequeña junto a cada idea; sin etiquetas de oportunidad o amenaza | — | [ ] |
-| D5 | Cada diapositiva completa y autoexplicativa en el PDF (sin depender de animaciones) | — | [ ] |
-| D6 | Referencias APA 7 completas y exportación a un solo PDF | — | [ ] |
-| D7 | Guion con los 7 integrantes y ensayo con tiempo | — | [ ] |
+| D1 | Portada "Certamen 2" y orden: diagnóstico → objetivos → metodología → población y muestra → PESTEL → referencias | — | [x] `global-sm_v7.pptx`: portada "Certamen 2"; orden diagnóstico → objetivos → método → población y muestra → PESTEL → referencias |
+| D2 | Quitar la diapositiva 14 ("The story so far"), que repite la 3 | — | [x] "The story so far" eliminada |
+| D3 | Diapositiva "Qué cambió tras el feedback" (feedback → cambio → dónde está) | — | [x] Diapositiva 2: feedback → cambio → diapositivas |
+| D4 | Diapositivas PESTEL: hallazgo + una línea de síntesis + fuente pequeña junto a cada idea; sin etiquetas de oportunidad o amenaza | — | [x] Diapositivas 25–33: portada del PESTEL, seis dimensiones, autos chinos y síntesis (4 hallazgos por diapositiva, síntesis y fuente en cada tarjeta) |
+| D5 | Cada diapositiva completa y autoexplicativa en el PDF (sin depender de animaciones) | — | [x] Sin animaciones ni transiciones; cada diapositiva queda completa |
+| D6 | Referencias APA 7 completas y exportación a un solo PDF | — | [~] Referencias APA listas (diapositivas 35–38). **Falta exportar el PDF final desde PowerPoint** con Century Gothic; `global-sm_v7_preview.pdf` es solo una vista previa |
+| D7 | Guion con los 7 integrantes y ensayo con tiempo | — | [ ] Falta: guion de las diapositivas 2 y 25–33, repartir entre los 7 integrantes y ensayar con tiempo |
 
 ### Bloque E — Fuentes primarias (pendiente del certamen 1)
 
@@ -134,6 +134,7 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 | Fecha | Qué se hizo | Quién |
 | --- | --- | --- |
 | 2026-11-07 | Análisis de la pauta, diagnóstico del repo y creación de este plan y de `research/pestel/` | Bruno (con Claude Code) |
+| 2026-11-07 | Bloque D: `global-sm_v7.pptx` (38 diapositivas) con correcciones B, feedback y PESTEL; contenido revisable en `PESTEL_slides_content.md`. B4 cerrado con la Ley 19.496 | Bruno (con Claude Code) |
 | 2026-11-07 | Bloque C cerrado (C1–C6) | Bruno (con Claude Code) |
 | 2026-11-07 | Tercera ronda: segunda corrida del complemento político verificada (P-12 a P-15). Legal pospuesta; se avanza al bloque C | Bruno (con Claude Code) |
 | 2026-11-07 | Segunda ronda: complemento político (P-05 a P-11) y nueva corrida transversal (X-11 a X-16) verificados e integrados. Legal sigue pendiente | Bruno (con Claude Code) |

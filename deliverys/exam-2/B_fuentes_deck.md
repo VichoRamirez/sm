@@ -2,7 +2,7 @@
 
 Revisión hecha el 07-nov-2026 sobre [`../workshop-3/global-sm_v6.pptx`](../workshop-3/global-sm_v6.pptx). Cada cifra se buscó en la fuente descargada (PDF o HTML), no en resúmenes. Los cambios **no se aplicaron al deck** (regla 7 del plan): este archivo trae el texto corregido para pegarlo en el bloque D.
 
-> **Numeración:** la diapositiva física y el número impreso en ella difieren desde la 14 en adelante. Aquí se usa siempre la **física** (orden en el archivo), con el número impreso entre paréntesis cuando no coincide.
+> **Numeración:** los números de diapositiva son los del orden de la presentación, que coinciden con el número impreso en cada una. (Corregido el 07-nov-2026: una versión anterior de este archivo usaba el nombre interno de los archivos XML.)
 
 ## Resumen
 
@@ -44,9 +44,9 @@ Revisión hecha el 07-nov-2026 sobre [`../workshop-3/global-sm_v6.pptx`](../work
 ### Melelli Viveros (2026) → Pauta, 23-ago-2026 ❌ (la etiqueta está mal)
 
 - **Evidencia:** "Durante 2025, las causas por fraude ingresadas a tribunales alcanzaron su nivel más alto en 12 años. Entre enero y septiembre se registraron más de 41.700 casos, un 64% más que el año anterior, según cifras del Poder Judicial recogidas en un informe de la plataforma Sheriff. Cerca del 69% corresponde a estafas y defraudaciones."
-- **Problema:** son **todas las causas por fraude** del país, no las de compraventa de vehículos. La nota relaciona ese aumento con el auge de los usados, pero no da una cifra propia del sector. Las diapositivas 4 y 16 (impresa 14) dicen "vehicle-fraud cases". El mismo error está en `context/definicion_fenomeno_y_objetivos_vg.md`, `context/modalidades_venta_autos_chile_vg.md` y `deliverys/workshop-2/` (ver bloque C).
+- **Problema:** son **todas las causas por fraude** del país, no las de compraventa de vehículos. La nota relaciona ese aumento con el auge de los usados, pero no da una cifra propia del sector. Las diapositivas 4 y 14 dicen "vehicle-fraud cases". El mismo error está en `context/definicion_fenomeno_y_objetivos_vg.md`, `context/modalidades_venta_autos_chile_vg.md` y `deliverys/workshop-2/` (ver bloque C).
 - **Errores en la referencia:** el autor es **Nicolás** Melelli Viveros y el medio es **Pauta**, el 23-ago-2026 (no The Clinic, 6-oct).
-- **Texto nuevo para las diapositivas 4 y 16:**
+- **Texto nuevo para las diapositivas 4 y 14:**
   > **41,700** fraud cases filed in Chilean courts, Jan–Sep 2025, up 64%: a 12-year high, as used-car sales boom. *(all fraud types; no official figure isolates vehicle fraud)*
 - **Si se busca un dato propio del sector,** queda como pregunta para la investigación Social (A3, pregunta 1).
 - **Referencia nueva:**
@@ -102,8 +102,8 @@ Nota: la diapositiva 3 debería tener el mismo ajuste de ANAC que la 4 si muestr
 
 - **Hasan y Amodu:** las referencias se reemplazaron por las correctas (sección 2 del `README.md`) en `context/definicion_fenomeno_y_objetivos_vg.md` y `deliverys/workshop-2/workshop_2_objetivos_investigacion.md`. Las citas falsas siguen en documentos superados de `exam-1/` y `workshop-3/`, que quedan para C4 y C6.
 - **Pendiente:** la afirmación "el 75 % de las soluciones de CV se concentran en aseguradoras (Hasan et al., 2025)" no está verificada en el paper. Revisar la copia local antes de volver a usarla. **El v6 no la usa.**
-- **Mellado (2026):** sigue abierto. Depende de la investigación Legal (A6, pregunta 1: qué dice la Ley 19.496 sobre la garantía de los usados). Afecta al texto de las diapositivas 4 ("No legal warranty on used cars, but consumer law applies") y 16 ("Used cars carry no legal warranty, even from a dealer"). **No modificar esas frases hasta tener el artículo de la ley.**
+- **Mellado (2026): resuelto el 07-nov-2026 con la fuente primaria.** La Ley 19.496 (LeyChile, XML idNorma 61438), **art. 14**, dice que si el proveedor informa expresamente, antes de la compra, que el producto es usado, "eximirá al proveedor de las obligaciones derivadas del derecho de opción que se establece en los artículos 19 y 20" (reparar, reponer o devolver), "sin perjuicio de aquellas que hubiera contraído el proveedor en virtud de la garantía otorgada al producto". El **art. 1** define como proveedor a quien desarrolla "habitualmente" actividades de comercialización, así que un vendedor particular ocasional no lo es. En el v7, la diapositiva 5 dice "No legal warranty if told the car is used (art. 14); consumer law still applies". La frase de "The story so far" desaparece con esa diapositiva. Ojo: el XML descargado es la versión del 20-04-2021; conviene confirmar en LeyChile que el art. 14 no cambió con la Ley 21.398.
 
 ## B5 — ~3 autos al mes por dealer
 
-No hace falta recalcular. El divisor de CLP 18,4M está confirmado en la fuente (CLP 18.396.548). Solo se precisa la etiqueta en las diapositivas 16 y 18 (impresas 14 y 16): "SII sales ÷ CLP 18.4M average **asking** price (Guzmán, 2026)". El precio de transacción suele ser menor que el de publicación, así que la cifra es una referencia conservadora del número de autos.
+No hace falta recalcular. El divisor de CLP 18,4M está confirmado en la fuente (CLP 18.396.548). Solo se precisa la etiqueta en las diapositivas 14 y 16: "SII sales ÷ CLP 18.4M average **asking** price (Guzmán, 2026)". El precio de transacción suele ser menor que el de publicación, así que la cifra es una referencia conservadora del número de autos.

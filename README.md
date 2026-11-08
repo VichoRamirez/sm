@@ -134,7 +134,7 @@ Aparecen en [`context/definicion_fenomeno_y_objetivos_vg.md`](./context/definici
 
 - [ ] **Hasan, M. A., Rahman, M. M., & Siddique, A. (2025)**, *IEEE Trans. ITS*, doi:10.1109/TITS.2024.3412098. **El DOI no existe (404).** Los autores, la revista y el DOI están mal. Reemplazar por la cita correcta de la sección 2.1. *Corregido el 07-nov-2026 en `context/` y `workshop-2/`; sigue en `exam-1/` y `workshop-3/` (tareas C4 y C6).*
 - [ ] **Amodu, O., Habaebi, M. H., Abdullah, K. A., & Agbede, M. O. (2024)**, *Journal of AI and Technology*, doi:10.37965/jait.2024.0389. **El DOI no existe (404).** Los coautores y la revista están mal. Reemplazar por la cita correcta de la sección 2.2. *Corregido el 07-nov-2026 en `context/` y `workshop-2/`; sigue en `exam-1/` y `workshop-3/` (tareas C4 y C6).*
-- [ ] **Mellado, R. (2026)**, *Revista Chilena de Derecho y Comercio Automotriz*, 12(1), 34–49. No tiene URL y no se encontró la revista. Sostiene la afirmación de que "los usados no tienen garantía legal". Buscar la fuente real (Ley 19.496 / SERNAC) o usar la de The Clinic (sección 7).
+- [x] **Mellado, R. (2026)**, *Revista Chilena de Derecho y Comercio Automotriz*, 12(1), 34–49. No tiene URL y no se encontró la revista. Sostiene la afirmación de que "los usados no tienen garantía legal". Buscar la fuente real (Ley 19.496 / SERNAC) o usar la de The Clinic (sección 7). *Resuelto el 07-nov-2026: reemplazado por la Ley 19.496, arts. 1 y 14 (ver `deliverys/exam-2/B_fuentes_deck.md`).*
 
 ### B. Referencias con URL genérica (solo el dominio)
 
