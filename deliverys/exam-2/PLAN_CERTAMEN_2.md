@@ -33,7 +33,7 @@
 - Fuente en letra pequeña **junto a cada idea**, no al pie ni al final.
 - Formato ejecutivo: hallazgo + una línea de síntesis.
 - Criticó una presentación de un "proyecto de compraventa automotriz" que mostraba toda la información de una vez. Probablemente era la nuestra: no saturar las diapositivas.
-- Mencionó "una fuente, dos fuentes" de forma ambigua. **No es requisito de la pauta**; usar dos fuentes solo en datos discutibles.
+- ~~Mencionó "una fuente, dos fuentes" de forma ambigua.~~ **Actualizado el 08-nov:** los requisitos detallados de la entrega exigen **mínimo 2 fuentes por hallazgo**, institucionales u oficiales de preferencia, junto a la idea. También piden desplegar la información idea por idea (animación) para una exposición de ~20 minutos e incorporar la **dimensión de incertidumbre**.
 
 ---
 
@@ -118,7 +118,22 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 | D4 | Diapositivas PESTEL: hallazgo + una línea de síntesis + fuente pequeña junto a cada idea; sin etiquetas de oportunidad o amenaza | — | [x] Diapositivas 25–33: portada del PESTEL, seis dimensiones, autos chinos y síntesis (4 hallazgos por diapositiva, síntesis y fuente en cada tarjeta) |
 | D5 | Cada diapositiva completa y autoexplicativa en el PDF (sin depender de animaciones) | — | [x] Sin animaciones ni transiciones; cada diapositiva queda completa |
 | D6 | Referencias APA 7 completas y exportación a un solo PDF | — | [~] Referencias APA listas (diapositivas 35–38). **Falta exportar el PDF final desde PowerPoint** con Century Gothic; `global-sm_v7_preview.pdf` es solo una vista previa |
-| D7 | Guion con los 7 integrantes y ensayo con tiempo | — | [ ] Falta: guion de las diapositivas 2 y 25–33, repartir entre los 7 integrantes y ensayar con tiempo |
+| D7 | Guion con los 7 integrantes y ensayo con tiempo | — | [~] Guion de ~20 min en las notas de las diapositivas 2 y 25–34 del v8, dividido en "Speaker 1" a "Speaker 7". Falta asignar nombres y ensayar con tiempo |
+
+### Bloque F — Correcciones del v8 (revisión del 08-nov y requisitos detallados)
+
+Archivo: `global-sm_v8.pptx` (40 diapositivas). Se presentan solo la 2 y la 25–34; la 3–24 van en el PDF con las correcciones.
+
+| ID | Tarea | Estado |
+| --- | --- | --- |
+| F1 | Quitar el lenguaje de oportunidad/amenaza de las síntesis (26–32) y alinear la 34 | [x] |
+| F2 | Ley 21.719: vigente el 1-dic-2026 por ley; el proyecto aprobado por el Senado (28-oct) la movería al 15-oct-2027. Multas 5.000/10.000/20.000 UTM según gravedad (LeyChile, art. 35) | [x] |
+| F3 | Mínimo 2 fuentes por tarjeta PESTEL; se quitan las líneas "Sources:" al pie de 26–32 | [x] |
+| F4 | Nueva diapositiva 33 "What is still uncertain" (ley de datos, índice de incertidumbre del Banco Central, dos proyectos de ley, comercio de EV chinos) y fila U en la 34 | [x] |
+| F5 | Correcciones de la 2–24: 41,4 % y "vehicle-fraud" en notas, "1 car every 8 years" quitado, ≈3 autos = promedio, 52,3 días, OBD-II, CLP 44.990, 82–102k, regla de grupos focales, notas antiguas, números de página | [x] |
+| F6 | Referencias APA 7: letras 2026a/b/c/d, duplicados y citas sin uso eliminados, nuevas fuentes (5 diapositivas de referencias) | [x] |
+| F7 | Animación "aparecer al hacer clic" tarjeta por tarjeta en 26–34; el PDF queda estático | [x] |
+| F8 | Exportar el PDF final desde PowerPoint con Century Gothic y revisar el orden de las animaciones en PowerPoint | [ ] |
 
 ### Bloque E — Fuentes primarias (pendiente del certamen 1)
 
@@ -133,6 +148,7 @@ Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.m
 
 | Fecha | Qué se hizo | Quién |
 | --- | --- | --- |
+| 2026-11-08 | Bloque F: `global-sm_v8.pptx` con síntesis descriptivas, 2 fuentes por hallazgo, diapositiva de incertidumbre, Ley 21.719 con ambas fechas, referencias APA rehechas, animaciones y guion de ~20 min. Fuentes nuevas verificadas en la fuente (LeyChile, Pauta, Cox, Fiscalía, MIIT, J.D. Power, BioBioChile, La Tercera) | Joaquín (con Claude Code) |
 | 2026-11-07 | Análisis de la pauta, diagnóstico del repo y creación de este plan y de `research/pestel/` | Bruno (con Claude Code) |
 | 2026-11-07 | Bloque D: `global-sm_v7.pptx` (38 diapositivas) con correcciones B, feedback y PESTEL; contenido revisable en `PESTEL_slides_content.md`. B4 cerrado con la Ley 19.496 | Bruno (con Claude Code) |
 | 2026-11-07 | Bloque C cerrado (C1–C6) | Bruno (con Claude Code) |
