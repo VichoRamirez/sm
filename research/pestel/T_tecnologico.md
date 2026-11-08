@@ -1,37 +1,86 @@
 # T — Tecnológico
 
-Tarea A4 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md).
+Tarea A4 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md). Hallazgos consolidados el 07-nov-2026 a partir de [`raw/Análisis Tecnológico…`](./raw/) (ChatGPT), con las correcciones de [`REVISION_A8.md`](./REVISION_A8.md). Cada cifra se comprobó en la fuente citada, salvo las marcadas con ⚠️.
 
 Aquí se describe **el estado de la tecnología en la industria**, no la arquitectura de InfoCar.
-
-## Material ya verificado en el repo
-
-- **Visión computacional para daños:** Hasan et al. (2025), revisión sistemática en *WIREs Data Mining and Knowledge Discovery*, [doi:10.1002/widm.70027](https://doi.org/10.1002/widm.70027) (copia local en `data/technical-bases/damage-with-IA/`) · Amodu et al. (2024), IoTBDS, [doi:10.5220/0012630700003705](https://doi.org/10.5220/0012630700003705).
-- **Límites de la IA (postura contraria):** [Kalai et al. (2025), por qué alucinan los modelos de lenguaje](https://arxiv.org/html/2509.04664v1) · [GPT-4V en seguros, arXiv 2404.09690](https://arxiv.org/html/2404.09690v1) · [INS-MMBench, arXiv 2406.09105](https://arxiv.org/pdf/2406.09105).
-- **Proveedores internacionales de inspección con IA:** Tractable, Ravin, Monk/ACV, UVeye, ProovStation y otros (README, sección 4).
-- **Adopción de IA en empresas y pymes:** [OCDE (2025), AI adoption by SMEs](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6/426399c1-en.pdf) · [Estudio SAP pymes Chile (2025)](https://news.sap.com/latinamerica/2025/05/estudio-sap-pequenas-y-medianas-empresas-en-chile-apuestan-por-la-ia/) · [Entel Digital](https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile) · [ILIA 2025 vía La Tercera](https://www.latercera.com/nacional/noticia/ilia-2025-chile-se-ubica-como-el-pais-que-mas-y-mejor-usa-la-inteligencia-artificial-en-latinoamerica/).
-- **IA en automotoras:** [Cox Automotive, AI Readiness (2025, PDF)](https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf) · CDK Global (README, sección 6).
-- **Plataformas locales con tasación o IA:** [Rodar](https://www.rodar.cl/), [GoAuto](https://www.goauto.cl/), [AutoGest](https://autogest.cl/), [GEMA](https://suite.go-gema.com/), [Autofact](https://www.autofact.cl/), [Ofertautos](https://ofertautos.cl/autos-usados).
-- **Acceso a datos de mercado:** los términos de Chileautos prohíben el scraping; el robots.txt de Mercado Libre bloquea el rastreo (`context/market_context.md` §4).
-
-## Pistas a investigar
-
-**País e industria**
-- Digitalización de trámites: transferencia en línea, Registro Civil y certificados en línea. Fuentes: ChileAtiende, Registro Civil.
-- Penetración de smartphones y conectividad móvil. Fuente: Subtel.
-- Disponibilidad de datos abiertos del parque: tasación fiscal del SII y permisos de circulación.
-- Electrificación del parque: diagnóstico y reparación de eléctricos e híbridos, que exigen otras herramientas.
-
-**Global**
-- Madurez de la inspección con IA fuera de los seguros (en remates, leasing y dealers).
-- Avance de modelos multimodales en evaluación de daños: precisión reportada y casos de error.
 
 ## Hallazgos
 
 | ID | Hallazgo (dato concreto) | Nivel | Relevancia para la industria de usados | Matiz o postura contraria | Fuente (APA) + URL | Otras dimensiones |
 | --- | --- | --- | --- | --- | --- | --- |
-| T-01 | | | | | | |
+| T-01 | En el Chequeo Digital del Ministerio de Economía, construido a partir de más de 40.000 autodiagnósticos de Mipymes, **70% quedó en los niveles “Inicial” o “Novato” de madurez digital y 14% en “Avanzado” o “Experto”**. El dato fue publicado el 26 de mayo de 2026.  | País | Una parte relevante de las compraventas chilenas pertenece al universo de empresas de menor tamaño. La baja profundidad de integración digital condiciona la incorporación de CRM, inventario conectado, analítica de precios, automatización documental y herramientas de IA como procesos permanentes. | El Chequeo Digital es un **autodiagnóstico voluntario**, no una encuesta probabilística de todas las Mipymes chilenas. Además, una encuesta distinta, realizada por Cadem para Entel, registra uso de IA en cerca de 70% de las Pymes, mostrando que “usar IA” y tener alta madurez digital no son equivalentes.  | (Ministerio de Economía, Fomento y Turismo, 2026). https://www.economia.gob.cl/2026/05/26/subsecretaria-de-economia-firma-alianza-para-sumar-la-ia-a-cursos-para-emprendedores.htm | E, S, T |
+| T-02 | El estudio de Entel Digital y CENIA (encuesta a más de **526** dueños, directores y gerentes, junio de 2025) encontró que **más del 80 %** de las grandes empresas usa IA y que el **70 %** de las pymes la ha incorporado. La **falta de capacitación de los trabajadores (40 %)** está entre los principales obstáculos. | País | Las compraventas se ubican principalmente en comercio y servicios, por lo que el resultado de retail es una referencia más próxima que el promedio transversal. La disponibilidad de personas capaces de configurar y revisar sistemas de IA condiciona cuánto puede integrarse la tecnología en tasación, inventario, atención y marketing. | Usar IA no equivale a integrarla en procesos (ver T-01, 70 % de mipymes en madurez digital inicial o novato). El estudio también reporta brechas regionales: más del 80 % de las empresas de la RM usa IA, y menos en otras regiones. | Entel Digital (2025, 19 de junio). *Estudio sobre adopción de IA en Chile*. https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile | E, S, T |
+| T-03 | A junio de 2026 Chile tenía **10.818.497 conexiones 5G**, 31,8% más que un año antes, y cada conexión móvil cursaba en promedio **30,8 GB mensuales**. En la encuesta de acceso a Internet 2025, 5G era usado por 51,9% de los hogares encuestados; en áreas rurales bajaba a 37,9%.  | País | La conectividad móvil permite que vendedores y compradores consulten avisos, certificados, precios, fotografías, financiamiento y antecedentes desde el patio de una automotora o durante una inspección. También hace técnicamente posible cargar fotografías y videos desde terreno. | La existencia de muchas conexiones no implica igual calidad de acceso. La encuesta 2025 registra diferencias urbano-rurales: la combinación 4G/5G alcanzaba 87,1% en zonas urbanas y 80,5% en rurales.  | (Subsecretaría de Telecomunicaciones, 2026). https://www.subtel.gob.cl/estadisticas-1o-semestre-subtel-el-5g-avanza-a-paso-firme-para-alcanzar-al-4g-y-brecha-se-reduce-a-solo-627-mil-conexiones/ | S, T |
+| T-04 | El trámite estatal de transferencia de dominio seguía siendo **presencial** al 1 de abril de 2026: ChileAtiende indica que se debe reservar hora por Internet, pero la transferencia se realiza “en cualquier oficina del Registro Civil”. En paralelo, Autofact comercializa una transferencia “100% online” apoyada en firma notarial.  | Industria | La compraventa combina capas digitales y presenciales. La reserva y parte de la preparación documental pueden hacerse a distancia, mientras que el canal oficial directo mantiene atención física; intermediarios privados han digitalizado etapas adicionales mediante notaría y gestión documental. | No se encontró una estadística oficial que publique qué proporción de todas las transferencias de usados utiliza canales privados digitales versus Registro Civil, notarías u otros canales. La afirmación de Autofact describe su propio servicio, no el conjunto del mercado. | (ChileAtiende, 2026). https://www.chileatiende.gob.cl/fichas/3409/1/pdf ; (Autofact, 2026). https://www.autofact.cl/informes | L, T |
+| T-05 | El SII publica para 2026 una **base descargable de tasación fiscal de vehículos livianos** y mantiene series históricas. La tasación fiscal se utiliza como base del permiso de circulación y, para usados, se determina considerando depreciación sobre el precio corriente en plaza.  | País | Es una fuente estructurada y pública para identificar marca, modelo, año y referencia fiscal. Puede cruzarse con inventarios de usados, aunque su función institucional es tributaria y municipal, no estimar el precio al que se cerrará una compraventa. | La tasación fiscal **no es un precio transaccional observado**. Su metodología y finalidad son distintas de las tasaciones comerciales construidas con avisos, ventas efectivas, kilometraje, estado físico o historial.  | (Servicio de Impuestos Internos, 2026). https://www.sii.cl/servicios_online/1049-2612.html | E, L, T |
+| T-06 | En 2026 ya existe en Chile una capa privada de datos vehiculares que agrega información oficial y comercial. Autofact vende un informe Full por **$8.990** con historial de propietarios, kilometraje, multas, prendas, remates y otros antecedentes; AutoGest ofrece SaaS para automotoras; Rodar integra inventario, antecedentes y lecturas **OBD2**; Ofertautos declara indexar avisos públicos y tasarlos contra el mercado.  | Industria | La información utilizada para decidir compra, recepción en parte de pago, precio y rotación de inventario ya no proviene de una sola base. Los dealers pueden combinar antecedentes registrales, publicaciones, diagnóstico electrónico y software de gestión. | La existencia de proveedores no permite inferir su penetración entre compraventas. Tampoco todas las variables son completas: Autofact señala que puede haber información que aún no haya sido reportada o incorporada a sus bases.  | (Autofact, 2026). https://www.autofact.cl/informes ; (AutoGest, 2026). https://autogest.cl/ ; (Rodar, 2026). https://www.rodar.cl/es ; (Ofertautos, 2026). https://www.ofertautos.cl/autos-usados | E, T, L |
+| T-07 | Entre enero y septiembre de 2026 se vendieron en Chile **14.837 vehículos livianos y medianos enchufables nuevos**, 144,6% más que en igual período de 2025; representaron **6,3%** del mercado nuevo acumulado. Los BEV sumaron 8.209 unidades y los PHEV/P-REEV 6.628.  | Industria | Estos vehículos pasan posteriormente al mercado secundario y agregan variables de inspección distintas de las de un auto convencional: batería de tracción, electrónica de potencia, software y diagnóstico electrónico pasan a formar parte de la descripción técnica del usado. | El 93,7% del mercado nuevo acumulado de livianos y medianos seguía correspondiendo a vehículos no enchufables según la misma fuente. Además, ANAC informa ventas nuevas, no la participación de eléctricos dentro de las transferencias de usados.  | (ANAC A.G., 2026). https://www.anac.cl/wp-content/uploads/2026/10/Informe-Cero-y-Bajas-Emisiones-Septiembre-2026.pdf | E, A, T |
+| T-08 | La revisión sistemática de Hasan et al. examinó **55 estudios** sobre detección de daños vehiculares con IA. Entre los trabajos revisados aparecen resultados como **48,1% box AP y 43,9% mask AP** con Mask R-CNN en un caso y **0,463 IoU** para localización de daños en otro; la literatura muestra resultados muy distintos según tarea, dataset y métrica.  | Global | La visión computacional ya puede clasificar, localizar y segmentar daños visibles en fotografías, lo que ha llevado esta tecnología a seguros, reparación, venta digital e inspección. Su desempeño no se resume en una única “precisión”: depende de tipo de daño, ángulo, iluminación, resolución y datos de entrenamiento. | La misma revisión identifica dificultades con daños menores, imágenes tomadas en condiciones no controladas, datasets privados y variación de ángulo e iluminación. Por definición, una fotografía exterior tampoco acredita por sí sola fallas mecánicas internas.  | (Hasan et al., 2025). https://doi.org/10.1002/widm.70027 | T |
+| T-09 | En una evaluación específica para seguros, GPT-4V mostró capacidad para comprender escenas multimodales, pero los autores documentaron dificultades en **valoración detallada de daños**, comprensión visual incorrecta y desempeño variable entre idiomas. El benchmark INS-MMBench fue creado posteriormente porque no existía un benchmark sistemático específico para modelos multimodales en seguros.  | Global | Los modelos multimodales generales pueden participar en clasificación y descripción visual, pero una salida lingüísticamente plausible no equivale a una medición pericial del daño ni del costo de reparación. Esto importa cuando imágenes se usan para describir condición o apoyar una valorización. | Kalai et al. muestran que las respuestas inventadas no son un fenómeno exclusivo de visión vehicular: los procedimientos de entrenamiento y evaluación de modelos de lenguaje pueden favorecer que el modelo adivine cuando no tiene certeza.  | (Lin et al., 2024). https://arxiv.org/abs/2404.09690 ; (Zhang et al., 2024). https://arxiv.org/abs/2406.09105 ; (Kalai et al., 2025). https://arxiv.org/abs/2509.04664 | T, L |
+| T-10 | En el estudio de Cox Automotive de 2025, solo **14%** de los concesionarios estadounidenses estaba en etapas 3 o 4 de adopción —IA integrada en flujos o incorporada a decisiones—, mientras 59% estaba apenas explorando o probando herramientas. Las tres barreras más mencionadas fueron exactitud/errores (**74%**), confianza en datos o algoritmos (**69%**) y necesidad de capacitación (**66%**).  | Global | En retail automotor internacional, la IA ya se usa en marketing, inventario y pricing, pero la integración operativa profunda sigue separada del uso ocasional de herramientas. Cox identifica pricing dinámico basado en mercado como el caso de uso más asociado a ventas y margen entre los concesionarios encuestados.  | En 2026, una medición posterior de Cox registró que **82% de los dealers decía usar IA**, pero solo **22%** había observado el aumento en ventas e ingresos que muchos esperaban. La diferencia muestra que la tasa declarada de uso puede crecer mucho más rápido que la integración o la medición de resultados.  | (Cox Automotive, 2025). https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf | E, S, T |
+
+Corrección respecto del informe en bruto: en **T-02**, la URL del PDF de Entel daba 404. Se cambió por el blog del mismo estudio y se corrigió "menos de 70 %" por "70 %", que es lo que dice la fuente.
+
+## Síntesis de la dimensión
+
+- Las pymes chilenas usan IA (70 %), pero la mayoría está en niveles iniciales de madurez digital, y la capacitación es la principal barrera.
+- La conectividad es amplia (10,8 millones de conexiones 5G), aunque persisten brechas urbano-rurales.
+- La transferencia oficial sigue siendo presencial. Ya existe una capa privada de datos y software para automotoras (historial, tasación, inventario, OBD2).
+- La detección de daños con visión computacional funciona en daños visibles, pero con dificultades en daños menores y en fotos no controladas. Los modelos multimodales generales inventan detalles.
+- En EE.UU., la mayoría de los concesionarios usa IA, pero pocos la integran en sus decisiones, y la exactitud es la barrera más citada (74 %).
 
 ## Preguntas abiertas
 
--
+- ¿Qué proporción de las transferencias se tramita por canales privados digitales (Autofact, notarías en línea) frente al Registro Civil? No hay estadística pública.
+- ¿Qué penetración tienen los software de gestión y tasación (AutoGest, Rodar, GoAuto) entre las compraventas chilenas? No hay datos.
+- ¿Hay técnicos suficientes en Chile para diagnosticar híbridos y eléctricos? No se encontró información.
+
+## Referencias
+
+Amodu, O., Shaban, A., & Akinade, G. (2024). *Revolutionizing vehicle damage inspection: A deep learning approach for automated detection and classification*. In *Proceedings of the 9th International Conference on Internet of Things, Big Data and Security* (pp. 199–208). SCITEPRESS. https://doi.org/10.5220/0012630700003705 
+
+Asociación Nacional Automotriz de Chile A.G. (2026). *Informe cero y bajas emisiones ANAC A.G. — septiembre 2026*. https://www.anac.cl/wp-content/uploads/2026/10/Informe-Cero-y-Bajas-Emisiones-Septiembre-2026.pdf 
+
+Autofact. (2026). *Informe Autofact: historial de autos usados en Chile*. https://www.autofact.cl/informes 
+
+AutoGest. (2026). *AutoGest — Sistema de gestión inteligente para automotoras*. https://autogest.cl/ 
+
+Centro Nacional de Inteligencia Artificial. (2025, 3 de octubre). *ILIA2025: Chile, Brasil y Uruguay vuelven a liderar en IA*. https://cenia.cl/2025/10/03/ilia2025-chile-brasil-y-uruguay-vuelven-a-liderar-en-ia-e-instalan-fuerte-sentido-de-urgencia-para-acelerar-su-uso-en-la-region/ 
+
+Centro Nacional de Inteligencia Artificial. (2026, 20 de octubre). *ILIA 2026: 4ta edición revela que América Latina y el Caribe se juegan su futuro en IA en la colaboración regional para datos, talento y cómputo*. https://cenia.cl/2026/10/20/ilia-2026-4ta-edicion-revela-que-america-latina-y-el-caribe-se-juegan-su-futuro-en-ia-en-la-colaboracion-regional-para-datos-talento-y-computo/ 
+
+ChileAtiende. (2026). *Transferencia de dominio de vehículos motorizados*. https://www.chileatiende.gob.cl/fichas/3409/1/pdf 
+
+Cox Automotive. (2025). *Driving AI readiness in auto retailing*. https://www.coxautoinc.com/wp-content/uploads/2025/10/Cox-Automotive-AI-Readiness-media-summary-FINAL.pdf 
+
+Cox Automotive. (2026). *AI in Auto Retail Tracker*. https://www.coxautoinc.com/retail/ai-in-auto-retail-tracker/ 
+
+Entel Digital. (2025, 19 de junio). *Estudio sobre adopción de IA en Chile* [Entrada de blog]. https://www.enteldigital.cl/blog/estudio-sobre-adopcion-de-ia-en-chile
+
+Hasan, M. J., Nguyen, C. K., Boo, Y. L., Jahani, H., & Ong, K.-L. (2025). Vehicle damage detection using artificial intelligence: A systematic literature review. *WIREs Data Mining and Knowledge Discovery, 15*(2), e70027. https://doi.org/10.1002/widm.70027 
+
+Kalai, A. T., Nachum, O., Vempala, S. S., & Zhang, E. (2025). *Why language models hallucinate*. arXiv. https://arxiv.org/abs/2509.04664 
+
+Lin, C., Lyu, H., Luo, J., & Xu, X. (2024). *Harnessing GPT-4V(ision) for insurance: A preliminary exploration*. arXiv. https://arxiv.org/abs/2404.09690 
+
+Ministerio de Economía, Fomento y Turismo. (2026, 26 de mayo). *Subsecretaría de Economía firma alianza para sumar la IA a cursos para emprendedores*. https://www.economia.gob.cl/2026/05/26/subsecretaria-de-economia-firma-alianza-para-sumar-la-ia-a-cursos-para-emprendedores.htm 
+
+OECD. (2025). *AI adoption by small and medium-sized enterprises: OECD discussion paper for the G7*. OECD Publishing. https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/12/ai-adoption-by-small-and-medium-sized-enterprises_9c48eae6/426399c1-en.pdf 
+
+OECD. (2026). *Empowering SMEs in the age of AI: The 2026 OECD D4SME Survey*. OECD Publishing. https://doi.org/10.1787/bf5a9816-en 
+
+Ofertautos. (2026). *Autos usados en Chile*. https://www.ofertautos.cl/autos-usados 
+
+Rodar. (2026). *Inventario e inteligencia para automotoras*. https://www.rodar.cl/es 
+
+SAP. (2025, 8 de mayo). *Estudio SAP: pequeñas y medianas empresas en Chile apuestan por la IA*. https://news.sap.com/latinamerica/2025/05/estudio-sap-pequenas-y-medianas-empresas-en-chile-apuestan-por-la-ia/ 
+
+Servicio de Impuestos Internos. (2026). *Tasación de vehículos: bajada de datos*. https://www.sii.cl/servicios_online/1049-2612.html 
+
+Servicio de Impuestos Internos. (2026). *Vehículos 2026: tasación fiscal*. https://www.sii.cl/destacados/tasacion_vehiculos/2026/ 
+
+Subsecretaría de Telecomunicaciones. (2026). *Informe final: Acceso y uso de Internet 2025*. https://www.subtel.gob.cl/wp-content/uploads/2026/02/Informe-Final-Acceso-y-Uso-Internet-2025_03.pdf 
+
+Subsecretaría de Telecomunicaciones. (2026, 27 de agosto). *Estadísticas 1º semestre Subtel: El 5G avanza a paso firme para alcanzar al 4G y brecha se reduce a solo 627 mil conexiones*. https://www.subtel.gob.cl/estadisticas-1o-semestre-subtel-el-5g-avanza-a-paso-firme-para-alcanzar-al-4g-y-brecha-se-reduce-a-solo-627-mil-conexiones/ 
+
+Zhang, et al. (2024). *INS-MMBench: A comprehensive benchmark for evaluating LVLMs’ performance in insurance*. arXiv. https://arxiv.org/abs/2406.09105 

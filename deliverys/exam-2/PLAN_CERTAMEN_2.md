@@ -4,7 +4,7 @@
 
 - **Pauta oficial:** [`INSTRUCTIONS FOR CERTAMEN 2 (t) Strategic Marketing.pdf`](./INSTRUCTIONS%20FOR%20CERTAMEN%202%20(t)%20Strategic%20Marketing.pdf)
 - **Clase de referencia:** [`class-to-add-0511.md`](./class-to-add-0511.md) (transcripción cruda, 05-nov-2026)
-- **Fecha de entrega:** por confirmar en Canvas. La pauta no la indica.
+- **Fecha de entrega:** **martes 10-nov-2026, 13:40 h** (PDF en Canvas antes de esa hora).
 - **Base acumulativa:** [`../workshop-3/global-sm_v6.pptx`](../workshop-3/global-sm_v6.pptx) (27 diapositivas: diagnóstico, objetivos, metodología, población y muestra, referencias).
 - **Fase actual:** investigación (PESTEL) y gestión de tareas. El deck no se toca hasta cerrar los bloques A y B.
 
@@ -70,30 +70,32 @@ Estados: `[ ]` pendiente · `[~]` en curso · `[x]` lista. Asignar responsables 
 
 ### Bloque A — Investigación PESTEL (prioridad 1)
 
-Método y plantilla en [`research/pestel/README.md`](../../research/pestel/README.md).
+Método y plantilla en [`research/pestel/README.md`](../../research/pestel/README.md). La investigación se delega en agentes de deep research con los prompts de [`research/pestel/prompts/`](../../research/pestel/prompts/) (uno por tarea, de A1 a A7). Las respuestas en bruto se guardan en `research/pestel/raw/` y se revisan con la lista de ese README antes de pasar a las tablas (A8).
 
 | ID | Tarea | Archivo | Responsable | Estado |
 | --- | --- | --- | --- | --- |
-| A1 | Político: país (gobierno 2026–2030, agenda), industria (política comercial, aranceles), global (EE.UU.–China) | [`P_politico.md`](../../research/pestel/P_politico.md) | — | [ ] |
-| A2 | Económico: crecimiento, inflación, tasas, crédito automotriz, tipo de cambio, precios y volumen de usados | [`E_economico.md`](../../research/pestel/E_economico.md) | — | [ ] |
-| A3 | Social: confianza y fraude, hábitos de compra, digitalización, uso de IA por personas | [`S_social.md`](../../research/pestel/S_social.md) | — | [ ] |
-| A4 | Tecnológico: IA y visión computacional, adopción en pymes y automotoras, plataformas, acceso a datos | [`T_tecnologico.md`](../../research/pestel/T_tecnologico.md) | — | [ ] |
-| A5 | Ambiental: emisiones, electromovilidad, restricción vehicular, chatarrización y vida útil del parque | [`A_ambiental.md`](../../research/pestel/A_ambiental.md) | — | [ ] |
-| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [ ] |
-| A7 | Factores que cruzan varias dimensiones (autos chinos y otros) | [`transversales.md`](../../research/pestel/transversales.md) | Integrador | [ ] |
-| A8 | Revisión cruzada: cada hallazgo tiene fuente exacta, nivel, relevancia y no lleva juicio de oportunidad o amenaza | todos | Integrador | [ ] |
+| A1 | Político: país (gobierno 2026–2030, agenda), industria (política comercial, aranceles), global (EE.UU.–China) | [`P_politico.md`](../../research/pestel/P_politico.md) | — | [~] 4 hallazgos consolidados; falta el complemento `prompts/A1b_politico_complemento.md` |
+| A2 | Económico: crecimiento, inflación, tasas, crédito automotriz, tipo de cambio, precios y volumen de usados | [`E_economico.md`](../../research/pestel/E_economico.md) | — | [x] 10 hallazgos |
+| A3 | Social: confianza y fraude, hábitos de compra, digitalización, uso de IA por personas | [`S_social.md`](../../research/pestel/S_social.md) | — | [x] 10 hallazgos |
+| A4 | Tecnológico: IA y visión computacional, adopción en pymes y automotoras, plataformas, acceso a datos | [`T_tecnologico.md`](../../research/pestel/T_tecnologico.md) | — | [x] 10 hallazgos |
+| A5 | Ambiental: emisiones, electromovilidad, restricción vehicular, chatarrización y vida útil del parque | [`A_ambiental.md`](../../research/pestel/A_ambiental.md) | — | [x] 17 hallazgos (dos informes) |
+| A6 | Legal: datos personales (Ley 21.719), consumidor (Ley 19.496), proyecto de ley de IA, transferencias e impuestos | [`L_legal.md`](../../research/pestel/L_legal.md) | — | [ ] **Falta.** El archivo recibido era Ambiental: relanzar `prompts/A6_legal.md` |
+| A7 | Factores que cruzan varias dimensiones (autos chinos y otros) | [`transversales.md`](../../research/pestel/transversales.md) | Integrador | [x] 10 hallazgos sobre autos chinos, más un cruce con otros factores |
+| A8 | Revisión cruzada: cada hallazgo tiene fuente exacta, nivel, relevancia y no lleva juicio de oportunidad o amenaza | todos | Integrador | [~] Revisión en [`REVISION_A8.md`](../../research/pestel/REVISION_A8.md) |
 
 Criterio de término por dimensión: al menos 6 hallazgos con dato concreto, al menos uno de nivel global donde aplique, al menos una postura contraria o matiz, y todas las fuentes en "verificadas".
 
 ### Bloque B — Fuentes del deck (prioridad 1, en paralelo con A)
 
+Resultado de la verificación y texto corregido para el deck: [`B_fuentes_deck.md`](./B_fuentes_deck.md).
+
 | ID | Tarea | Responsable | Estado |
 | --- | --- | --- | --- |
-| B1 | Reemplazar las fuentes no verificadas del v6 por su equivalente verificado del README o eliminar el dato: Guzmán (2026) → Emol 13-feb-2026 (F-150, CLP 18,4M); Farías (2026) → Autocosmos 30-abr-2026 (52,3 días); Melelli Viveros (2026) → Pauta 23-ago-2026 (41.700 causas); ANAC (2026) → PDF de diciembre 2025. **Confirmar que cada cifra aparece en la fuente equivalente.** | — | [ ] |
-| B2 | Agregar a las referencias las cuatro citas que faltan: Hogale et al. (2026) y Cox Automotive (2025) en la diapo 8, Chileautos (n.d.) y Autofact (n.d.) en la diapo 5 | — | [ ] |
-| B3 | Poner la letra que corresponde a "CAVEM (2026)" en la diapo 3 (2026a, b, c o e) | — | [ ] |
-| B4 | Resolver los DOIs falsos (Hasan, Amodu) y Mellado (2026) en `context/definicion_fenomeno_y_objetivos_vg.md` y `deliverys/workshop-2/`, según la sección A de pendientes del README | — | [ ] |
-| B5 | Si el ~3 autos al mes por dealer (diapo 18) depende del precio de Guzmán, recalcularlo con la fuente que quede en B1 | — | [ ] |
+| B1 | Reemplazar las fuentes no verificadas del v6 por su equivalente verificado del README o eliminar el dato: Guzmán (2026) → Emol 13-feb-2026 (F-150, CLP 18,4M); Farías (2026) → Autocosmos 30-abr-2026 (52,3 días); Melelli Viveros (2026) → Pauta 23-ago-2026 (41.700 causas); ANAC (2026) → PDF de diciembre 2025. **Confirmar que cada cifra aparece en la fuente equivalente.** | — | [x] Verificado; 3 cifras mal etiquetadas. Texto corregido en `B_fuentes_deck.md`, se aplica en D |
+| B2 | Agregar a las referencias las cuatro citas que faltan: Hogale et al. (2026) y Cox Automotive (2025) en la diapo 8, Chileautos (n.d.) y Autofact (n.d.) en la diapo 5 | — | [x] Referencias listas en `B_fuentes_deck.md`, se aplican en D |
+| B3 | Poner la letra que corresponde a "CAVEM (2026)" en la diapo 3 (2026a, b, c o e) | — | [x] CAVEM (2026a, 2026b, 2026c), se aplica en D |
+| B4 | Resolver los DOIs falsos (Hasan, Amodu) y Mellado (2026) en `context/definicion_fenomeno_y_objetivos_vg.md` y `deliverys/workshop-2/`, según la sección A de pendientes del README | — | [~] DOIs corregidos en context/ y workshop-2/. Mellado depende de A6 |
+| B5 | Si el ~3 autos al mes por dealer (diapo 18) depende del precio de Guzmán, recalcularlo con la fuente que quede en B1 | — | [x] No se recalcula; solo se precisa la etiqueta |
 
 ### Bloque C — Coherencia entre documentos (prioridad 2)
 
@@ -132,3 +134,7 @@ Criterio de término por dimensión: al menos 6 hallazgos con dato concreto, al 
 | Fecha | Qué se hizo | Quién |
 | --- | --- | --- |
 | 2026-11-07 | Análisis de la pauta, diagnóstico del repo y creación de este plan y de `research/pestel/` | Bruno (con Claude Code) |
+| 2026-11-07 | Hallazgos aprobados consolidados en `research/pestel/` (E, S, T, A y transversales completos; P parcial). Cifras unificadas: 12,95 % de marcas chinas en usados y 3,4 usados por nuevo | Bruno (con Claude Code) |
+| 2026-11-07 | Revisión A8 de los 7 informes de deep research (132 URLs descargadas): P insuficiente, L faltante, E/S/T/A/X aprobables con correcciones. Fecha corregida a martes 10-nov | Bruno (con Claude Code) |
+| 2026-11-07 | Bloque B verificado (B1–B3 y B5 listos para aplicar en D; B4 parcial). Errores: 41,4 % ANAC es país de fabricación, 41.700 causas son de fraude en general y el 52,3 días mide desde la denuncia del siniestro | Bruno (con Claude Code) |
+| 2026-11-07 | Fecha de entrega fijada (martes 10-nov, 13:40). Prompts de deep research para A1–A7 y lista de revisión en `research/pestel/prompts/` | Bruno (con Claude Code) |

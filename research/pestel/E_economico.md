@@ -1,38 +1,34 @@
 # E — Económico
 
-Tarea A2 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md).
-
-## Material ya verificado en el repo
-
-- **Volumen de transferencias:** CAVEM, [informe mensual diciembre 2025](https://www.cavem.cl/informes/6981f16e190e9.pdf), [anuario 2025](https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf), [julio 2026](https://cnc.cl/wp-content/uploads/2021/01/Informe-Mensual-Julio-2026.pdf) y [septiembre 2026](https://www.cavem.cl/informes/6ac52d8391f8d.pdf). Cifras ya usadas en el proyecto: 1.060.919 transferencias en 2025 (+5,8 %); 736.120 entre enero y agosto de 2026 (+4,1 %); empresas compran 16,4 % (julio 2026). Confirmar cada cifra en el PDF antes de citarla.
-- **Mercado de nuevos:** ANAC, [mercado automotor diciembre 2025](https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Mercado-Automotor-Diciembre-2025.pdf).
-- **Precios de usados:** [Emol (2026-02-13)](https://www.emol.com/noticias/Economia/2026/02/13/1191407/autos-usados-chile-2025.html), con precio medio publicado de CLP 18,4M (+5 %) y dispersión de la F-150.
-- **Estructura empresarial:** archivo SII `SIIVentaVehiculos.xlsx` (actividad 451, año comercial 2024), en [`context/market_context.md`](../../context/market_context.md).
-- **Comercio electrónico:** e-commerce de unos USD 10.000 millones en 2025, según `context/market_context.md` §7. **Sin fuente identificada:** buscarla o descartar el dato.
-
-## Pistas a investigar
-
-**País**
-- Crecimiento (Imacec, PIB), inflación (IPC), tasa de política monetaria y expectativas. Fuentes: Banco Central (IPoM), INE.
-- Desempleo e ingreso de los hogares. Fuente: INE. Contexto del poder de compra del comprador particular.
-- Crédito automotriz: volumen, tasas y morosidad. Fuentes: CMF, Banco Central (Informe de Estabilidad Financiera), financieras automotrices.
-- Tipo de cambio CLP/USD y su efecto en el precio de autos nuevos importados y, por arrastre, de los usados. Fuente: Banco Central.
-
-**Industria**
-- Relación entre precio de nuevos y de usados, venta de nuevos frente a usados (3,4 usados por cada nuevo).
-- Costos de reparación y repuestos, y su inflación. Fuentes: INE (IPC, división transporte), aseguradoras (AACH).
-- Márgenes y capital de trabajo de las compraventas: buscar estudios o prensa económica.
-
-**Global**
-- Precios internacionales de autos usados (por ejemplo, el índice Manheim de Cox Automotive en EE.UU.) como referencia de ciclo.
-- Sobreoferta de autos chinos y su efecto en los precios. Desarrollar en [`transversales.md`](./transversales.md).
+Tarea A2 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md). Hallazgos consolidados el 07-nov-2026 a partir de [`raw/Análisis Económico…`](./raw/) (Gemini), con las correcciones de [`REVISION_A8.md`](./REVISION_A8.md). Cada cifra se comprobó en la fuente citada.
 
 ## Hallazgos
 
 | ID | Hallazgo (dato concreto) | Nivel | Relevancia para la industria de usados | Matiz o postura contraria | Fuente (APA) + URL | Otras dimensiones |
 | --- | --- | --- | --- | --- | --- | --- |
-| E-01 | | | | | | |
+| E-01 | El Banco Central bajó la proyección de crecimiento del PIB 2026 de 1,0–1,75 % (IPoM de junio) a **0,25–0,75 %** (IPoM de septiembre). Subió su expectativa de inflación de 4,2 % a 4,3 % y mantuvo la tasa de política monetaria en 4,5 %, con un escenario "sujeto a un grado de incertidumbre mayor que el habitual". | País | El nivel de actividad, la inflación y la tasa de política son el marco del ingreso disponible de los hogares y del costo del crédito con que se financian las compras de autos. | Para 2027 el Banco Central proyecta un crecimiento de **2–3 %** y para 2028 de 2,25–3,25 %, es decir, una recuperación respecto de 2026. | Banco Central de Chile (2026, 9 de septiembre). *Banco Central publica el Informe de Política Monetaria (IPoM) de septiembre de 2026*. https://www.bcentral.cl/contenido/-/detalle/prensa/nota-de-prensa/bcch-publica-ipom-septiembre-2026 ; Vargas, C. (2026, 9 de septiembre). *IPoM: Banco Central recorta proyección de crecimiento 2026 y la sitúa bajo el 1%*. Radio Universidad de Chile. https://radio.uchile.cl/2026/09/09/ipom-banco-central-recorta-proyeccion-de-crecimiento-2026-y-la-situa-bajo-el-1/ | S, P |
+| E-02 | La tasa de desocupación nacional fue **9,6 %** en el trimestre junio–agosto de 2026, con un alza de 1,0 punto porcentual en doce meses. | País | El empleo y la formalidad del ingreso son requisitos de acceso al crédito automotriz para el comprador particular. | El Índice Nominal de Remuneraciones creció **7,7 %** anual a septiembre de 2026: los ingresos de quienes mantienen su empleo siguen subiendo en términos nominales. | INE (2026, 30 de septiembre). *La tasa de desocupación nacional fue 9,6% en el trimestre junio-agosto de 2026*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/09/30/la-tasa-de-desocupaci%C3%B3n-nacional-fue-9-6-en-el-trimestre-junio---agosto-de-2026 | S |
+| E-03 | En septiembre de 2026, la morosidad de 90 días o más del sistema bancario (cartera total) subió a **2,36 %** (2,34 % en agosto). Las colocaciones de consumo cayeron **1,56 %** en el mes. | País | El crédito de consumo es una de las vías de pago de los usados. Su volumen y su morosidad reflejan las condiciones de financiamiento que enfrentan los compradores. | Respecto de doce meses antes, todos los indicadores de riesgo de crédito **bajaron**: el alza es mensual, no una tendencia anual. | CMF (2026). *Informe del desempeño del sistema bancario y cooperativas: septiembre 2026*. https://www.cmfchile.cl/portal/estadisticas/626/articles-114535_recurso_1.pdf | P, L |
+| E-04 | El dólar observado estaba en **CLP 970,46** al 30 de septiembre de 2026. | País | Chile importa todos sus autos nuevos: el tipo de cambio entra en el precio de lista de los 0 km, que es la referencia de reposición con que se comparan los usados. | El traspaso del tipo de cambio al precio final no es automático: depende de los márgenes y de las campañas de bonos de cada marca. | CMF (2026). *Informe del desempeño del sistema bancario y cooperativas: septiembre 2026* (nota 1). https://www.cmfchile.cl/portal/estadisticas/626/articles-114535_recurso_1.pdf | P |
+| E-05 | En 2025 se transfirieron **1.060.919** livianos y medianos usados (+5,8 %). Entre enero y octubre de 2026 la cifra fue de **908.310** (+3,0 %). Se transfieren **3,4 usados por cada auto nuevo** inscrito. | Industria | Mide el tamaño del mercado de usados y su escala frente al de nuevos. | El crecimiento anual esconde meses de caída: julio −4,7 %, agosto +2,9 % y octubre **−7,0 %** (86.529 transferencias). | CAVEM (2026a). *Informe del mercado automotor diciembre 2025*. https://www.cavem.cl/informes/6981f16e190e9.pdf ; The Clinic (2026, 6 de noviembre). *Ventas de vehículos usados en Chile: el mercado secundario mantiene la firmeza con más de 908 mil transferencias en 2026*. https://www.theclinic.cl/2026/11/06/ventas-de-vehiculos-usados-en-chile-el-mercado-secundario-mantiene-la-firmeza-con-mas-de-908-mil-transferencias-en-2026/ ; Nuevo Poder (2026). *Venta de autos usados crece 4,1%…*. https://www.nuevopoder.cl/venta-de-autos-usados-crece-41-y-alcanza-su-segundo-mejor-registro-historico-a-agosto/ | — |
+| E-06 | En 2025, el **51,1 %** de los autos nuevos vendidos fueron SUV. Los vehículos de pasajeros cayeron **11,8 %**. Por marca, **32,4 %** de las ventas fue de origen chino (enero–noviembre). | Industria | La mezcla de los autos nuevos de hoy es la oferta de usados de los próximos años: más SUV y más marcas chinas. | En transferencias de usados, Chevrolet sigue siendo la marca líder por el parque acumulado (Nuevo Poder, 2026). | ANAC (2026). *Informe sector automotor: diciembre 2025*. https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Mercado-Automotor-Diciembre-2025.pdf | A, X |
+| E-07 | El comercio electrónico en Chile cerró 2025 cerca de **USD 10.000 millones**, con un crecimiento real sobre 9 %, y llegó al **12,6 %** del comercio minorista. | País | Indica cuánto del gasto de los hogares ya pasa por canales digitales, el entorno en que operan los portales de avisos y los servicios de historial y tasación en línea. | El 87,4 % del comercio minorista sigue siendo físico. Además, la cifra es de todo el retail, no de vehículos. | Cámara de Comercio de Santiago (2026, 26 de marzo). *Comercio electrónico bordeó los US$ 10 mil millones en 2025*. https://www.ccs.cl/2026/03/26/comercio-electronico-bordeo-los-us-10-mil-millones-en-2025/ | T, S |
+| E-08 | En el Índice de Costos del Transporte del INE, "repuestos y accesorios para el funcionamiento y mantención del vehículo" subió **1,0 %** en abril y **0,8 %** en mayo de 2026. | Industria | Los repuestos son parte del costo de reacondicionar un usado antes de venderlo. | Es un índice promedio nacional: la variación por marca y modelo puede ser muy distinta, sobre todo en marcas con poca red de repuestos (ver X-05). | INE (2026a, 12 de mayo). *Índice de Costos del Transporte… abril de 2026*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/05/12/%C3%ADndice-de-costos-del-transporte-registr%C3%B3-una-variaci%C3%B3n-mensual-de-11-3-en-abril-de-2026 ; INE (2026b, 10 de junio). *… mayo de 2026*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/06/10/%C3%ADndice-de-costos-del-transporte-registr%C3%B3-una-variaci%C3%B3n-mensual-de-1-5-en-mayo | T |
+| E-09 | En EE.UU., el índice Manheim de precios mayoristas de usados llegó a **205,9** en septiembre de 2026 (−0,6 % anual). | Global | Es la referencia internacional del ciclo de precios de los usados después del alza de la pandemia. | El subíndice de **eléctricos usados subió 4,3 %** anual, mientras el de no eléctricos bajó 1,6 %: los segmentos se mueven en direcciones opuestas. | Cox Automotive (2026, 7 de octubre). *Manheim Used Vehicle Value Index: September 2026 trends*. https://www.coxautoinc.com/insights/manheim-used-vehicle-value-index-september-2026-trends/ | A |
+| E-10 | En Chile, el precio promedio de publicación de los usados subió **5 %** en 2025: de CLP 17.527.519 a **CLP 18.396.548**. Para un mismo modelo, la Ford F-150, los precios publicados fueron de CLP 2,0 a 68,9 millones. | Industria | La dispersión de precios para un mismo modelo muestra cuánta variación hay en las referencias de precio que usan compradores y vendedores. | Son **precios de publicación** en Chileautos, no de transacción. No existe un índice público de precios efectivos de transferencia (ver preguntas abiertas). | Guzmán, J. T. (2026, 13 de febrero). *Precios de autos usados suben 5% en 2025: ¿Cuáles son las marcas y modelos más buscados?* Emol. https://www.emol.com/noticias/Economia/2026/02/13/1191407/autos-usados-chile-2025.html | S |
+
+Origen: E-01 a E-09 vienen del informe de Gemini, corregidos. E-10 viene del bloque B y reemplaza al E-10 original, que se descartó por sus fuentes. La depreciación de las marcas chinas está en [`transversales.md`](./transversales.md) (X-03).
+
+## Síntesis de la dimensión
+
+- La economía chilena se desacelera en 2026: PIB de 0,25–0,75 %, desempleo de 9,6 % e inflación sobre la meta.
+- Aun así, las transferencias de usados crecen 3,0 % hasta octubre y se mantienen en 3,4 usados por cada nuevo.
+- Los autos nuevos que llegan hoy, que serán los usados de mañana, son en su mayoría SUV y un tercio de marcas chinas.
+- Los precios publicados suben (+5 % en 2025) y la dispersión para un mismo modelo es amplia.
 
 ## Preguntas abiertas
 
--
+- **¿Qué parte de las compras de usados se financia con crédito?** El único dato encontrado ("70 %") viene de un blog comercial (kmcheck) sin metodología: no se usa. Buscar en la CMF o en financieras automotrices como Forum o Tanner.
+- **Precio de transacción:** no existe un índice público de precios efectivos de las transferencias; solo hay precios de publicación.
+- **Márgenes y capital de trabajo de las compraventas:** sin fuente.
+- **Empresas compradoras (16,4 %, julio 2026):** no se pudo verificar. El dato vigente es **15,3 %** en septiembre de 2026 (CAVEM 2026c, p. 3).

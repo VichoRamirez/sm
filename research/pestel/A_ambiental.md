@@ -1,36 +1,133 @@
 # A — Ambiental
 
-Tarea A5 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md).
+Tarea A5 del [plan](../../deliverys/exam-2/PLAN_CERTAMEN_2.md). Reglas y plantilla en el [README](./README.md). Hallazgos consolidados el 07-nov-2026 a partir de dos informes de ChatGPT: [`raw/Análisis Ambiental…`](./raw/) y [`raw/Análisis Legal…`](./raw/) (este último es, en realidad, una segunda investigación ambiental), con las correcciones de [`REVISION_A8.md`](./REVISION_A8.md). Cada cifra se comprobó en la fuente citada, salvo las marcadas con ⚠️.
 
-Es la dimensión con menos material en el repo: se parte de cero.
-
-## Material ya verificado en el repo
-
-- Ninguno específico. El [anuario CAVEM 2025](https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf) y el [informe ANAC de diciembre 2025](https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Mercado-Automotor-Diciembre-2025.pdf) podrían traer datos por tipo de motorización (combustión, híbrido, eléctrico). Revisarlos.
-
-## Pistas a investigar
-
-**País**
-- Estrategia Nacional de Electromovilidad y metas para vehículos livianos nuevos. Fuentes: Ministerio de Energía y Ministerio de Transportes.
-- Normas de emisiones y de eficiencia energética para vehículos. Fuentes: Ministerio del Medio Ambiente y BCN (texto legal; si es norma, se cruza con L).
-- Restricción vehicular y sello verde en Santiago: qué autos quedan afectados según su norma de emisión. Fuentes: Ministerio de Transportes, SEREMI de Medio Ambiente RM.
-- Antigüedad del parque y vida útil. Fuente: INE (parque vehicular).
-- Chatarrización y reciclaje: Ley REP y neumáticos o baterías. Fuente: Ministerio del Medio Ambiente.
-
-**Industria**
-- Valor de reventa de híbridos y eléctricos usados, y degradación de baterías como incertidumbre de precio.
-- Huella ambiental de reparar frente a reemplazar piezas.
-
-**Global**
-- Tendencias regulatorias de emisiones en los países de origen de los autos (UE, China) y su efecto en los modelos que llegan a Chile.
-- Efecto del cambio climático en la logística de importación. La profesora dio un ejemplo con navieras y fruta en clase: buscar un equivalente para vehículos.
+El ID **A** corresponde a Ambiental, no a Económico.
 
 ## Hallazgos
 
 | ID | Hallazgo (dato concreto) | Nivel | Relevancia para la industria de usados | Matiz o postura contraria | Fuente (APA) + URL | Otras dimensiones |
 | --- | --- | --- | --- | --- | --- | --- |
-| A-01 | | | | | | |
+| A-01 | La Estrategia Nacional de Electromovilidad 2030 mantiene que en **2035 el 100% de las nuevas incorporaciones de vehículos livianos y medianos sean cero emisiones** y agrega una meta intermedia de **20% de las ventas en 2030**. En 2025, los vehículos de “nuevas energías” representaron **11,4% de las ventas nuevas**, pero solo **2,8%** correspondió a eléctricos e híbridos enchufables.  | País | La meta modifica progresivamente la composición de los vehículos que entran al parque y, con rezago, la oferta disponible en el mercado de segunda mano. Para valorar usados conviene distinguir HEV/MHEV de vehículos enchufables, porque la cifra agregada de 11,4% incluye ambos grupos. | El flujo de ventas nuevas se electrifica más rápido que el stock. En 2024, eléctricos e híbridos sumaban solo **33.853 permisos de circulación, 0,5% de los vehículos motorizados**.  | (Ministerio de Energía, 2026) https://energia.gob.cl/sites/default/files/documentos/estrategia_nacional_de_electromovilidad_2030.pdf ; (ANAC, 2026) https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Informe-Cero-y-Bajas-Emisiones-Diciembre-2025.pdf ; (INE, 2025) https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2025/08/14/permisos-de-circulaci%C3%B3n-crecieron-un-2-9-en-2024 | P, E, T, L |
+| A-02 | A septiembre de 2026, ANAC reportó **14.837** vehículos enchufables nuevos vendidos en el año, el **6,3 %** del mercado acumulado; **8.209** eran 100 % eléctricos (BEV). | País | Las metas alteran gradualmente la composición del parque nuevo que, después de su primer ciclo de propiedad, alimenta la oferta de usados. | El 6,3% de ANAC incluye BEV, PHEV y vehículos eléctricos de rango extendido, por lo que no debe leerse como una medición directa de avance hacia la meta de “cero emisiones”. Además, ANAC atribuyó buena parte del crecimiento de 2026 a los precios de los combustibles.  | (ANAC, 2026b) https://www.anac.cl/wp-content/uploads/2026/10/Informe-Cero-y-Bajas-Emisiones-Septiembre-2026.pdf ; (Ministerio de Energía, 2026b) https://www.energia.gob.cl/noticias/nacional/nueva-estrategia-de-electromovilidad-fija-hoja-de-ruta-al-2030?page=117 | P, E, T |
+| A-03 | El parque registrado mediante permisos de circulación seguía siendo predominantemente de tecnologías tradicionales: en 2024 hubo **6.592.807 vehículos motorizados**, frente a **33.853 eléctricos e híbridos**. A la vez, el INE reportó que los vehículos con motor eléctrico crecieron **101,6% entre 2023 y 2024**.  | Industria | El stock que alimenta las transacciones de usados todavía está compuesto casi completamente por vehículos no electrificados; el crecimiento desde una base pequeña implica que la mezcla del inventario cambia de forma gradual y desigual por antigüedad. | Una tasa de crecimiento alta no equivale a una alta participación del parque: la participación electrificada reportada por el INE fue 0,5% en 2024. Además, la categoría INE mezcla eléctricos e híbridos, por lo que no permite aislar BEV.  | (INE, 2025) https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2025/08/14/permisos-de-circulaci%C3%B3n-crecieron-un-2-9-en-2024 ; (INE, 2026) https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/02/04/ine-publica-edici%C3%B3n-2025-del-informe-anual-de-estad%C3%ADsticas-del-medio-ambiente | E, T |
+| A-04 | Desde el **30 de septiembre de 2025** se aplica Euro 6c a vehículos livianos, con medición mediante WLTP. En paralelo, el estándar de eficiencia energética para livianos exige **18,8 km/lge en 2024–2026**, **22,8 km/lge en 2027–2029** y **28,9 km/lge desde 2030**.  | País | Las reglas inciden sobre los vehículos nuevos que luego ingresarán al mercado de usados. Con el tiempo amplían las diferencias por año-modelo en consumo homologado, tecnología de control de emisiones y condiciones de circulación. | El estándar de eficiencia se controla sobre el promedio de los vehículos homologados por cada responsable/importador, no como exigencia retroactiva para cada auto ya usado. La antigüedad del vehículo, por sí sola, tampoco determina sus emisiones reales sin considerar mantenimiento y condición mecánica.  | (Ministerio de Energía, 2022) https://energia.gob.cl/node/22319 ; (Ministerio del Medio Ambiente, s. f.) https://fuentesmoviles.mma.gob.cl/norma-de-emisiones/ ; (Biblioteca del Congreso Nacional de Chile, 2021) https://www.bcn.cl/leychile/navegar?idNorma=1155887 | P, T, L |
+| A-05 | Durante la Gestión de Episodios Críticos 2026 de la RM se restringió la circulación dentro de la Provincia de Santiago, San Bernardo y Puente Alto de **vehículos con sello verde inscritos hasta 2011**; además, los vehículos sin sello verde no pueden ingresar al anillo Américo Vespucio durante el período regulado.  | País | La posibilidad de circular en Santiago pasa a ser una característica funcional diferenciadora entre usados de distinta antigüedad y estándar de emisiones. Esto puede incidir en qué unidades buscan compradores que necesitan uso diario dentro de la RM. | La fuente oficial define la restricción, pero no publica una estimación causal de cuánto cambia el precio de reventa o la cantidad demandada de los vehículos afectados. Ese efecto no debe inferirse como una cifra. | (Ministerio del Medio Ambiente, 2026) https://mma.gob.cl/autoridades-lanzan-gestion-de-episodios-criticos-gec-2026-para-enfrentar-la-mala-calidad-del-aire-en-la-region-metropolitana/ | P, S, L |
+| A-06 | En 2018, Chileautos (vía CAVEM) midió una caída de **10 %** en el valor comercial de los usados de 2011 o anteriores entre enero y mayo de 2018, y **cuatro días más** de publicación para venderlos, en el contexto de la restricción de Santiago. | Industria | Es la única medición encontrada del efecto de la restricción sobre los precios de los usados. | El dato es de 2018 y su magnitud no puede trasladarse a 2026. La fuente oficial de la GEC 2026 no publica efectos sobre los precios. | (CAVEM, 2018) https://www.cavem.cl/noticias/precios-de-autos-afectados-por-la-restriccin-en-santiago | E, S, L |
+| A-07 | CAVEM contabilizó en 2025 un parque de **6.738.858 vehículos**, una tasa de renovación de **4,9%** y una tasa de pérdida de **3,4%**. Ese mismo año registró **1.060.919 transferencias de livianos y medianos usados**, equivalentes a **3,38 usados por cada nuevo** en su cuadro nacional.  | Industria | Una renovación anual cercana al 5% implica coexistencia prolongada de cohortes con normas de emisiones y tecnologías distintas. Esa heterogeneidad aparece en inventarios, tasaciones, repuestos y decisiones de reacondicionamiento. | El propio anuario presenta una inconsistencia: la tabla de la p. 61 muestra **328.218 vehículos nuevos**, mientras el texto inmediatamente inferior menciona **313.644**; esta última cifra corresponde a livianos y medianos en otras páginas. No se encontró en el anuario una edad media del parque.  | (CAVEM, 2026 [Anuario 2025]) https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf | E, T |
+| A-08 | En 2025 se transfirieron **1.060.919 livianos y medianos usados**. De ellos, **122.541 tenían entre 16 y 20 años y 129.864 más de 20 años**: en conjunto, **252.405 unidades, 23,8% de las transferencias**.  (La suma de 252.405 y el 23,8 % son cálculos del informe a partir del anuario). | Industria | Una porción material de las compraventas corresponde a vehículos de cohortes anteriores a los estándares actuales de emisiones y eficiencia, por lo que la antigüedad se cruza con restricciones, consumo y reacondicionamiento. | La distribución de las transferencias por edad no equivale a la antigüedad media del parque circulante; no se identificó en las fuentes revisadas una media nacional oficial 2025–2026 comparable. | (CAVEM, 2026) https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf | E, S |
+| A-09 | La Ley REP incluye **aceites lubricantes, baterías y neumáticos** entre los productos prioritarios. Las metas REP de neumáticos rigen desde el **20 de enero de 2023**; para aceites lubricantes comienzan el **1 de enero de 2027**, con una meta inicial de valorización de **50%** de los aceites recuperables.  | Industria | El reacondicionamiento y mantenimiento de usados genera flujos de neumáticos, lubricantes y baterías que quedan vinculados a sistemas formales de recolección y valorización. Esto conecta talleres, importadores, distribuidores y gestores de residuos. | La Ley 20.920 declara a las baterías producto prioritario, pero en las fuentes revisadas no se verificó un decreto de metas específico vigente para baterías automotrices equivalente al de neumáticos. Tampoco se verificó un programa nacional de retiro de autos particulares completos.  | (Biblioteca del Congreso Nacional de Chile, 2016) https://www.bcn.cl/leychile/navegar?idLey=20920 ; (Ministerio del Medio Ambiente, s. f.) https://economiacircular.mma.gob.cl/neumaticos/ ; (Ministerio del Medio Ambiente, s. f.) https://economiacircular.mma.gob.cl/aceites-lubricantes/ | P, E, L |
+| A-10 | La Ley REP ya alcanza insumos relevantes para el ciclo de vida del automóvil. En aceites lubricantes, las metas empiezan el **1 de enero de 2027**, con **50% el primer año**; en baterías, al corte del informe el decreto de metas aún estaba en elaboración y su plazo había sido extendido hasta el **29 de enero de 2027**.  | País | Talleres y procesos de reacondicionamiento de usados generan flujos de aceites, neumáticos y baterías cuya gestión se inserta en sistemas de recolección y valorización. | La regulación de baterías todavía no tenía decreto definitivo al 7 de noviembre de 2026; por tanto, las metas futuras de recolección y valorización no podían darse por cerradas.  | (Ministerio del Medio Ambiente, 2026b) https://mma.gob.cl/ley-rep-se-extiende-el-plazo-para-la-elaboracion-del-decreto-supremo-de-baterias/ ; (Ministerio del Medio Ambiente, 2026a) https://economiacircular.mma.gob.cl/aceites-lubricantes/ | L, E |
+| A-11 | En el inventario de emisiones 2022 de la RM, el **transporte aportó 33%** de las emisiones de contaminantes consideradas, frente a **34% de la leña**, 20% de maquinaria y 12% de industria y fuentes fijas.  | País | La participación del transporte explica que los planes de descontaminación incluyan restricciones y estándares para vehículos; esas medidas condicionan el uso de determinadas cohortes de usados en zonas reguladas. | El peso de los vehículos no es uniforme entre ciudades. En Temuco y Padre Las Casas, el MMA atribuyó **91% de las emisiones de MP2,5** a combustión residencial de leña, por lo que no corresponde extrapolar el 33% de Santiago a todo Chile.  | (Ministerio del Medio Ambiente, 2026) https://airerm.mma.gob.cl/autoridades-lanzan-gestion-de-episodios-criticos-gec-2026-para-enfrentar-la-mala-calidad-del-aire-en-la-region-metropolitana/ ; (Ministerio del Medio Ambiente, 2023) https://mma.gob.cl/temuco-y-padre-las-casas-contaran-con-un-nuevo-pda/ | P, S, L |
+| A-12 | En el RETC 2023, los vehículos particulares y los comerciales de uso particular explicaron juntos el **53,4 % del NOx** del transporte en ruta de la RM. | País / Industria | La participación de fuentes móviles sustenta medidas como restricciones de circulación y estándares de emisión que diferencian a los usados según antigüedad y tecnología. | Corresponde solo al NOx del transporte en ruta, no al total de contaminantes. Según el inventario 2022, la leña aporta más que el transporte (ver A-11). | (Ministerio del Medio Ambiente, 2026e) https://retc.mma.gob.cl/wp-content/uploads/2026/01/INFORME-RETC-2023.pdf | P, S, L |
+| A-13 | En cinco grandes mercados europeos, la retención de valor de BEV usados cayó desde alrededor de **50% en 2022 a 35% en 2025**, frente a aproximadamente 50% para el mercado usado total en 2025. En EE.UU., la IEA situó los valores BEV a fines de 2025 unos **25 puntos porcentuales por debajo** del mercado usado total.  | Global | Las referencias internacionales de valor residual intervienen en la tasación de modelos electrificados y en las expectativas de recompra, especialmente para marcas y modelos comercializados globalmente. | El comportamiento no es lineal: Recurrent informó que en EE.UU. los precios minoristas de EV usados estaban **8% sobre un año antes** en el tercer trimestre de 2026 y que se vendían a una velocidad similar a autos comparables a gasolina.  | (International Energy Agency, 2026b) https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars ; (Recurrent, 2026) https://www.recurrentauto.com/research/used-electric-vehicle-buying-report | E, T |
+| A-14 | Geotab analizó más de **22.700 EV de 21 marcas y modelos** y estimó una degradación media de batería de **2,3% anual**; en vehículos que dependían de carga rápida DC superior a 100 kW observó tasas de hasta **3,0% anual**.  | Global | En un EV usado, el kilometraje y la edad no capturan por sí solos el estado del componente de mayor valor. El historial de carga, clima y salud de batería añade información relevante para inspección, tasación y garantía. | La degradación observada fue gradual en promedio y varió según uso. Por tanto, no es correcto asumir que una batería de cierta edad tiene una pérdida uniforme de capacidad. El estudio es internacional y no representa específicamente condiciones chilenas. | (Geotab, 2026) https://www.geotab.com/press-release/ev-battery-health-degradation-fast-charging-study/ | T, E |
+| A-15 | El Reglamento de Baterías de la UE exige que, desde el **18 de febrero de 2027**, las baterías de vehículos eléctricos introducidas en ese mercado dispongan de un **pasaporte electrónico** con información del modelo y datos específicos derivados del uso.  | Global | La trazabilidad del estado y uso de la batería convierte esos datos en una variable documentable para transacciones posteriores del vehículo y para reutilización o reciclaje del componente. | La obligación es europea, no chilena. Su efecto local dependerá de qué vehículos y sistemas de batería comercializados en Chile compartan especificaciones y sistemas de datos con modelos sujetos a la regulación europea. | (European Parliament & Council of the European Union, 2023/2026 consolidado) https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A02023R1542-20260813 | T, L |
+| A-16 | La normativa vigente de la UE fija desde 2035 una reducción de **100% respecto de la meta de CO₂ de 2021** para la flota de autos nuevos. Sin embargo, en junio de 2026 el Consejo de la UE seguía discutiendo una propuesta de revisión que modifica objetivos y agrega flexibilidades.  ⚠️ La fuente del Consejo de la UE bloquea la descarga: verificar a mano la fecha de la discusión. | Global | Los fabricantes desarrollan portafolios para varios mercados; cambios en las reglas de regiones de gran escala alteran qué motorizaciones reciben inversión, actualización y producción. Parte de esos modelos llega a Chile y posteriormente pasa al mercado de segunda mano. | La regla europea no gobierna directamente las ventas de usados en Chile y la revisión seguía en negociación a junio de 2026. Por eso no corresponde tratar una modificación propuesta como norma ya vigente. | (European Parliament & Council of the European Union, 2023) https://eur-lex.europa.eu/eli/reg/2023/851/oj ; (Council of the European Union, 2026) https://www.consilium.europa.eu/en/meetings/env/2026/06/25/ | P, T, L |
+| A-17 | China produjo cerca de **16 millones** de autos eléctricos en 2025, alrededor del **75 %** de la producción mundial. En Chile, CAVEM registró **99.161** primeras inscripciones de marcas chinas en 2025, el **31,62 %** del mercado de nuevos. | Global / Industria | La estructura productiva china ya tiene expresión observable en el parque chileno y en la segunda vida de vehículos de esas marcas; los cambios de tecnologías y estándares del país de origen alimentan gradualmente la oferta usada local. | Marca china no equivale a eléctrico: una fracción considerable usa otras motorizaciones. Desde 2026, China endureció cerca de 18 % los límites de consumo de combustible para vehículos tradicionales e híbridos. | (International Energy Agency, 2026a) https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade ; (CAVEM, 2026a) https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf ; (State Council of the People’s Republic of China, 2026) https://english.www.gov.cn/english.www.gov.cn/news/202601/01/content_WS6955c457c6d00ca5f9a08602.html | E, T, P, X |
+
+Origen:
+
+- **Informe 1:** A-01, A-03 a A-05, A-07, A-09, A-11, A-14 a A-16.
+- **Informe 2:** A-02, A-06, A-08, A-10, A-12, A-13 y A-17.
+
+Se descartó el A-09 del informe 1 (Cox Europa, depreciación en el Reino Unido), porque la fuente bloquea la descarga y la IEA (A-13) cubre el mismo punto con una fuente verificable. El 12,83 % de marcas chinas en usados del informe 2 se retiró: la cifra que se usa es la de [`transversales.md`](./transversales.md).
+
+## Síntesis de la dimensión
+
+- Chile mantiene la meta de 100 % de autos nuevos cero emisiones en 2035 (20 % en 2030). En 2026, los enchufables son el 6,3 % de las ventas nuevas, pero eléctricos e híbridos son solo el 0,5 % del parque.
+- El mercado de usados es mayoritariamente de combustión y antiguo: el 23,8 % de las transferencias de 2025 fue de autos de 16 años o más.
+- En Santiago, la norma de emisión y el año del auto definen dónde y cuándo puede circular (sello verde, restricción de la GEC).
+- Las normas nuevas (Euro 6c, eficiencia energética, REP) rigen sobre los autos nuevos y los residuos; no son retroactivas sobre los usados.
+- Fuera de Chile, los eléctricos usados se deprecian más que el promedio y la salud de la batería se vuelve una variable de valor (degradación de 2,3 % anual; pasaporte de baterías de la UE desde 2027).
 
 ## Preguntas abiertas
 
--
+- ¿Cuál es la antigüedad media del parque en 2025–2026? No se encontró una cifra oficial.
+- ¿Cuánto valen y cuánto se deprecian los eléctricos e híbridos usados en Chile? Solo hay datos internacionales.
+- ¿Qué metas tendrá el decreto REP de baterías, pendiente hasta el 29-ene-2027?
+- ¿Hay evidencia concreta del efecto del clima o de la descarbonización marítima en la importación de vehículos? No se encontró.
+
+## Referencias
+
+Asociación Nacional Automotriz de Chile [ANAC]. (2026). *Informe de ventas vehículos cero y bajas emisiones: diciembre 2025*. https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Informe-Cero-y-Bajas-Emisiones-Diciembre-2025.pdf 
+
+Asociación Nacional Automotriz de Chile [ANAC]. (2026). *Informe mercado automotor ANAC A.G.: diciembre 2025*. https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Mercado-Automotor-Diciembre-2025.pdf 
+
+Asociación Nacional Automotriz de Chile A.G. (2026b). *Informe cero y bajas emisiones ANAC A.G. — septiembre 2026*. https://www.anac.cl/wp-content/uploads/2026/10/Informe-Cero-y-Bajas-Emisiones-Septiembre-2026.pdf
+
+Asociación Nacional Automotriz de Chile. (2026). *Informe mercado automotor ANAC A.G. – diciembre 2025*. https://www.anac.cl/wp-content/uploads/2026/01/12-ANAC-Mercado-Automotor-Diciembre-2025.pdf 
+
+Biblioteca del Congreso Nacional de Chile. (2016). *Ley N.º 20.920: Establece marco para la gestión de residuos, la responsabilidad extendida del productor y fomento al reciclaje*. https://www.bcn.cl/leychile/navegar?idLey=20920 
+
+Biblioteca del Congreso Nacional de Chile. (2021). *Ley N.º 21.305 sobre eficiencia energética*. https://www.bcn.cl/leychile/navegar?idNorma=1155887 
+
+Council of the European Union. (2026, June 25). *Environment Council, 25 June 2026*. https://www.consilium.europa.eu/en/meetings/env/2026/06/25/ 
+
+Cámara de Comercio Automotriz de Chile [CAVEM]. (2026). *Mercado automotor: Anuario estadístico 2025*. https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf 
+
+Cámara de Comercio Automotriz de Chile. (2018, 29 de mayo). *Precios de autos afectados por la restricción en Santiago*. https://www.cavem.cl/noticias/precios-de-autos-afectados-por-la-restriccin-en-santiago 
+
+Cámara de Comercio Automotriz de Chile. (2026a). *Mercado automotor: Anuario estadístico 2025*. https://www.cavem.cl/informes/6a7c9bdb0cbc1.pdf 
+
+Cámara de Comercio Automotriz de Chile. (2026b, 2 de octubre). *Marcas chinas de autos usados en Chile: cuántas se transfieren y qué buscan los compradores según CAVEM*. https://www.cavem.cl/noticias/marcas-chinas-de-autos-usados-en-chile-cuntas-se-transfieren-y-qu-buscan-los-compradores-segn-cavem 
+
+European Commission. (2026). *Batteries — Digital product passport*. https://single-market-economy.ec.europa.eu/single-market/digital-product-passport/batteries_en?prefLang=fr 
+
+European Parliament & Council of the European Union. (2023). *Regulation (EU) 2023/1542 concerning batteries and waste batteries*. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R1542 
+
+European Parliament & Council of the European Union. (2023). *Regulation (EU) 2023/1542 concerning batteries and waste batteries, consolidated version 13 August 2026*. https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A02023R1542-20260813 
+
+European Parliament & Council of the European Union. (2023). *Regulation (EU) 2023/851 amending Regulation (EU) 2019/631 as regards strengthening the CO₂ emission performance standards for new passenger cars and new light commercial vehicles*. https://eur-lex.europa.eu/eli/reg/2023/851/oj 
+
+Geotab. (2026, 13 de enero). *New Geotab data shows EV battery health remains strong as fast charging use increases*. https://www.geotab.com/press-release/ev-battery-health-degradation-fast-charging-study/ 
+
+Geotab. (2026, January 13). *New Geotab data shows EV battery health remains strong as fast charging use increases*. https://www.geotab.com/press-release/ev-battery-health-degradation-fast-charging-study/ 
+
+Instituto Nacional de Estadísticas [INE]. (2025, agosto 14). *Permisos de circulación crecieron un 2,9% en 2024*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2025/08/14/permisos-de-circulaci%C3%B3n-crecieron-un-2-9-en-2024 
+
+Instituto Nacional de Estadísticas [INE]. (2026, febrero 4). *INE publica edición 2025 del Informe Anual de Estadísticas del Medio Ambiente*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2026/02/04/ine-publica-edici%C3%B3n-2025-del-informe-anual-de-estad%C3%ADsticas-del-medio-ambiente 
+
+Instituto Nacional de Estadísticas. (2024, 13 de septiembre). *Más vehículos en Chile: permisos de circulación crecieron 4,6% en el 2023*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2024/09/13/m%C3%A1s-veh%C3%ADculos-en-chile-permisos-de-circulaci%C3%B3n-crecieron-4-6-en-el-2023 
+
+Instituto Nacional de Estadísticas. (2025, 14 de agosto). *Permisos de circulación crecieron un 2,9% en 2024*. https://www.ine.gob.cl/sala-de-prensa/prensa/general/noticia/2025/08/14/permisos-de-circulaci%C3%B3n-crecieron-un-2-9-en-2024 
+
+International Energy Agency. (2026a). *Global EV Outlook 2026: Manufacturing and trade*. https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade 
+
+International Energy Agency. (2026b). *Global EV Outlook 2026: Trends in electric cars*. https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars 
+
+Ministerio de Energía. (2022). *Resolución Exenta N.º 5: Fija estándar mínimo de eficiencia energética para vehículos motorizados livianos*. Biblioteca del Congreso Nacional de Chile. https://www.bcn.cl/leychile/navegar?i=1172567 
+
+Ministerio de Energía. (2022, febrero 12). *Se publica nuevo estándar de eficiencia energética para vehículos livianos*. https://energia.gob.cl/node/22319 
+
+Ministerio de Energía. (2026). *Estrategia Nacional de Electromovilidad 2030*. https://energia.gob.cl/sites/default/files/documentos/estrategia_nacional_de_electromovilidad_2030.pdf 
+
+Ministerio de Energía. (2026, 9 de junio). *Nueva Estrategia de Electromovilidad fija hoja de ruta al 2030*. https://www.energia.gob.cl/noticias/nacional/nueva-estrategia-de-electromovilidad-fija-hoja-de-ruta-al-2030?page=117 
+
+Ministerio del Medio Ambiente. (2023, enero 27). *Temuco y Padre Las Casas contarán con un nuevo PDA*. https://mma.gob.cl/temuco-y-padre-las-casas-contaran-con-un-nuevo-pda/ 
+
+Ministerio del Medio Ambiente. (2024). *Decreto N.º 45: Prorroga el plazo para la entrada en vigencia de la segunda fase (Euro 6c) de las normas de emisión aplicables a vehículos motorizados livianos y medianos*. Biblioteca del Congreso Nacional de Chile. https://www.bcn.cl/leychile/navegar?idNorma=1201991 
+
+Ministerio del Medio Ambiente. (2026, abril 30). *Autoridades lanzan Gestión de Episodios Críticos (GEC) 2026 para enfrentar la mala calidad del aire en la Región Metropolitana*. Aire Región Metropolitana. https://airerm.mma.gob.cl/autoridades-lanzan-gestion-de-episodios-criticos-gec-2026-para-enfrentar-la-mala-calidad-del-aire-en-la-region-metropolitana/ 
+
+Ministerio del Medio Ambiente. (2026, abril 30). *Autoridades lanzan Gestión de Episodios Críticos (GEC) 2026 para enfrentar la mala calidad del aire en la Región Metropolitana*. https://mma.gob.cl/autoridades-lanzan-gestion-de-episodios-criticos-gec-2026-para-enfrentar-la-mala-calidad-del-aire-en-la-region-metropolitana/ 
+
+Ministerio del Medio Ambiente. (2026a). *Aceites lubricantes*. https://economiacircular.mma.gob.cl/aceites-lubricantes/ 
+
+Ministerio del Medio Ambiente. (2026b, 4 de agosto). *Ley REP: se extiende el plazo para la elaboración del Decreto Supremo de Baterías*. https://mma.gob.cl/ley-rep-se-extiende-el-plazo-para-la-elaboracion-del-decreto-supremo-de-baterias/ 
+
+Ministerio del Medio Ambiente. (2026c). *Baterías*. https://economiacircular.mma.gob.cl/baterias/ 
+
+Ministerio del Medio Ambiente. (2026d). *Autoridades lanzan Gestión de Episodios Críticos GEC 2026 para enfrentar la mala calidad del aire en la Región Metropolitana*. https://mma.gob.cl/autoridades-lanzan-gestion-de-episodios-criticos-gec-2026-para-enfrentar-la-mala-calidad-del-aire-en-la-region-metropolitana/ 
+
+Ministerio del Medio Ambiente. (2026e). *Informe RETC 2023*. https://retc.mma.gob.cl/wp-content/uploads/2026/01/INFORME-RETC-2023.pdf 
+
+Ministerio del Medio Ambiente. (s. f.). *Aceites lubricantes*. Economía Circular. https://economiacircular.mma.gob.cl/aceites-lubricantes/ 
+
+Ministerio del Medio Ambiente. (s. f.). *Neumáticos*. Economía Circular. https://economiacircular.mma.gob.cl/neumaticos/ 
+
+Ministerio del Medio Ambiente. (s. f.). *Norma de emisiones*. Fuentes Móviles. https://fuentesmoviles.mma.gob.cl/norma-de-emisiones/ 
+
+Recurrent. (2026). *Used Electric Car Prices & Market Report — Q4 2026*. https://www.recurrentauto.com/research/used-electric-vehicle-buying-report 
+
+State Council of the People’s Republic of China. (2026, 1 de enero). *China to enforce stricter fuel efficiency standards for vehicles in 2026*. https://english.www.gov.cn/english.www.gov.cn/news/202601/01/content_WS6955c457c6d00ca5f9a08602.html 
