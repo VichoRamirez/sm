@@ -183,3 +183,26 @@ Buena calidad. Verificado en la fuente:
 | X-16 | X-05 nuevo | ⚠️ La rebaja de 50 % del impuesto de compra en China y las exportaciones de 5,79 millones no están en la página de la IEA citada, y Reuters bloquea la descarga |
 
 Los demás hallazgos de la segunda corrida repiten los de la primera.
+
+## Tercera ronda: segunda corrida del complemento político
+
+Llegó otra corrida del complemento político, que sobrescribió `Político_b`. Se guardó como `raw/Análisis Político_c…` y `Político_b` se restauró desde git, para conservar las dos fuentes.
+
+**Integrado como P-12 a P-15, más un matiz en P-09:**
+
+| Origen | Veredicto |
+| --- | --- |
+| P-11 c → **P-12** | ✅ Robos de vehículos: 39.166 → 36.868 (UNAB-OCRIT, datos CEAD); AACH, 13.733 asegurados en 2024 (−3,1 %). ⚠️ Las cifras de AACH del primer semestre 2026 (5.851 robos y 631 recuperaciones) no se verificaron |
+| P-12 c → **P-13** | ✅ Auto Seguro (SPD); AACH, más de 1.500 recuperados entre enero y octubre de 2025 |
+| P-13 c → **P-09** (matiz) | ✅ Ley 18.483, art. 21: "sólo podrán importarse vehículos sin uso" (LeyChile) |
+| P-15 c → **P-14** | ✅ ANAC, marzo 2026: cuatro medidas (permiso a $0, hoy 25 % → 50 %; arancel de 6 %; impuesto al lujo; IVA) |
+| P-15 c → **P-15** | ✅ CNC–SII: Resolución 154 prorrogada al 1-nov-2026. ⚠️ El Boletín 18.775-15 (llantas usadas) no se verificó: la Cámara bloquea la descarga |
+| P-10 c, P-13 c, P-16 c | Repiten P-05, P-09 y P-11. El PDF del IPN de noviembre lo bloquea Incapsula: sigue ⚠️ |
+
+**Legal (A6):** se deja pendiente por decisión del equipo (07-nov). Lo legal que ya está cubierto en otras dimensiones:
+
+- Ley 21.601 (P-01, P-02).
+- Ley 18.483 (P-09).
+- Proyectos de IA y datos (P-06).
+- Garantía al segundo dueño y SERNAC (X-13, X-15).
+- Normativa ambiental (A-04, A-09, A-10).
