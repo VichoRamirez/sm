@@ -1,6 +1,6 @@
 # Deck v13 — lista de cambios por lámina
 
-Consolida los documentos de resolución de los issues #1–#12 para editar el `.pptx` de la v12. Cada fila indica la lámina de la v12, el cambio, el issue y el documento con el texto exacto.
+Consolida los documentos de resolución de los issues #1–#12. **Aplicado el 22-nov-2026** en `global-sm_v13.pptx` (55 láminas), generado desde `global-sm_v11.pptx` (el último `.pptx` disponible) con `build/build_v13.py`, que también reaplica los cambios de v11 → v12 (láminas 1, 3, 37, 38 y 40–46). `global-sm_v13_preview.pdf` es una vista previa renderizada con ONLYOFFICE: la fuente Century Gothic aparece sustituida, así que el PDF final hay que exportarlo desde PowerPoint o Keynote. Cada fila indica la lámina de la v12, el cambio, el issue y el documento con el texto exacto.
 
 Documentos: [D] [`DECISIONES_EXAMEN_FINAL.md`](./DECISIONES_EXAMEN_FINAL.md) · [S] [`03_seleccion_PESTEL_FODA.md`](./03_seleccion_PESTEL_FODA.md) · [M] [`04_metas_SMART.md`](./04_metas_SMART.md) · [C] [`05_coherencia_forma_cierre.md`](./05_coherencia_forma_cierre.md)
 
@@ -16,7 +16,7 @@ Documentos: [D] [`DECISIONES_EXAMEN_FINAL.md`](./DECISIONES_EXAMEN_FINAL.md) · 
 | — | **48** | Nueva: Goals [M] |
 | 47 | 49 | Cierre |
 | — | **50** | Recuperada: What changed after your feedback [C] |
-| 48–51 | 51–54 | Referencias |
+| 48–51 | 51–55 | Referencias (se agrega una quinta lámina) |
 
 ## Cambios
 
@@ -51,6 +51,16 @@ Documentos: [D] [`DECISIONES_EXAMEN_FINAL.md`](./DECISIONES_EXAMEN_FINAL.md) · 
 
 ## Fuera del deck
 
-- Guion del examen final con el nuevo cierre (#12).
-- Exportar `global-sm_v13.pptx` y `global-sm_v13.pdf` en esta carpeta.
+- Guion del examen final con el nuevo cierre (#12): `Guion_ExamenFinal.md`.
+- Exportar `global-sm_v13.pdf` desde PowerPoint o Keynote, con la fuente real.
 - Cerrar cada issue citando su lámina en la v13 (regla del #13).
+
+## Ajustes al aplicar (diferencias con los documentos)
+
+- **#11:** las tres entradas “faltantes” ya estaban en el `.pptx`. El problema real era que la última entrada de cada columna se salía del cuadro y quedaba cortada en el PDF. Se redistribuyeron las referencias en 5 láminas (10 columnas parejas).
+- **Lámina 8:** sin cambios. El gráfico 78 % → 31 % ya explica cada barra.
+- **Lámina 15:** el 84,7 % se mantiene, con fecha (“Sep 2026”), porque es la base del cálculo ≈521.000.
+- **Láminas 28 y 35:** ya citaban The Clinic (2026b) junto a CAVEM (2026a), así que no se tocaron. La cita se corrigió en la 37 y en O1.
+- **Hallazgos del #2 en el PESTEL:** quedaron en `research/pestel/`. En el deck se declaran en la regla “Built on the PESTEL” (36) y en el chip de origen de cada fuerza, en vez de agregar tarjetas a las láminas 28 y 30, que están llenas.
+- **Chips de origen del FODA:** van como texto en negrita al final de la línea de fuente (`⟵ E · 28`).
+- **Lámina 13:** sin cambios. La pregunta sobre la forma de pago se agregó en la 9 (SO5).
