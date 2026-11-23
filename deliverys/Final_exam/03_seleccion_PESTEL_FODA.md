@@ -122,8 +122,8 @@ Las láminas 28 y 30 tienen que mostrar los hallazgos nuevos del #2 para que eso
 
 Conteo según la matriz de la sección 2: 24 pasan (incluye O5), 6 en vigilancia, 6 de contexto, 1 descartado y 1 que va al diseño muestral. Recontar si cambia la decisión sobre O5.
 
-## Decisiones abiertas para el equipo
+## Decisiones (22-nov-2026)
 
-1. **O5, marcas chinas:** ¿lo dejamos como ítem propio (propuesta) o como media frase en O3, como está hoy?
-2. **T5, poder del comprador:** ¿lo agregamos (propuesta, cierra parte del #7) o se cubre en S3/W4?
-3. **Ubicación de la lámina:** entre la 43 y la 44 (propuesta) o como apéndice, con un resumen en la 43.
+1. **O5, marcas chinas:** ítem propio.
+2. **T5, poder del comprador:** se agrega.
+3. **Lámina de selección:** entre la 43 y la 44.
