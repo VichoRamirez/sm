@@ -2,7 +2,7 @@
 
 Deck: `global-sm_v14.pptx`. Como en el certamen 2, este guion se enfoca en lo nuevo respecto de la última presentación: portada, lo que cambió en el PESTEL (lámina 35) y el bloque nuevo, láminas 36–49. La 50 es apéndice.
 
-Tiempo hablado: unos **7 minutos y 50 segundos** a 100 palabras por minuto, un ritmo tranquilo. Los oradores son una propuesta pareja (entre 1:00 y 1:45 por persona), más unos 30 segundos de cambios de orador; cámbienlos si alguien prefiere otra lámina.
+Tiempo hablado: unos **7 minutos y 50 segundos** a 100 palabras por minuto, un ritmo tranquilo. Los oradores son una propuesta pareja entre los siete (entre 1:00 y 1:25 por persona), más unos 30 segundos de cambios de orador; cámbienlos si alguien prefiere otra lámina.
 
 | Lámina | Quién | Tiempo | Acumulado | Qué tiene que lograr |
 |---|---|---|---|---|
@@ -14,12 +14,12 @@ Tiempo hablado: unos **7 minutos y 50 segundos** a 100 palabras por minuto, un r
 | 39 | Gabo | 0:35 | 3:30 | Se usa, pero no se confía: vendemos reconocimiento de daños con prueba |
 | 40 | Bruno | 0:35 | 4:05 | Dealers que se van gratis; aseguradoras, un tercer comprador |
 | 41 | Checho | 0:30 | 4:35 | El insumo escaso son los precios de los talleres |
-| 42 | Checho | 0:15 | 4:50 | Ninguna fuerza es baja; “high is not bad” |
+| 42 | Joaquín | 0:15 | 4:50 | Ninguna fuerza es baja; “high is not bad” |
 | 43–44 | Checho | 0:30 | 5:20 | La regla de selección y qué pasa al FODA |
-| 45–46 | Dani | 0:50 | 6:10 | FODA con origen visible |
+| 45–46 | Joaquín | 0:50 | 6:10 | FODA con origen visible |
 | 47 | Vicho | 0:30 | 6:40 | Cada línea cruza dentro y fuera, y su nombre dice qué construimos |
 | 48 | Gabo | 0:50 | 7:30 | Cuatro metas: dos las valida este estudio, dos el siguiente |
-| 49 | Bruno | 0:20 | 7:50 | Cierre en cinco pasos y preguntas |
+| 49 | Dani | 0:20 | 7:50 | Cierre en cinco pasos y preguntas |
 | 50 | — | — | — | Apéndice: mostrar solo si preguntan por el feedback |
 
 ## Por qué el guion dice lo que dice
@@ -77,7 +77,7 @@ The average dealer buys about three cars a month and can go back to a spreadshee
 
 AI vendors are many and cheap. The scarce input is workshop price data: 29 days just to get a car into a workshop, according to the CMF. That figure is for insured cars, so we use it as a proxy. Workshops are not in our sample: they are the next study.
 
-## 42 · Cinco fuerzas · Checho · 0:15
+## 42 · Cinco fuerzas · Joaquín · 0:15
 
 No force is low, and two are high. As we heard in class, a high force is not a bad business: it shows what to fix before launch.
 
@@ -85,7 +85,7 @@ No force is low, and two are high. As we heard in class, a high force is not a b
 
 Now we move from describing to choosing. A finding passes to the SWOT if it touches the information gap at purchase, holds today, and we can act on it now. Of 38 findings, 24 pass, 6 stay on watch, like the used-EV import bill, and 8 only frame the market.
 
-## 45–46 · FODA · Dani · 0:50
+## 45–46 · FODA · Joaquín · 0:50
 
 Every item shows where it comes from: a PESTEL letter or a force. Opportunities: a growing market in an economy that does not grow, no legal warranty on used cars, warranties that run out, insurers, and Chinese brands without a resale curve. Threats: the free chatbot, entrants within reach, early digital firms, data and AI rules, and buyers who can leave. Inside, our strength is joining damage, repair cost and price; our weaknesses are what a photo cannot see and the data we still lack.
 
@@ -97,7 +97,7 @@ Each line crosses inside and outside, and each name says what we build. One: ver
 
 And each line has a goal. One hundred mechanic-checked reports, with at most 10% invented content, against a 31% baseline. Real prices from 60 dealers, and at least three workshops sharing theirs. Three or four insurer interviews and one pilot deal. And a marketing goal: 10 of the 60 dealers we study sign the monthly plan. Research objectives tell us what to understand; these goals tell us what to achieve. Two are checked by this study, two by the next one.
 
-## 49 · Cierre · Bruno · 0:20
+## 49 · Cierre · Dani · 0:20
 
 Diagnosis: information asymmetry. Objective: what certainty is worth. Method: listen first, then measure. Context: PESTEL, five forces and a SWOT, every item traced. Strategy: four lines and four goals. Thank you. Questions?
 
