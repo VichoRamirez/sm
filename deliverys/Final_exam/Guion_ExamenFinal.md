@@ -1,8 +1,8 @@
 # InfoCar · Examen final · Guion
 
-Deck: `global-sm_v14.pptx`. Como en el certamen 2, este guion se enfoca en lo nuevo respecto de la última presentación: portada, lo que cambió en el PESTEL (lámina 35) y el bloque nuevo, láminas 36–49. La 50 es apéndice.
+Deck: `global-sm_v15.pptx`. Como en el certamen 2, este guion se enfoca en lo nuevo respecto de la última presentación: portada, lo que cambió en el PESTEL (lámina 35) y el bloque nuevo, láminas 36–51. La 52 es apéndice.
 
-Tiempo hablado: unos **7 minutos y 50 segundos** a 100 palabras por minuto, un ritmo tranquilo. Los oradores son una propuesta pareja entre los siete (entre 1:00 y 1:25 por persona), más unos 30 segundos de cambios de orador; cámbienlos si alguien prefiere otra lámina.
+Tiempo hablado: unos **9 minutos y 15 segundos** a 100 palabras por minuto, un ritmo tranquilo. Los oradores son una propuesta pareja entre los siete (entre 0:45 y 1:45 por persona; Joaquín queda con más tiempo, muévanlo si hace falta), más unos 30 segundos de cambios de orador; cámbienlos si alguien prefiere otra lámina.
 
 | Lámina | Quién | Tiempo | Acumulado | Qué tiene que lograr |
 |---|---|---|---|---|
@@ -19,8 +19,10 @@ Tiempo hablado: unos **7 minutos y 50 segundos** a 100 palabras por minuto, un r
 | 45–46 | Joaquín | 0:50 | 6:10 | FODA con origen visible |
 | 47 | Vicho | 0:30 | 6:40 | Cada línea cruza dentro y fuera, y su nombre dice qué construimos |
 | 48 | Gabo | 0:50 | 7:30 | Cuatro metas: dos las valida este estudio, dos el siguiente |
-| 49 | Dani | 0:20 | 7:50 | Cierre en cinco pasos y preguntas |
-| 50 | — | — | — | Apéndice: mostrar solo si preguntan por el feedback |
+| 49 | Joaquín | 0:40 | 8:10 | Dashboard: cada meta con su área de las 4P, KPI, responsable y contingencia |
+| 50 | Moisés | 0:45 | 8:55 | La meta 4, semana a semana: del estudio a 10 dealers firmados |
+| 51 | Dani | 0:20 | 9:15 | Cierre en cinco pasos y preguntas |
+| 52 | — | — | — | Apéndice: mostrar solo si preguntan por el feedback |
 
 ## Por qué el guion dice lo que dice
 
@@ -97,9 +99,17 @@ Each line crosses inside and outside, and each name says what we build. One: ver
 
 And each line has a goal. One hundred mechanic-checked reports, with at most 10% invented content, against a 31% baseline. Real prices from 60 dealers, and at least three workshops sharing theirs. Three or four insurer interviews and one pilot deal. And a marketing goal: 10 of the 60 dealers we study sign the monthly plan. Research objectives tell us what to understand; these goals tell us what to achieve. Two are checked by this study, two by the next one.
 
-## 49 · Cierre · Dani · 0:20
+## 49 · Dashboard de marketing · Joaquín · 0:40
 
-Diagnosis: information asymmetry. Objective: what certainty is worth. Method: listen first, then measure. Context: PESTEL, five forces and a SWOT, every item traced. Strategy: four lines and four goals. Thank you. Questions?
+This is our marketing dashboard. One row per goal, with its marketing-mix area, the strategy, the tasks, the KPI we watch and how often, the owner, and what we do if it slips. Product carries goals 1 and 2; insurers are a new place to sell; goal 4 is price and promotion. Every contingency is a rule we set in advance, not an excuse after the fact. We expand goal 4, because it is the marketing goal and SO5 checks it inside this study.
+
+## 50 · Meta 4, semana a semana · Moisés · 0:45
+
+Goal 4, task by task. Month 1 is the study: we add Van Westendorp to the dealer guide, interview the 60 dealers and confirm the target by bracket. Weeks 4 to 6 we build the offer: price per bracket, a kit to set up in one visit, and terms with data consent. Weeks 6 to 11 we visit and sign the dealers who said yes in the study. From week 9 we check usage every week, because going back to a spreadsheet costs nothing. 145 hours, all in-house.
+
+## 51 · Cierre · Dani · 0:20
+
+Diagnosis: information asymmetry. Objective: what certainty is worth. Method: listen first, then measure. Context: PESTEL, five forces and a SWOT, every item traced. Strategy: four lines, four goals and a dashboard to run them. Thank you. Questions?
 
 ## Preguntas probables
 
